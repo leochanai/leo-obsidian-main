@@ -8,6 +8,9 @@ description: 学习如何编写有效的技能，使 Claude 能够发现和成�
 tags:
   - agent-skills
 ---
+
+# Agent Skill 创作最佳实践
+
 > 学习如何编写有效的技能，使 Claude 能够发现和成功使用。
 
 ---
@@ -21,6 +24,7 @@ tags:
 ### 简洁是关键
 
 [上下文窗口](/docs/zh-CN/build-with-claude/context-windows) 是一种公共资源。您的技能与 Claude 需要了解的所有其他内容共享上下文窗口，包括：
+
 - 系统提示
 - 对话历史
 - 其他技能的元数据
@@ -31,11 +35,13 @@ tags:
 **默认假设**：Claude 已经非常聪明
 
 只添加 Claude 没有的上下文。质疑每一条信息：
+
 - "Claude 真的需要这个解释吗？"
 - " 我能假设 Claude 知道这个吗？"
 - " 这段落值得它的令牌成本吗？"
 
 **好的例子：简洁**（大约 50 个令牌）：
+
 ````markdown
 ## 提取 PDF 文本
 
@@ -50,6 +56,7 @@ with pdfplumber.open("file.pdf") as pdf:
 ````
 
 **不好的例子：过于冗长**（大约 150 个令牌）：
+
 ```markdown
 ## 提取 PDF 文本
 
@@ -69,11 +76,13 @@ PDF（便携式文档格式）文件是一种常见的文件格式，包含
 **高自由度**（基于文本的说明）：
 
 使用场景：
+
 - 多种方法都有效
 - 决策取决于上下文
 - 启发式方法指导方法
 
 示例：
+
 ```markdown
 ## 代码审查流程
 
@@ -86,11 +95,13 @@ PDF（便携式文档格式）文件是一种常见的文件格式，包含
 **中等自由度**（伪代码或带参数的脚本）：
 
 使用场景：
+
 - 存在首选模式
 - 某些变化是可以接受的
 - 配置影响行为
 
 示例：
+
 ````markdown
 ## 生成报告
 
@@ -107,11 +118,13 @@ def generate_report(data, format="markdown", include_charts=True):
 **低自由度**（特定脚本，很少或没有参数）：
 
 使用场景：
+
 - 操作脆弱且容易出错
 - 一致性至关重要
 - 必须遵循特定的序列
 
 示例：
+
 ````markdown
 ## 数据库迁移
 
@@ -145,18 +158,21 @@ python scripts/migrate.py --verify --backup
 **YAML 前置事项**：SKILL.md 前置事项需要两个字段：
 
 `name`：
+
 - 最多 64 个字符
 - 只能包含小写字母、数字和连字符
 - 不能包含 XML 标签
 - 不能包含保留字："anthropic"、"claude"
 
 `description`：
+
 - 必须非空
 - 最多 1024 个字符
 - 不能包含 XML 标签
 - 应描述技能的功能和使用时机
 
 有关完整的技能结构详情，请参阅 [技能概述](/docs/zh-CN/agents-and-tools/agent-skills/overview#skill-structure)。
+
 </Note>
 
 ### 命名约定
@@ -183,6 +199,7 @@ python scripts/migrate.py --verify --backup
 - 技能集合中的不一致模式
 
 一致的命名使以下操作更容易：
+
 - 在文档和对话中引用技能
 - 一目了然地理解技能的功能
 - 组织和搜索多个技能
@@ -207,16 +224,19 @@ python scripts/migrate.py --verify --backup
 有效的示例：
 
 **PDF 处理技能**：
+
 ```yaml
 description: 从 PDF 文件中提取文本和表格、填充表单、合并文档。在处理 PDF 文件或用户提及 PDF、表单或文档提取时使用。
 ```
 
 **Excel 分析技能**：
+
 ```yaml
 description: 分析 Excel 电子表格、创建数据透视表、生成图表。在分析 Excel 文件、电子表格、表格数据或 .xlsx 文件时使用。
 ```
 
 **Git 提交助手技能**：
+
 ```yaml
 description: 通过分析 git 差异生成描述性提交消息。当用户要求帮助编写提交消息或审查暂存更改时使用。
 ```
@@ -226,9 +246,11 @@ description: 通过分析 git 差异生成描述性提交消息。当用户要�
 ```yaml
 description: 帮助处理文档
 ```
+
 ```yaml
 description: 处理数据
 ```
+
 ```yaml
 description: 对文件进行各种操作
 ```
@@ -254,7 +276,7 @@ SKILL.md 作为概述，指向 Claude 根据需要查看的详细材料，就像
 
 完整的技能目录结构可能如下所示：
 
-```
+```md
 pdf/
 ├── SKILL.md              # 主要说明（触发时加载）
 ├── FORMS.md              # 表单填充指南（根据需要加载）
@@ -298,7 +320,7 @@ Claude 仅在需要时加载 FORMS.md、REFERENCE.md 或 EXAMPLES.md。
 
 对于具有多个领域的技能，按领域组织内容以避免加载无关的上下文。当用户询问销售指标时，Claude 只需要读取与销售相关的架构，而不是财务或营销数据。这保持令牌使用低且上下文集中。
 
-```
+```md
 bigquery-skill/
 ├── SKILL.md (概述和导航)
 └── reference/
@@ -357,6 +379,7 @@ Claude 仅在用户需要这些功能时读取 REDLINING.md 或 OOXML.md。
 **保持引用距离 SKILL.md 一级**。所有参考文件应直接从 SKILL.md 链接，以确保 Claude 在需要时读取完整文件。
 
 **不好的例子：太深**：
+
 ```markdown
 # SKILL.md
 参阅 [advanced.md](advanced.md)...
@@ -369,6 +392,7 @@ Claude 仅在用户需要这些功能时读取 REDLINING.md 或 OOXML.md。
 ```
 
 **好的例子：一级深**：
+
 ```markdown
 # SKILL.md
 
@@ -383,6 +407,7 @@ Claude 仅在用户需要这些功能时读取 REDLINING.md 或 OOXML.md。
 对于超过 100 行的参考文件，在顶部包含目录。这确保 Claude 即使在部分读取时也能看到可用信息的完整范围。
 
 **示例**：
+
 ```markdown
 # API 参考
 
@@ -548,12 +573,14 @@ Claude 可以根据需要读取完整文件或跳转到特定部分。
 不要包含会过时的信息：
 
 **不好的例子：时间敏感**（会变成错误）：
+
 ```markdown
 如果您在 2025 年 8 月之前执行此操作，请使用旧 API。
 2025 年 8 月之后，使用新 API。
 ```
 
 **好的例子**（使用 " 旧模式 " 部分）：
+
 ```markdown
 ## 当前方法
 
@@ -727,6 +754,7 @@ chore: 更新依赖项并重构错误处理
 此方法确保您解决实际问题，而不是预期可能永远不会出现的要求。
 
 **评估结构**：
+
 ```json
 {
   "skills": ["pdf-processing"],
@@ -773,6 +801,7 @@ chore: 更新依赖项并重构错误处理
 **迭代现有技能**：
 
 当改进技能时，相同的分层模式继续。您在以下之间交替：
+
 - **与 Claude A 合作**（帮助改进技能的专家）
 - **与 Claude B 测试**（使用技能执行真实工作的代理）
 - **观察 Claude B 的行为**并将见解带回 Claude A
@@ -847,6 +876,7 @@ import pdfplumber
 编写技能脚本时，处理错误条件而不是推卸给 Claude。
 
 **好的例子：明确处理错误**：
+
 ```python
 def process_file(path):
     """处理文件，如果不存在则创建它。"""
@@ -866,6 +896,7 @@ def process_file(path):
 ```
 
 **不好的例子：推卸给 Claude**：
+
 ```python
 def process_file(path):
     # 只是失败并让 Claude 弄清楚
@@ -875,6 +906,7 @@ def process_file(path):
 配置参数也应该被证明和记录，以避免 " 巫毒常数 "（Ousterhout 定律）。如果您不知道正确的值，Claude 如何确定它？
 
 **好的例子：自文档化**：
+
 ```python
 # HTTP 请求通常在 30 秒内完成
 # 更长的超时考虑了慢速连接
@@ -886,6 +918,7 @@ MAX_RETRIES = 3
 ```
 
 **不好的例子：魔法数字**：
+
 ```python
 TIMEOUT = 47  # 为什么是 47？
 RETRIES = 5   # 为什么是 5？
@@ -912,6 +945,7 @@ RETRIES = 5   # 为什么是 5？
 对于大多数实用脚本，执行是首选，因为它更可靠和高效。有关脚本执行如何工作的详情，请参阅下面的 [运行时环境](#runtime-environment) 部分。
 
 **示例**：
+
 ````markdown
 ## 实用脚本
 
@@ -1019,7 +1053,7 @@ Claude 的视觉能力帮助理解布局和结构。
 
 **示例**：
 
-```
+```md
 bigquery-skill/
 ├── SKILL.md (概述，指向参考文件)
 └── reference/
@@ -1039,12 +1073,14 @@ bigquery-skill/
 **格式**：`ServerName:tool_name`
 
 **示例**：
+
 ```markdown
 使用 BigQuery:bigquery_schema 工具检索表架构。
 使用 GitHub:create_issue 工具创建问题。
 ```
 
 其中：
+
 - `BigQuery` 和 `GitHub` 是 MCP 服务器名称
 - `bigquery_schema` 和 `create_issue` 是这些服务器中的工具名称
 
@@ -1073,6 +1109,7 @@ reader = PdfReader("file.pdf")
 ### YAML 前置事项要求
 
 SKILL.md 前置事项需要 `name` 和 `description` 字段，具有特定的验证规则：
+
 - `name`：最多 64 个字符，仅小写字母/数字/连字符，无 XML 标签，无保留字
 - `description`：最多 1024 个字符，非空，无 XML 标签
 
@@ -1087,6 +1124,7 @@ SKILL.md 前置事项需要 `name` 和 `description` 字段，具有特定的验
 在分享技能之前，验证：
 
 ### 核心质量
+
 - [ ] 描述具体并包含关键术语
 - [ ] 描述包括技能的功能和使用时机
 - [ ] SKILL.md 正文在 500 行以下
@@ -1099,6 +1137,7 @@ SKILL.md 前置事项需要 `name` 和 `description` 字段，具有特定的验
 - [ ] 工作流有清晰的步骤
 
 ### 代码和脚本
+
 - [ ] 脚本解决问题而不是推卸给 Claude
 - [ ] 错误处理明确且有帮助
 - [ ] 没有 " 巫毒常数 "（所有值都有理由）
@@ -1109,6 +1148,7 @@ SKILL.md 前置事项需要 `name` 和 `description` 字段，具有特定的验
 - [ ] 包含质量关键任务的反馈循环
 
 ### 测试
+
 - [ ] 至少创建了三个评估
 - [ ] 使用 Haiku、Sonnet 和 Opus 进行了测试
 - [ ] 使用真实使用场景进行了测试

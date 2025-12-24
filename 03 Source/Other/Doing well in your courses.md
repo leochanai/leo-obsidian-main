@@ -75,7 +75,7 @@ Especially if the past tests were written by the same professor. This will give 
 
 Even I often make this mistake still: You read a formula/derivation/proof in the book and it makes perfect sense. Now close the book and try to write it down. You will find that this process is completely different and it will amaze you that many times you won't actually be able to do this! Somehow the two things use different parts of the memory. Make it a point to make sure that you can actually write down the most important bits, and that you can re-derive them at will. Feynman famously [knew this](http://www.quora.com/What-did-Richard-Feynman-mean-when-he-said-What-I-cannot-create-I-do-not-understand) very well.
 
-即使是我现在也经常犯这个错误：你在书上看到一个公式、推导或证明，觉得非常有道理。现在闭上书，尝试把它写下来。你会发现这个过程完全不同，而且你会惊讶地发现，很多时候你实际上写不出来！不知由于何种原因，这两件事使用的是记忆的不同部分。务必确保你能真正写下最重要的部分，并能随意重新推导它们。费曼对此也是众所周知的[深有感触](http://www.quora.com/What-did-Richard-Feynman-mean-when-he-said-What-I-cannot-create-I-do-not-understand)。
+即使是我现在也经常犯这个错误：你在书上看到一个公式、推导或证明，觉得非常有道理。现在闭上书，尝试把它写下来。你会发现这个过程完全不同，而且你会惊讶地发现，很多时候你实际上写不出来！不知由于何种原因，这两件事使用的是记忆的不同部分。务必确保你能真正写下最重要的部分，并能随意重新推导它们。费曼对此也是众所周知的 [深有感触](http://www.quora.com/What-did-Richard-Feynman-mean-when-he-said-What-I-cannot-create-I-do-not-understand)。
 
 ---
 
