@@ -8,6 +8,9 @@ description: "一起逃离 Vercel 拥抱 Cloudflare 吧Cloudflare 云服务迁�
 tags:
   - "cloudflare"
 ---
+
+# 将 Next.js 项目从 Vercel 迁移到 Cloudflare
+
 ## 一起逃离 Vercel 拥抱 Cloudflare 吧
 
 Vercel 再次调价之后，性价比越来越低，每个月 $20 的额度根本扛不住什么访问量；而且建站所需的各种服务（数据库，KV 等）也欠缺，所以我觉得是时候迁离 Vercel，投奔赛博菩萨 Cloudflare 的怀抱了。

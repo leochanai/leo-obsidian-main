@@ -4,17 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "b9f174fcbf42b0c0",
+        "id": "1990ce165f188d2f",
         "type": "tabs",
         "children": [
           {
-            "id": "4ebee227ed7985f5",
+            "id": "ab67aa6b5e96ba0f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "03 Source/Other/Doing well in your courses.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Doing well in your courses"
             }
           }
         ]
@@ -85,16 +99,6 @@
         "type": "tabs",
         "dimension": 34.28270042194092,
         "children": [
-          {
-            "id": "357c1e97f042c05e",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          },
           {
             "id": "a24b677c479d6728",
             "type": "leaf",
@@ -170,12 +174,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "03 Source/Other/Doing well in your courses.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "Doing well in your courses 的大纲"
             }
           }
         ],
@@ -194,22 +199,32 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "4ebee227ed7985f5",
+  "active": "ab67aa6b5e96ba0f",
   "lastOpenFiles": [
-    "03 Source/Claude Code/Agent Skills Marketplace.md",
-    "01 Base/Agent Skills.base",
+    "03 Source/Obsidian/obsidian-baseline.md",
     "03 Source/Other/Doing well in your courses.md",
-    "03 Source/Other",
+    "10 Attachment/ebdfd5dbea293b607afa83d51c4222db_MD5.png",
+    "10 Attachment/e694072238189e8e9421868d26aa52ff_MD5.png",
+    "10 Attachment/e03b4897bc306a5ddc38a537f62b5bf3_MD5.png",
+    "10 Attachment/c5c774db0c76de8ad39bb448720a4280_MD5.png",
+    "10 Attachment/84435593a7757e9a7e3504fe8c82e713_MD5.png",
+    "03 Source/Cloudflare/Get Started - Cloudflare.md",
+    "03 Source/Cloudflare/将 Next.js 项目从 Vercel 迁移到 Cloudflare.md",
     "03 Source/Claude Code/Agent Skills.md",
+    "03 Source/Claude Code/Agent Skills Marketplace.md",
     "03 Source/Claude Code/Agent Skill 创作最佳实践.md",
+    "02 Map/Drawing 2025-12-24 16.21.30.excalidraw.md",
+    "03 Map/Drawing 2025-12-24 16.21.14.excalidraw.md",
+    "03 Map",
+    "01 Base/Agent Skills.base",
+    "03 Source/Other",
     "04 Other/Claude Docs.md",
     "04 Other/Andrej Karpathy.md",
     "04 Other",
-    "03 Source/Cloudflare/将 Next.js 项目从 Vercel 迁移到 Cloudflare.md",
-    "03 Source/Cloudflare/Get Started - Cloudflare.md",
     "03 Source/Cloudflare",
     "03 Source/Obsidian",
     "03 Source/Claude Code",
@@ -229,12 +244,7 @@
     "06 Note/HMN Emails.md",
     "06 Note/Huahai Emails.md",
     "11 Template/未命名.md",
-    "00 Inbox/MySQL 8.0 版本以上默认启用了 caching_sha2_password 认证插件，要求客户端从服务端获取 RSA 公钥来加密密码。  驱动程序出于安全考虑默认禁止了此行为，可以通过将 AllowPublicKeyRetrieval 设置为 true .md",
-    "06 Note/Public Key Retrieval is not allowed.md",
     "06 Note",
-    "未命名",
-    "00 Inbox/Gemini Deep Research.md",
-    "00 Inbox/Gemini Deep Reasearch.md",
     "10 Attachment/安哥.jpg"
   ]
 }

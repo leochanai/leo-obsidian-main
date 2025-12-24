@@ -8,6 +8,9 @@ description: Open-source Next.js adapters
 tags:
   - cloudflare
 ---
+
+# Get Started - Cloudflare
+
 ## New apps
 
 To create a new Next.js app, pre-configured to run on Cloudflare using `@opennextjs/cloudflare`, run:
@@ -36,6 +39,7 @@ npm install --save-dev wrangler@latest
 
 > [!tip]
 > You must use Wrangler version `3.99.0` or later to deploy Next.js apps using `@opennextjs/cloudflare`.
+
 ### 3\. Create a wrangler configuration file
 
 > [!info]
