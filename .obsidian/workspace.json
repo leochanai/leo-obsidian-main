@@ -1,0 +1,240 @@
+{
+  "main": {
+    "id": "a9f03e7b0d56ae4f",
+    "type": "split",
+    "children": [
+      {
+        "id": "b9f174fcbf42b0c0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4ebee227ed7985f5",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "97724c4b328eff8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "60013721c5de48bc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "15e90fe269434724",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "9b3a80dc0f8cf543",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "29fbe0b71df6694a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f4de798dc9827ed2",
+    "type": "split",
+    "children": [
+      {
+        "id": "dea80247bd80007f",
+        "type": "tabs",
+        "dimension": 34.28270042194092,
+        "children": [
+          {
+            "id": "357c1e97f042c05e",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "a24b677c479d6728",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "4e4abf0ca13a6025",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          }
+        ]
+      },
+      {
+        "id": "72a70c2011ef31d9",
+        "type": "tabs",
+        "dimension": 65.71729957805907,
+        "children": [
+          {
+            "id": "d490f6a00609dfd3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "05 Source/Obsidian/Baseline sets a new standard for your Obsidian vault experience..md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Baseline sets a new standard for your Obsidian vault experience. 的反向链接列表"
+            }
+          },
+          {
+            "id": "6d29898df4018ae5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "05 Source/Obsidian/Baseline sets a new standard for your Obsidian vault experience..md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Baseline sets a new standard for your Obsidian vault experience. 的出链列表"
+            }
+          },
+          {
+            "id": "f580b6fa08db6598",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 316.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:新建数据库": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
+    }
+  },
+  "active": "4ebee227ed7985f5",
+  "lastOpenFiles": [
+    "03 Source/Claude Code/Agent Skills Marketplace.md",
+    "01 Base/Agent Skills.base",
+    "03 Source/Other/Doing well in your courses.md",
+    "03 Source/Other",
+    "03 Source/Claude Code/Agent Skills.md",
+    "03 Source/Claude Code/Agent Skill 创作最佳实践.md",
+    "04 Other/Claude Docs.md",
+    "04 Other/Andrej Karpathy.md",
+    "04 Other",
+    "03 Source/Cloudflare/将 Next.js 项目从 Vercel 迁移到 Cloudflare.md",
+    "03 Source/Cloudflare/Get Started - Cloudflare.md",
+    "03 Source/Cloudflare",
+    "03 Source/Obsidian",
+    "03 Source/Claude Code",
+    "03 Source",
+    "02 Map",
+    "03 Map/Drawing 2025-12-19 14.50.07.excalidraw.md",
+    "00 Inbox/未命名 1.md",
+    "00 Inbox/未命名.md",
+    "02 Journal/2025-11-28.md",
+    "06 Note/HMN CloudNMSPlatform release-notes.md",
+    "06 Note/CloudNMSPlatform_v1.1.0.2.md",
+    "06 Note/未命名.md",
+    "06 Note/HMN CloudNMSPlatform Release-notes.md",
+    "06 Note/HMN Release-notes.md",
+    "06 Note/HMN Releasenotes.md",
+    "06 Note/Huahai Releasenotes.md",
+    "06 Note/HMN Emails.md",
+    "06 Note/Huahai Emails.md",
+    "11 Template/未命名.md",
+    "00 Inbox/MySQL 8.0 版本以上默认启用了 caching_sha2_password 认证插件，要求客户端从服务端获取 RSA 公钥来加密密码。  驱动程序出于安全考虑默认禁止了此行为，可以通过将 AllowPublicKeyRetrieval 设置为 true .md",
+    "06 Note/Public Key Retrieval is not allowed.md",
+    "06 Note",
+    "未命名",
+    "00 Inbox/Gemini Deep Research.md",
+    "00 Inbox/Gemini Deep Reasearch.md",
+    "10 Attachment/安哥.jpg"
+  ]
+}

@@ -1,0 +1,13 @@
+views:
+  - type: table
+    name: 表格
+    filters:
+      and:
+        - file.tags.contains("agent-skills")
+    order:
+      - file.name
+      - file.ctime
+      - source
+    sort:
+      - property: source
+        direction: DESC
