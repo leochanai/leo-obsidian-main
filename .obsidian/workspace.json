@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04 Person/LEO.md",
+                "file": "00 Inbox/一家投资OpenAI的硅谷基金的深度研究.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "LEO"
+              "title": "一家投资OpenAI的硅谷基金的深度研究"
             }
           }
         ]
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04 Person/LEO.md",
+                "file": "00 Inbox/一家投资OpenAI的硅谷基金的深度研究.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "LEO 的反向链接列表"
+              "title": "一家投资OpenAI的硅谷基金的深度研究 的反向链接列表"
             }
           },
           {
@@ -153,12 +153,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04 Person/LEO.md",
+                "file": "00 Inbox/一家投资OpenAI的硅谷基金的深度研究.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "LEO 的出链列表"
+              "title": "一家投资OpenAI的硅谷基金的深度研究 的出链列表"
             }
           }
         ],
@@ -175,13 +175,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04 Person/LEO.md",
+                "file": "00 Inbox/一家投资OpenAI的硅谷基金的深度研究.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "LEO 的大纲"
+              "title": "一家投资OpenAI的硅谷基金的深度研究 的大纲"
             }
           }
         ]
@@ -200,16 +200,26 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
+      "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false,
+      "image-uploader-for-note:Upload images for active file": false
     }
   },
   "active": "37ca5a7cd99662de",
   "lastOpenFiles": [
+    "10 Attachment/d193fd7ee32acdb7ca6765a7bc72b3fd_MD5.webp",
+    "10 Attachment/dabc318a61a13e6bad410db1a098e663_MD5.webp",
+    "10 Attachment/a2e843f426f95e0e187430a248275ff4_MD5.webp",
+    "10 Attachment/977f6f1e48df87d614cffc35f27070c8_MD5.webp",
+    "10 Attachment/02dd954296f545f110e364e3e539db20_MD5.webp",
+    "10 Attachment/d233c96df474531e18c0a2db0d73ee4e_MD5.webp",
+    "04 Person/LEO.md",
+    "00 Inbox/一家投资OpenAI的硅谷基金的深度研究.md",
+    "10 Attachment/604fb9d8222931e16d641abc50445668_MD5.webp",
+    "12 AI Chat",
     "04 Person/喜妹.md",
     "04 Person/安哥.md",
     "04 Person/乐乐.md",
     "04 Person/哈哈.md",
-    "04 Person/LEO.md",
     "05 Note/2025-12-25.md",
     "01 Base/Agent Skills.base",
     "03 Source/Other/Doing well in your courses.md",
@@ -217,19 +227,12 @@
     "10 Attachment/1e1bc708a0235b73c59dae73d7d6030b_MD5.webp",
     "10 Attachment/4d8911aeac1cbab43548a72a79ed0e76_MD5.webp",
     "10 Attachment/20b4fc29c39004d3d17367340ea8b1bc_MD5.webp",
-    "10 Attachment/29f24c1577a27314168bf7cabf118368_MD5.webp",
-    "10 Attachment/661a5be68008e03b40dd7dc47348cf95_MD5.webp",
-    "10 Attachment/ca6eeab7f6eceef8a2495aab26f88810_MD5.webp",
-    "10 Attachment/f6b5acc27935f185935c986fc04faf01_MD5.webp",
-    "10 Attachment/eaef60306f12a2e1145ead6f90dd6b2f_MD5.png",
-    "10 Attachment/46521f5246c24632bb0c82bcba390cc5_MD5.png",
     "03 Source/Design/A designer’s path from influence to identity.md",
     "05 Note",
     "03 Source/Design",
     "03 Source/Claude Code/Agent Skill 创作最佳实践.md",
     "00 Inbox/A Googler explains how to “meta prompt” for incredible Veo videos.md",
     "03 Source/Veo3",
-    "10 Attachment/ce9236f0f36b272d22ae6293e49877f8_MD5.webp",
     "03 Source/Claude Code/Agent Skills.md",
     "03 Source/Claude Code/Agent Skills Marketplace.md",
     "03 Source/Cloudflare/将 Next.js 项目从 Vercel 迁移到 Cloudflare.md",
@@ -246,10 +249,7 @@
     "04 Person",
     "03 Source/Cloudflare",
     "03 Source/Obsidian",
-    "03 Source/Claude Code",
     "03 Map/Drawing 2025-12-19 14.50.07.excalidraw.md",
-    "00 Inbox/未命名 1.md",
-    "02 Journal/2025-11-28.md",
-    "06 Note/HMN CloudNMSPlatform release-notes.md"
+    "00 Inbox/未命名 1.md"
   ]
 }
