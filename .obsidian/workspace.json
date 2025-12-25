@@ -32,6 +32,36 @@
             }
           }
         ]
+      },
+      {
+        "id": "c2de55cdc5d5abed",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "efc503af52e3fad7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05 Note/2025-12-25.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2025-12-25"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03 Source/Veo3/A Googler explains how to “meta prompt” for incredible Veo videos.md",
+                "file": "05 Note/2025-12-25.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +174,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "A Googler explains how to “meta prompt” for incredible Veo videos 的反向链接列表"
+              "title": "2025-12-25 的反向链接列表"
             }
           },
           {
@@ -153,12 +183,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03 Source/Veo3/A Googler explains how to “meta prompt” for incredible Veo videos.md",
+                "file": "05 Note/2025-12-25.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "A Googler explains how to “meta prompt” for incredible Veo videos 的出链列表"
+              "title": "2025-12-25 的出链列表"
             }
           }
         ],
@@ -175,20 +205,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03 Source/Veo3/A Googler explains how to “meta prompt” for incredible Veo videos.md",
+                "file": "05 Note/2025-12-25.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "A Googler explains how to “meta prompt” for incredible Veo videos 的大纲"
+              "title": "2025-12-25 的大纲"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 423.5
+    "width": 298.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -203,25 +233,31 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "ab67aa6b5e96ba0f",
+  "active": "efc503af52e3fad7",
   "lastOpenFiles": [
+    "03 Source/Veo3/A Googler explains how to “meta prompt” for incredible Veo videos.md",
+    "05 Note/2025-12-25.md",
     "03 Source/Other/Doing well in your courses.md",
+    "03 Source/Design/A designer’s path from influence to identity.md",
+    "05 Note",
+    "03 Source/Design",
+    "10 Attachment/4d8911aeac1cbab43548a72a79ed0e76_MD5.webp",
+    "10 Attachment/ca6eeab7f6eceef8a2495aab26f88810_MD5.webp",
+    "10 Attachment/1e1bc708a0235b73c59dae73d7d6030b_MD5.webp",
+    "10 Attachment/29f24c1577a27314168bf7cabf118368_MD5.webp",
+    "10 Attachment/eaef60306f12a2e1145ead6f90dd6b2f_MD5.png",
+    "10 Attachment/46521f5246c24632bb0c82bcba390cc5_MD5.png",
+    "10 Attachment/661a5be68008e03b40dd7dc47348cf95_MD5.webp",
+    "10 Attachment/f6b5acc27935f185935c986fc04faf01_MD5.webp",
+    "10 Attachment/20b4fc29c39004d3d17367340ea8b1bc_MD5.webp",
     "03 Source/Claude Code/Agent Skill 创作最佳实践.md",
     "00 Inbox/A Googler explains how to “meta prompt” for incredible Veo videos.md",
-    "03 Source/Veo3/A Googler explains how to “meta prompt” for incredible Veo videos.md",
     "03 Source/Veo3",
     "10 Attachment/ce9236f0f36b272d22ae6293e49877f8_MD5.webp",
-    "10 Attachment/70fa756f1a43bf5aa29466ec2da47d3f_MD5.webp",
     "03 Source/Claude Code/Agent Skills.md",
     "03 Source/Claude Code/Agent Skills Marketplace.md",
     "03 Source/Cloudflare/将 Next.js 项目从 Vercel 迁移到 Cloudflare.md",
     "00 Inbox/obsidian-baseline.md",
-    "10 Attachment/e03b4897bc306a5ddc38a537f62b5bf3_MD5.png",
-    "10 Attachment/ebdfd5dbea293b607afa83d51c4222db_MD5.png",
-    "10 Attachment/e694072238189e8e9421868d26aa52ff_MD5.png",
-    "10 Attachment/c5c774db0c76de8ad39bb448720a4280_MD5.png",
-    "10 Attachment/84435593a7757e9a7e3504fe8c82e713_MD5.png",
-    "10 Attachment/39aa3cf8b30d2fc02e1a39cd4bd13451_MD5.png",
     "03 Source/Cloudflare/Get Started - Cloudflare.md",
     "00 Inbox/Open Next.md",
     "03 Source/Obsidian/obsidian-baseline.md",
@@ -230,25 +266,19 @@
     "03 Map",
     "01 Base/Agent Skills.base",
     "03 Source/Other",
-    "04 Other/Claude Docs.md",
-    "04 Other/Andrej Karpathy.md",
-    "04 Other",
+    "04 Person/Claude Docs.md",
+    "04 Person/Andrej Karpathy.md",
+    "04 Person",
     "03 Source/Cloudflare",
     "03 Source/Obsidian",
     "03 Source/Claude Code",
-    "03 Source",
-    "02 Map",
     "03 Map/Drawing 2025-12-19 14.50.07.excalidraw.md",
     "00 Inbox/未命名 1.md",
-    "00 Inbox/未命名.md",
     "02 Journal/2025-11-28.md",
     "06 Note/HMN CloudNMSPlatform release-notes.md",
     "06 Note/CloudNMSPlatform_v1.1.0.2.md",
     "06 Note/未命名.md",
     "06 Note/HMN CloudNMSPlatform Release-notes.md",
-    "06 Note/HMN Release-notes.md",
-    "06 Note/HMN Releasenotes.md",
-    "06 Note/Huahai Releasenotes.md",
-    "10 Attachment/安哥.jpg"
+    "06 Note/HMN Release-notes.md"
   ]
 }
