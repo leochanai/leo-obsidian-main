@@ -1,0 +1,18 @@
+views:
+  - type: table
+    name: 表格
+    filters:
+      and:
+        - file.tags.contains("investment")
+    order:
+      - file.name
+      - file.ctime
+      - source
+      - tags
+    sort:
+      - property: file.ctime
+        direction: DESC
+      - property: source
+        direction: DESC
+    columnSize:
+      file.name: 256

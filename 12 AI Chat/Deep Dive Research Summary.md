@@ -1,11 +1,13 @@
 ---
 source:
 author:
+  - "[[Antigravity]]"
 published:
 created:
 description:
 tags:
   - investment
+  - ai-chat
 ---
 
 # Deep Dive Research Summary

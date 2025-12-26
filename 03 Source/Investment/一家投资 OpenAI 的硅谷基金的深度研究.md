@@ -1,11 +1,12 @@
 ---
-source: "https://mp.weixin.qq.com/s/uUKGLg15xw4EfOezVc7ZOQ"
+source: https://mp.weixin.qq.com/s/uUKGLg15xw4EfOezVc7ZOQ
 author:
   - "[[张小珺 x Freda]]"
 published:
 created: 2025-12-25
-description: "我非常厌恶信息孤岛。"
+description: 我非常厌恶信息孤岛。
 tags:
+  - investment
 ---
 
 # 一家投资 OpenAI 的硅谷基金的深度研究

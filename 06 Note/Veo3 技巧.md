@@ -1,11 +1,13 @@
 ---
 source:
 author:
+  - "[[LEO]]"
 published:
 created:
 description:
 tags:
   - veo3
+  - highlight
 ---
 
 # Veo3 技巧

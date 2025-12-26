@@ -276,7 +276,9 @@
   "lintOnFileChange": false,
   "displayLintOnFileChangeNotice": false,
   "settingsConvertedToConfigKeyValues": true,
-  "foldersToIgnore": [],
+  "foldersToIgnore": [
+    "13 Skills"
+  ],
   "filesToIgnore": [],
   "linterLocale": "system-default",
   "logLevel": "ERROR",
