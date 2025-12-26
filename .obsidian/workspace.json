@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05 Note/2025-12-25.md",
+                "file": "12 AI Chat/SSH Key Exchange Deep Dive.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2025-12-25"
+              "title": "SSH Key Exchange Deep Dive"
             }
           },
           {
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "05 Note/2025-12-25.md",
+                "file": "12 AI Chat/SSH Key Exchange Deep Dive.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,7 +168,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "2025-12-25 的反向链接列表"
+              "title": "SSH Key Exchange Deep Dive 的反向链接列表"
             }
           },
           {
@@ -177,12 +177,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "05 Note/2025-12-25.md",
+                "file": "12 AI Chat/SSH Key Exchange Deep Dive.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "2025-12-25 的出链列表"
+              "title": "SSH Key Exchange Deep Dive 的出链列表"
             }
           }
         ],
@@ -199,13 +199,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "05 Note/2025-12-25.md",
+                "file": "12 AI Chat/SSH Key Exchange Deep Dive.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2025-12-25 的大纲"
+              "title": "SSH Key Exchange Deep Dive 的大纲"
             }
           }
         ]
@@ -231,9 +231,12 @@
   "active": "37ca5a7cd99662de",
   "lastOpenFiles": [
     "12 AI Chat/Deep Dive Research Summary.md",
+    "03 Source/Investment/一家投资 OpenAI 的硅谷基金的深度研究.md",
+    "03 Source/Investment",
+    "12 AI Chat/SSH Key Exchange Deep Dive.md",
+    "05 Note/2025-12-26.md",
     "05 Note/2025-12-25.md",
     "12 AI Chat/深度研究总结.md",
-    "00 Inbox/一家投资 OpenAI 的硅谷基金的深度研究.md",
     "10 Attachment/d193fd7ee32acdb7ca6765a7bc72b3fd_MD5.webp",
     "10 Attachment/dabc318a61a13e6bad410db1a098e663_MD5.webp",
     "10 Attachment/a2e843f426f95e0e187430a248275ff4_MD5.webp",
@@ -270,11 +273,7 @@
     "03 Map/Drawing 2025-12-24 16.21.14.excalidraw.md",
     "03 Map",
     "03 Source/Other",
-    "04 Person/Claude Docs.md",
-    "04 Person/Andrej Karpathy.md",
     "04 Person",
-    "03 Source/Cloudflare",
-    "03 Source/Obsidian",
-    "03 Map/Drawing 2025-12-19 14.50.07.excalidraw.md"
+    "03 Source/Cloudflare"
   ]
 }

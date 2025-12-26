@@ -1,3 +1,15 @@
+---
+source:
+author:
+published:
+created:
+description:
+tags:
+  - investment
+---
+
+# Deep Dive Research Summary
+
 ## User Input
 
 总结摘要 [[一家投资 OpenAI 的硅谷基金的深度研究]]
