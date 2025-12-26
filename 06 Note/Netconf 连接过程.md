@@ -1,15 +1,15 @@
 ---
-source: 
+source:
 author:
 published:
-created: 
-description: 
+created:
+description:
 tags:
+  - ssh
+  - netconf
 ---
 
-# 2025-12-26
-
-## Netconf 连接过程
+# Netconf 连接过程
 
 ```mermaid
 sequenceDiagram

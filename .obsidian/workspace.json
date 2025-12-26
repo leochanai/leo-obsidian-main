@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1e8e94e19abbb6b8",
+        "id": "5f8d33c671abfe5f",
         "type": "tabs",
         "children": [
           {
-            "id": "37ca5a7cd99662de",
+            "id": "7a073ab780dc04bc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "12 AI Chat/SSH Key Exchange Deep Dive.md",
+                "file": "05 Journal/2025-12-25.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,31 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "SSH Key Exchange Deep Dive"
-            }
-          },
-          {
-            "id": "8d1a22cc076658fd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "12 AI Chat/Deep Dive Research Summary.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Deep Dive Research Summary"
+              "title": "2025-12-25"
             }
           }
         ]
@@ -124,41 +100,12 @@
         "dimension": 34.28270042194092,
         "children": [
           {
-            "id": "a24b677c479d6728",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "标签"
-            }
-          },
-          {
-            "id": "4e4abf0ca13a6025",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "添加笔记属性"
-            }
-          },
-          {
             "id": "d490f6a00609dfd3",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "12 AI Chat/SSH Key Exchange Deep Dive.md",
+                "file": "05 Journal/2025-12-25.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,7 +115,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "SSH Key Exchange Deep Dive 的反向链接列表"
+              "title": "2025-12-25 的反向链接列表"
             }
           },
           {
@@ -177,12 +124,22 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "12 AI Chat/SSH Key Exchange Deep Dive.md",
+                "file": "05 Journal/2025-12-25.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "SSH Key Exchange Deep Dive 的出链列表"
+              "title": "2025-12-25 的出链列表"
+            }
+          },
+          {
+            "id": "daadc01746aec00b",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ],
@@ -199,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "12 AI Chat/SSH Key Exchange Deep Dive.md",
+                "file": "05 Journal/2025-12-25.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "SSH Key Exchange Deep Dive 的大纲"
+              "title": "2025-12-25 的大纲"
             }
           }
         ]
@@ -228,14 +185,20 @@
       "image-uploader-for-note:Upload images for active file": false
     }
   },
-  "active": "37ca5a7cd99662de",
+  "active": "7a073ab780dc04bc",
   "lastOpenFiles": [
+    "05 Journal/2025-12-26.md",
+    "05 Journal/2025-12-25.md",
+    "12 AI Chat/SSH Key Exchange Deep Dive.md",
     "12 AI Chat/Deep Dive Research Summary.md",
+    "06 Note/Netconf 连接过程.md",
+    "06 Note/2026 年投资方向.md",
+    "06 Note/Veo3 技巧.md",
+    "06 Note/设计师的自我修养.md",
+    "06 Note/考神.md",
+    "06 Note",
     "03 Source/Investment/一家投资 OpenAI 的硅谷基金的深度研究.md",
     "03 Source/Investment",
-    "12 AI Chat/SSH Key Exchange Deep Dive.md",
-    "05 Note/2025-12-26.md",
-    "05 Note/2025-12-25.md",
     "12 AI Chat/深度研究总结.md",
     "10 Attachment/d193fd7ee32acdb7ca6765a7bc72b3fd_MD5.webp",
     "10 Attachment/dabc318a61a13e6bad410db1a098e663_MD5.webp",
@@ -257,7 +220,7 @@
     "10 Attachment/4d8911aeac1cbab43548a72a79ed0e76_MD5.webp",
     "10 Attachment/20b4fc29c39004d3d17367340ea8b1bc_MD5.webp",
     "03 Source/Design/A designer’s path from influence to identity.md",
-    "05 Note",
+    "05 Journal",
     "03 Source/Design",
     "03 Source/Claude Code/Agent Skill 创作最佳实践.md",
     "00 Inbox/A Googler explains how to “meta prompt” for incredible Veo videos.md",
@@ -267,13 +230,8 @@
     "03 Source/Cloudflare/将 Next.js 项目从 Vercel 迁移到 Cloudflare.md",
     "00 Inbox/obsidian-baseline.md",
     "03 Source/Cloudflare/Get Started - Cloudflare.md",
-    "00 Inbox/Open Next.md",
-    "03 Source/Obsidian/obsidian-baseline.md",
-    "02 Map/Drawing 2025-12-24 16.21.30.excalidraw.md",
-    "03 Map/Drawing 2025-12-24 16.21.14.excalidraw.md",
     "03 Map",
     "03 Source/Other",
-    "04 Person",
-    "03 Source/Cloudflare"
+    "04 Person"
   ]
 }

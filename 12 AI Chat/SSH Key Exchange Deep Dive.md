@@ -13,7 +13,7 @@ tags:
 
 ## User Input
 
-[[2025-12-26]] 展开讲讲 Key Exchange Init 的详细过程，包括算法的选定、算法的优劣等等
+[[Netconf 连接过程]] 展开讲讲 Key Exchange Init 的详细过程，包括算法的选定、算法的优劣等等
 
 ## Planner Response
 
