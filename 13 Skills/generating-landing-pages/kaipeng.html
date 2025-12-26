@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深圳市凯鹏文化交流 | 定制化精英教育</title>
+    <meta name="description" content="专注于K12精品教育，提供个性化学习方案与中西融合的文化素养提升课程。">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+SC:wght@300;400;500&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --color-bg: #F2F0EB;
+            --color-ink-dark: #1A1A1A;
+            --color-ink-light: #585858;
+            --color-seal-red: #B83B3B;
+            --color-seal-hover: #962E2E;
+            --color-jade: #7A8B82;
+            --font-serif: 'Noto Serif SC', 'Cormorant Garamond', serif;
+            --font-sans: 'Noto Sans SC', sans-serif;
+            --spacing-unit: 8px;
+            --container-width: 1200px;
+            --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-ink-dark);
+            font-family: var(--font-sans);
+            line-height: 1.7;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Texture Overlay */
+        .noise-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.05;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        /* Ink Cursor Canvas */
+        #ink-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Typography */
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: var(--font-serif);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .text-vertical {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+
+        .highlight {
+            color: var(--color-seal-red);
+        }
+
+        /* Utility */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2.5rem;
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.4s var(--transition-smooth);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background-color: var(--color-seal-red);
+            color: white;
+            border-radius: 2px;
+            box-shadow: 0 4px 15px rgba(184, 59, 59, 0.2);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-seal-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(184, 59, 59, 0.3);
+        }
+
+        .btn-outline {
+            border: 1px solid var(--color-ink-dark);
+            color: var(--color-ink-dark);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--color-ink-dark);
+            color: white;
+        }
+
+        /* Navigation */
+        nav {
+            padding: 2rem 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-seal {
+            width: 36px;
+            height: 36px;
+            background-color: var(--color-seal-red);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            border-radius: 4px;
+            font-family: 'Noto Serif SC', serif;
+        }
+
+        /* Section 1: Hero */
+        .hero {
+            height: 100vh;
+            min-height: 700px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text-vertical {
+            font-size: 4rem;
+            line-height: 1.3;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+            padding-right: 2rem;
+            opacity: 0;
+            animation: revealVertical 1.2s var(--transition-smooth) forwards 0.5s;
+        }
+
+        .hero-details {
+            padding-left: 2rem;
+        }
+
+        .sub-headline {
+            font-size: 1.2rem;
+            color: var(--color-ink-light);
+            margin-bottom: 2rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 1s var(--transition-smooth) forwards 0.8s;
+        }
+
+        .hero-cta-group {
+            margin-top: 3rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 1s var(--transition-smooth) forwards 1s;
+        }
+
+        .trust-badges {
+            margin-top: 4rem;
+            display: flex;
+            gap: 2rem;
+            opacity: 0.5;
+            font-size: 0.9rem;
+            color: var(--color-ink-light);
+            animation: fadeIn 1s ease forwards 1.5s;
+        }
+
+        /* Section 2: Narrative */
+        .narrative {
+            padding: 8rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .section-label {
+            font-size: 0.9rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-seal-red);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .narrative-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .narrative-image-wrapper {
+            position: relative;
+            height: 500px;
+            background-color: #e5e3de;
+            overflow: hidden;
+            border-radius: 2px;
+        }
+
+        .narrative-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1.5s ease;
+            filter: sepia(0.2) grayscale(0.2);
+        }
+
+        .narrative-image-wrapper:hover .narrative-image {
+            transform: scale(1.05);
+            filter: sepia(0) grayscale(0);
+        }
+
+        .narrative-text p {
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+            color: var(--color-ink-light);
+        }
+
+        /* Section 3: Product (The Six Arts) */
+        .product {
+            padding: 8rem 0;
+            background: linear-gradient(to bottom, var(--color-bg), #e8e6e1);
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .course-card {
+            background: #fff;
+            padding: 3rem 2rem;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.4s var(--transition-smooth);
+            position: relative;
+        }
+
+        .course-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 0;
+            background-color: var(--color-seal-red);
+            transition: height 0.4s var(--transition-smooth);
+        }
+
+        .course-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+        }
+
+        .course-card:hover::before {
+            height: 100%;
+        }
+
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            font-family: var(--font-serif);
+            color: var(--color-seal-red);
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-desc {
+            color: var(--color-ink-light);
+            font-size: 1rem;
+        }
+
+        /* Section 4: Social Proof */
+        .proof {
+            padding: 8rem 0;
+            text-align: center;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 3rem 0;
+        }
+
+        .stat-item h3 {
+            font-size: 3.5rem;
+            font-family: 'Cormorant Garamond', serif;
+            color: var(--color-ink-dark);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            font-size: 1rem;
+            color: var(--color-ink-light);
+            font-family: var(--font-serif);
+        }
+
+        /* Section 5: Differentiators */
+        .diff {
+            padding: 8rem 0;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        .diff .section-label {
+            color: #fff;
+            opacity: 0.6;
+        }
+
+        .diff-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 4rem;
+        }
+
+        .diff-list li {
+            list-style: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 1.5rem 0;
+            display: flex;
+            align-items: baseline;
+            gap: 1rem;
+        }
+
+        .diff-list strong {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            min-width: 120px;
+        }
+
+        .diff-list span {
+            opacity: 0.7;
+        }
+
+        /* Section 6: Conversion */
+        .conversion {
+            padding: 8rem 0;
+            background-color: var(--color-seal-red);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .conversion-bg-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: var(--font-serif);
+            font-size: 20rem;
+            opacity: 0.05;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+
+        .form-wrapper {
+            background: white;
+            padding: 3rem;
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 2px;
+            color: var(--color-ink-dark);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 1rem 0;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            background: transparent;
+            transition: border-color 0.3s;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-bottom-color: var(--color-seal-red);
+        }
+
+        /* Footer */
+        footer {
+            padding: 4rem 0 2rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 3rem;
+        }
+
+        .copyright {
+            font-size: 0.8rem;
+            color: var(--color-ink-light);
+        }
+
+        /* Animations */
+        @keyframes revealVertical {
+            from {
+                opacity: 0;
+                clip-path: inset(0 100% 0 0);
+            }
+
+            to {
+                opacity: 1;
+                clip-path: inset(0 0 0 0);
+            }
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 0.6;
+            }
+        }
+
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s var(--transition-smooth);
+        }
+
+        .reveal-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+
+            .hero-content,
+            .narrative-grid,
+            .diff-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero {
+                height: auto;
+                padding: 6rem 0;
+            }
+
+            .hero-text-vertical {
+                writing-mode: horizontal-tb;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                padding-bottom: 2rem;
+                padding-right: 0;
+                font-size: 2.5rem;
+            }
+
+            .stat-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-details {
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Texture & Canvas -->
+    <div class="noise-overlay"></div>
+    <canvas id="ink-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-inner">
+            <a href="#" class="logo" style="text-decoration: none; color: inherit;">
+                <span class="logo-seal">凯</span>
+                <span>鹏文化交流</span>
+            </a>
+            <a href="#contact" class="btn btn-outline" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">预约咨询</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <h1 class="hero-text-vertical text-vertical">
+                博观而约取<br>
+                <span class="highlight">厚积而薄发</span>
+            </h1>
+            <div class="hero-details">
+                <p class="sub-headline">
+                    深圳首家融合东西方教育哲学的精英成长中心。<br>
+                    不仅仅是提分，更是为孩子定制未来十年的文化底蕴。
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#contact" class="btn btn-primary">预约学业规划咨询</a>
+                    <div style="margin-top: 1rem; font-size: 0.9rem; color: var(--color-ink-light);">
+                        每日仅限 5 个名额
+                    </div>
+                </div>
+                <div class="trust-badges">
+                    <span>★ 专注K12精品教育</span>
+                    <span>★ 100% 名校师资背景</span>
+                    <span>★ 私人定制化方案</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Narrative Section -->
+    <section class="narrative">
+        <div class="container">
+            <div class="section-header reveal-on-scroll">
+                <span class="section-label">教育理念 / Philosophy</span>
+                <h2 class="section-title">告别流水线式的填鸭教育</h2>
+            </div>
+
+            <div class="narrative-grid">
+                <div class="narrative-image-wrapper reveal-on-scroll">
+                    <!-- Abstract image representing growth/culture -->
+                    <img src="https://images.unsplash.com/photo-1516962215378-7fa2e137ae01?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                        alt="书法艺术" class="narrative-image">
+                </div>
+                <div class="narrative-text reveal-on-scroll" style="transition-delay: 0.2s;">
+                    <p>在传统的补习班中，孩子往往只是被动接收知识的容器。但在凯鹏，我们视每个孩子为独一无二的艺术品。</p>
+                    <p>我们深知，注重教育投资回报的中高端家庭，需要的不仅是一张高分试卷，更是一个具备<strong>全球视野、文化自信与独立思考能力</strong>的未来领袖。</p>
+                    <p style="border-left: 3px solid var(--color-seal-red); padding-left: 1.5rem; font-style: italic;">
+                        "教育的本质意味着：一棵树摇动另一棵树，一朵云推动另一朵云，一个灵魂唤醒另一个灵魂。"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product">
+        <div class="container">
+            <div class="section-header reveal-on-scroll">
+                <span class="section-label">课程体系 / Curriculum</span>
+                <h2 class="section-title">新六艺·全人培养体系</h2>
+            </div>
+
+            <div class="card-grid">
+                <div class="course-card reveal-on-scroll">
+                    <div class="card-icon">文</div>
+                    <h3 class="card-title">人文素养精修</h3>
+                    <p class="card-desc">深度阅读与创意写作。重构孩子的语言逻辑，以经典文学滋养心灵。</p>
+                </div>
+                <div class="course-card reveal-on-scroll" style="transition-delay: 0.1s;">
+                    <div class="card-icon">理</div>
+                    <h3 class="card-title">数理逻辑思维</h3>
+                    <p class="card-desc">非题海战术。通过建模与推演，培养解决复杂问题的底层逻辑能力。</p>
+                </div>
+                <div class="course-card reveal-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="card-icon">视</div>
+                    <h3 class="card-title">全球视野工坊</h3>
+                    <p class="card-desc">全英文浸入式项目制学习 (PBL)，与常春藤名校导师连线对话。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Differentiators -->
+    <section class="diff">
+        <div class="container">
+            <div class="section-header reveal-on-scroll">
+                <span class="section-label">核心优势 / Why Us</span>
+                <h2 class="section-title" style="color: white;">为什么选择凯鹏？</h2>
+            </div>
+
+            <div class="diff-grid reveal-on-scroll">
+                <div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: #fff;">常规机构 vs. 凯鹏定制</h3>
+                    <p style="opacity: 0.7; margin-bottom: 2rem;">大多数机构贩卖焦虑，我们交付确定性与成长。</p>
+                    <a href="#contact" class="btn btn-primary">查看成功案例</a>
+                </div>
+                <ul class="diff-list">
+                    <li>
+                        <strong>师资配比</strong>
+                        <span>1:1 定制化导师制 (vs. 1:50 大班授课)</span>
+                    </li>
+                    <li>
+                        <strong>教学目标</strong>
+                        <span>分数与素养双优 (vs. 仅应试提分)</span>
+                    </li>
+                    <li>
+                        <strong>服务深度</strong>
+                        <span>全天候学业管家 (vs. 课后即失联)</span>
+                    </li>
+                    <li>
+                        <strong>成长规划</strong>
+                        <span>3-5年长线路径设计 (vs. 短期冲刺)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="proof">
+        <div class="container">
+            <div class="section-header reveal-on-scroll">
+                <span class="section-label">成果见证 / Results</span>
+                <h2 class="section-title">让优秀成为一种习惯</h2>
+            </div>
+
+            <div class="stat-grid reveal-on-scroll">
+                <div class="stat-item">
+                    <h3>98%</h3>
+                    <p>学员重点中学升学率</p>
+                </div>
+                <div class="stat-item">
+                    <h3>15yr+</h3>
+                    <p>平均教研团队经验</p>
+                </div>
+                <div class="stat-item">
+                    <h3>1:1</h3>
+                    <p>真正的私人定制方案</p>
+                </div>
+            </div>
+
+            <div class="reveal-on-scroll" style="margin-top: 3rem;">
+                <p
+                    style="font-family: var(--font-serif); font-style: italic; font-size: 1.2rem; max-width: 800px; margin: 0 auto;">
+                    "在凯鹏的一年，不仅让孩子的成绩从班级中游跃升至前三，更重要的是，他找回了对学习的好奇心。这是作为家长最欣慰的。"
+                </p>
+                <p style="margin-top: 1rem; font-weight: 600;">—— 林女士 (深圳实验学校家长 / 某知名企业高管)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conversion / Contact -->
+    <section id="contact" class="conversion">
+        <div class="conversion-bg-text">FUTURE</div>
+        <div class="container">
+            <div class="form-wrapper reveal-on-scroll">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <h2 style="margin-bottom: 0.5rem;">开启卓越之旅</h2>
+                    <p style="color: var(--color-ink-light);">填写表单，获取《个性化学习白皮书》及免费规划名额</p>
+                </div>
+
+                <form onsubmit="event.preventDefault(); alert('感谢您的预约！我们的教育顾问将在24小时内联系您。');">
+                    <div class="form-group">
+                        <label
+                            style="display: block; font-size: 0.9rem; color: var(--color-ink-light); margin-bottom: 0.5rem;">家长姓名</label>
+                        <input type="text" class="form-input" required placeholder="请输入您的称呼">
+                    </div>
+                    <div class="form-group">
+                        <label
+                            style="display: block; font-size: 0.9rem; color: var(--color-ink-light); margin-bottom: 0.5rem;">联系电话</label>
+                        <input type="tel" class="form-input" required placeholder="用于接收规划方案">
+                    </div>
+                    <div class="form-group">
+                        <label
+                            style="display: block; font-size: 0.9rem; color: var(--color-ink-light); margin-bottom: 0.5rem;">孩子年级</label>
+                        <select class="form-input" style="border: none; border-bottom: 1px solid rgba(0,0,0,0.2);">
+                            <option>小学 1-3 年级</option>
+                            <option>小学 4-6 年级</option>
+                            <option>初中 1-3 年级</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">立即预约名额</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="logo" style="margin-bottom: 1rem;">
+                        <span class="logo-seal">凯</span>
+                        <span>鹏文化交流</span>
+                    </div>
+                    <p style="color: var(--color-ink-light); font-size: 0.9rem;">
+                        深圳市福田区中心四路1号嘉里建设广场<br>
+                        Tel: 0755-8888 8888
+                    </p>
+                </div>
+                <div style="text-align: right;">
+                    <a href="#"
+                        style="color: var(--color-ink-dark); text-decoration: none; margin-left: 1.5rem; font-size: 0.9rem;">关于我们</a>
+                    <a href="#"
+                        style="color: var(--color-ink-dark); text-decoration: none; margin-left: 1.5rem; font-size: 0.9rem;">课程体系</a>
+                    <a href="#"
+                        style="color: var(--color-ink-dark); text-decoration: none; margin-left: 1.5rem; font-size: 0.9rem;">师资团队</a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 深圳市凯鹏文化交流有限公司. All Rights Reserved. 粤ICP备XXXXXXXX号
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 1. Intersection Observer for Scroll Reveals
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // 2. Ink Trail Canvas Effect
+        const canvas = document.getElementById('ink-canvas');
+        const ctx = canvas.getContext('2d');
+        let width, height;
+        let particles = [];
+
+        function resize() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+        }
+
+        window.addEventListener('resize', resize);
+        resize();
+
+        class Particle {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+                this.size = Math.random() * 20 + 10; // Varied ink blot sizes
+                this.opacity = 0.15; // Low opacity for watercolor effect
+                this.life = 1.0;
+                this.decay = 0.015;
+            }
+
+            update() {
+                this.life -= this.decay;
+                this.size += 0.2; // Ink spreads slightly
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(0, 0, 0, ${this.opacity * this.life})`;
+                ctx.fill();
+            }
+        }
+
+        let mouse = { x: null, y: null };
+
+        window.addEventListener('mousemove', (e) => {
+            mouse.x = e.clientX;
+            mouse.y = e.clientY;
+            // Add particles on move
+            if (Math.random() > 0.7) { // Don't draw every frame for performance
+                particles.push(new Particle(mouse.x, mouse.y));
+            }
+        });
+
+        function animate() {
+            ctx.clearRect(0, 0, width, height);
+
+            for (let i = 0; i < particles.length; i++) {
+                particles[i].update();
+                particles[i].draw();
+
+                if (particles[i].life <= 0) {
+                    particles.splice(i, 1);
+                    i--;
+                }
+            }
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+
+        // 3. Smooth Anchor Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
