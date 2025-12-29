@@ -1,50 +1,53 @@
 ---
 name: managing-local-servers
-description: 批量管理本地服务器集群的生命周期。支持查询状态、一键启动所有虚拟机(virsh start)以及安全关闭服务器(自动处理VM下电)。
-version: 1.1.0
+description: 批量管理本地服务器集群的生命周期。支持查询状态、启动指定虚拟机(virsh start)以及安全关闭服务器(自动处理VM下电)。
+version: 2.0.0
 ---
 
 ## 概览
-此技能提供了一套工具集，用于管理本地实验室环境中的多台物理服务器 (`192.168.0.x/2.x`)。
+此技能提供一套 Shell 脚本工具集，用于管理本地实验室环境中的多台物理服务器。
 
-## 关键特性
-- **生命周期管理**: 支持 **查询 (Query)**、**启动 (Start)** 和 **停止 (Stop)** 三种操作。
-- **VM 感知**: 自动检测 KVM/Libvirt 虚拟机状态，确保关机时数据安全，开机时业务自动恢复。
-- **批量并发**: 通过统一的配置文件 (`servers.json`) 管理多台主机。
-- **无需 Key**: 使用 `expect` 自动处理 SSH 密码认证。
+## 服务器清单
+| IP | 用户 | 用途 |
+|----|------|------|
+| 192.168.0.91 | root | KVM 虚拟化主机 |
+| 192.168.0.95 | root | KVM 虚拟化主机 |
+| 192.168.2.235 | root | KVM 虚拟化主机 |
 
 ## 使用方法
 
-### 1. 配置文件
-所有操作共享 `scripts/servers.json` 配置。
-
-### 2. 操作指令
-进入技能目录: `cd 13\ Skills/managing-local-servers`
-
-**🔍 查询状态 (Query)**
-检查物理机在线状态及 VM 运行情况。
+进入脚本目录：
 ```bash
-python3 scripts/query_servers.py
+cd "13 Skills/managing-local-servers/scripts"
 ```
 
-**🚀 一键启动 (Start)**
-批量启动所有物理机上处于「关闭」状态的虚拟机。
-*(注: 物理机需先手动开机或通过 WoL 唤醒)*
+### 🔍 查询状态
 ```bash
-python3 scripts/start_servers.py
+./query.sh
 ```
+显示每台服务器的主机名、运行时间和所有虚拟机状态。
 
-**🛑 安全关机 (Stop)**
-优雅关闭所有运行中的 VM，随后关闭物理机。
+### 🚀 启动虚拟机
 ```bash
-python3 scripts/stop_servers.py
+./start.sh
 ```
+启动配置文件中指定的目标虚拟机（不会启动测试机等非业务 VM）。
 
-## 工作流程 (Safety Protocol)
-**关机流程**: Connect -> Audit VMs -> Graceful Shutdown VMs -> Wait -> Host Shutdown
-**开机流程**: Connect -> Find Shutoff VMs -> Start VMs -> Verify
+### 🛑 安全关机
+```bash
+./stop.sh
+```
+执行流程：
+1. 对每个运行中的 VM 发送 `virsh shutdown` 信号
+2. 等待 30 秒让 VM 完成关机
+3. 执行 `/sbin/shutdown -h now` 关闭物理机
+
+## 技术细节
+- 使用 `expect` 自动处理 SSH 密码认证
+- 服务器配置直接写在脚本中（无需外部配置文件）
+- 目标 VM 列表在 `start.sh` 中通过关联数组 `TARGET_VMS` 定义
 
 ## 依赖
-- Python 3.x
-- `expect` (macOS/Linux 自带)
-- 目标服务器需安装 `libvirt-clients` (`virsh`)
+- macOS/Linux 环境
+- `expect` 命令（macOS 自带）
+- 目标服务器需安装 `libvirt-clients`（`virsh` 命令）
