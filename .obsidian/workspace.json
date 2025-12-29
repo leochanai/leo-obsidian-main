@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "12 AI Chat/Deep Dive Research Summary.md",
+                "file": "04 Person/哈哈.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Deep Dive Research Summary"
+              "title": "哈哈"
             }
           }
         ]
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "12 AI Chat/Deep Dive Research Summary.md",
+                "file": "04 Person/哈哈.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Deep Dive Research Summary 的反向链接列表"
+              "title": "哈哈 的反向链接列表"
             }
           },
           {
@@ -124,12 +124,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "12 AI Chat/Deep Dive Research Summary.md",
+                "file": "04 Person/哈哈.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Deep Dive Research Summary 的出链列表"
+              "title": "哈哈 的出链列表"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "12 AI Chat/Deep Dive Research Summary.md",
+                "file": "04 Person/哈哈.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Deep Dive Research Summary 的大纲"
+              "title": "哈哈 的大纲"
             }
           }
         ]
@@ -185,8 +185,21 @@
       "image-uploader-for-note:Upload images for active file": false
     }
   },
-  "active": "15e90fe269434724",
+  "active": "7a073ab780dc04bc",
   "lastOpenFiles": [
+    "04 Person/喜妹.md",
+    "04 Person/乐乐.md",
+    "04 Person/安哥.md",
+    "04 Person/Claude Docs.md",
+    "05 Journal/2025-12-29.md",
+    "12 AI Chat/Deep Dive Research Summary.md",
+    "12 AI Chat/SSH Key Exchange Deep Dive.md",
+    "05 Journal/2025-12-26.md",
+    "05 Journal/2025-12-25.md",
+    "06 Note/设计师的自我修养.md",
+    "hades-bbq/index.html",
+    "hades-bbq/hero.png",
+    "hades-bbq",
     "13 Skills/generating-landing-pages/kaipeng2.html",
     "13 Skills/generating-landing-pages/未命名.txt",
     "13 Skills/generating-landing-pages/kaipeng.html",
@@ -199,30 +212,18 @@
     "01 Base/Agent Skills.base",
     "06 Note/Veo3 技巧.md",
     "06 Note/Netconf 连接过程.md",
-    "06 Note/设计师的自我修养.md",
     "06 Note/考神.md",
     "06 Note/2026 年投资方向.md",
-    "12 AI Chat/Deep Dive Research Summary.md",
-    "12 AI Chat/SSH Key Exchange Deep Dive.md",
     "03 Source/Investment/一家投资 OpenAI 的硅谷基金的深度研究.md",
     "01 Base/Investment.md",
     "13 Skills/summarizing-youtube-videos/SKILL.md",
     "13 Skills/generating-poetry-image-prompts/SKILL.md",
-    "05 Journal/2025-12-25.md",
-    "13 Skills/generating-poetry-image-prompts",
-    "13 Skills/generating-poetry-prompts",
-    "13 Skills/generating-docker-compose-files/scripts/validate_compose.sh",
     "13 Skills/generating-docker-compose-files/assets/README.md",
     "13 Skills/generating-docker-compose-files/references/README.md",
     "13 Skills/generating-docker-compose-files/scripts/README.md",
     "13 Skills/generating-docker-compose-files/assets/example_app_architectures.md",
     "13 Skills/generating-docker-compose-files/SKILL.md",
     "13 Skills/k8s-security-policies/references/rbac-patterns.md",
-    "13 Skills/k8s-security-policies/SKILL.md",
-    "13 Skills/document-skills/xlsx/SKILL.md",
-    "13 Skills/document-skills/pptx/ooxml.md",
-    "13 Skills/document-skills/pptx/html2pptx.md",
-    "13 Skills/document-skills/pptx/SKILL.md",
     "10 Attachment/d193fd7ee32acdb7ca6765a7bc72b3fd_MD5.webp",
     "10 Attachment/dabc318a61a13e6bad410db1a098e663_MD5.webp",
     "10 Attachment/a2e843f426f95e0e187430a248275ff4_MD5.webp",
@@ -231,7 +232,6 @@
     "10 Attachment/d233c96df474531e18c0a2db0d73ee4e_MD5.webp",
     "10 Attachment/604fb9d8222931e16d641abc50445668_MD5.webp",
     "10 Attachment/1e1bc708a0235b73c59dae73d7d6030b_MD5.webp",
-    "10 Attachment/4d8911aeac1cbab43548a72a79ed0e76_MD5.webp",
-    "10 Attachment/20b4fc29c39004d3d17367340ea8b1bc_MD5.webp"
+    "10 Attachment/4d8911aeac1cbab43548a72a79ed0e76_MD5.webp"
   ]
 }
