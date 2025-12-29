@@ -1,0 +1,35 @@
+[
+  {
+    "ip": "192.168.0.91",
+    "user": "root",
+    "password": "genew1234",
+    "port": 22,
+    "target_vms": [
+      "Win7N2-0.94",
+      "rhel7.3N1_0.92"
+    ]
+  },
+  {
+    "ip": "192.168.0.95",
+    "user": "root",
+    "password": "genew1234",
+    "port": 22,
+    "target_vms": [
+      "Centos7.9-98",
+      "rh-vm1-96",
+      "rh-vm2-97"
+    ]
+  },
+  {
+    "ip": "192.168.2.235",
+    "user": "root",
+    "password": "root123",
+    "port": 22,
+    "target_vms": [
+      "rh7.9-2.118",
+      "rh7.9-2.117",
+      "rh7.9-2.120",
+      "rh7.9-2.127"
+    ]
+  }
+]
