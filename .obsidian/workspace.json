@@ -185,8 +185,12 @@
       "image-uploader-for-note:Upload images for active file": false
     }
   },
-  "active": "7a073ab780dc04bc",
+  "active": "15e90fe269434724",
   "lastOpenFiles": [
+    "13 Skills/generating-kids-poetry-prompts/SKILL.md",
+    "13 Skills/generating-kids-poetry-prompts",
+    "13 Skills/generating-poetry-image-prompts copy/SKILL.md",
+    "13 Skills/generating-poetry-image-prompts copy",
     "04 Person/喜妹.md",
     "04 Person/乐乐.md",
     "04 Person/安哥.md",
@@ -208,8 +212,6 @@
     "13 Skills/generating-landing-pages",
     "13 Skills/generating-html/SKILL.md",
     "13 Skills/generating-html",
-    "01 Base/Invenstment.base",
-    "01 Base/Agent Skills.base",
     "06 Note/Veo3 技巧.md",
     "06 Note/Netconf 连接过程.md",
     "06 Note/考神.md",
@@ -222,8 +224,6 @@
     "13 Skills/generating-docker-compose-files/references/README.md",
     "13 Skills/generating-docker-compose-files/scripts/README.md",
     "13 Skills/generating-docker-compose-files/assets/example_app_architectures.md",
-    "13 Skills/generating-docker-compose-files/SKILL.md",
-    "13 Skills/k8s-security-policies/references/rbac-patterns.md",
     "10 Attachment/d193fd7ee32acdb7ca6765a7bc72b3fd_MD5.webp",
     "10 Attachment/dabc318a61a13e6bad410db1a098e663_MD5.webp",
     "10 Attachment/a2e843f426f95e0e187430a248275ff4_MD5.webp",
