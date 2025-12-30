@@ -11,23 +11,12 @@
             "id": "ae7181696bd9f67b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "03 Source/Claude Code/Agent Skills.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "file": "01 Base/Agent Skills.base",
+                "viewName": "表格"
               },
-              "icon": "lucide-file",
+              "icon": "lucide-table",
               "title": "Agent Skills"
             }
           }
@@ -185,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03 Source/Claude Code/Agent Skills.md",
+                "file": "01 Base/Agent Skills.base",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -213,23 +202,30 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "ae7181696bd9f67b",
+  "active": "15e90fe269434724",
   "lastOpenFiles": [
+    "DesignerIdentity.html",
+    "generate_design_html.py",
+    "01 Base/Invenstment.base",
+    "03 Source/Claude Code/Agent Skills.md",
+    "13 Skills/web-artifacts-builder/scripts/shadcn-components.tar.gz",
+    "13 Skills/web-artifacts-builder/scripts/bundle-artifact.sh",
+    "13 Skills/web-artifacts-builder/scripts/init-artifact.sh",
+    "13 Skills/web-artifacts-builder/scripts",
+    "13 Skills/web-artifacts-builder/SKILL.md",
+    "13 Skills/web-artifacts-builder/LICENSE.txt",
+    "13 Skills/web-artifacts-builder",
+    "13 Skills/skill-creator/references/workflows.md",
+    "13 Skills/skill-creator/references/output-patterns.md",
+    "13 Skills/skill-creator/scripts/quick_validate.py",
+    "13 Skills/skill-creator/scripts/package_skill.py",
+    "13 Skills/skill-creator/SKILL.md",
+    "13 Skills/frontend-design/SKILL.md",
     "13 Skills/generating-html-from-content/SKILL.md",
     "13 Skills/generating-html-from-content/generating-html-from-content.md",
-    "03 Source/Investment/generate_html_script_v2.py",
-    "03 Source/Investment/一家投资 OpenAI 的硅谷基金的深度研究.html",
-    "03 Source/Investment/generate_html_script.py",
-    "13 Skills/generating-html-from-content",
     "13 Skills/html/SKILL.md",
-    "13 Skills/html",
-    "13 Skills/copy_skills_to_anti.sh",
-    "13 Skills/copy_skills_to_cc.sh",
-    "13 Skills/copy_skills_cc.sh",
     "13 Skills/bilingual-translation/SKILL.md",
-    "13 Skills/bilingual-translation",
     "13 Skills/bilingual-translation /SKILL.md",
-    "13 Skills/bilingual-translation ",
     "13 Skills/translator/SKILL.md",
     "03 Source/Claude Code/Agent Skills Marketplace.md",
     "03 Source/Investment/一家投资 OpenAI 的硅谷基金的深度研究.md",
@@ -250,13 +246,6 @@
     "13 Skills/stopping-local-servers/SKILL.md",
     "13 Skills/stop-local-servers/SKILL.md",
     "13 Skills/generating-kids-poetry-prompts/SKILL.md",
-    "13 Skills/generating-poetry-image-prompts copy/SKILL.md",
-    "04 Person/喜妹.md",
-    "04 Person/乐乐.md",
-    "04 Person/安哥.md",
-    "04 Person/Claude Docs.md",
-    "05 Journal/2025-12-29.md",
-    "12 AI Chat/Deep Dive Research Summary.md",
     "hades-bbq/hero.png",
     "10 Attachment/d193fd7ee32acdb7ca6765a7bc72b3fd_MD5.webp",
     "10 Attachment/dabc318a61a13e6bad410db1a098e663_MD5.webp",
