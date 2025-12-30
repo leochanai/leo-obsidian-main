@@ -213,8 +213,12 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "15e90fe269434724",
+  "active": "7a073ab780dc04bc",
   "lastOpenFiles": [
+    "13 Skills/managing-local-servers/scripts/stop_servers.py",
+    "13 Skills/managing-local-servers/scripts/start_servers.py",
+    "13 Skills/managing-local-servers/scripts/servers.json",
+    "13 Skills/managing-local-servers/scripts/query_servers.py",
     "13 Skills/managing-local-servers/scripts/stop.sh",
     "13 Skills/managing-local-servers/scripts/start.sh",
     "13 Skills/managing-local-servers/scripts/query.sh",
@@ -222,10 +226,6 @@
     "13 Skills/managing-local-servers/scripts/temp_query_192.168.2.235.exp",
     "13 Skills/managing-local-servers/scripts/temp_query_192.168.0.95.exp",
     "13 Skills/managing-local-servers/scripts/temp_query_192.168.0.91.exp",
-    "13 Skills/managing-local-servers/scripts/temp_shutdown_192.168.2.235.exp",
-    "13 Skills/managing-local-servers/scripts/temp_shutdown_192.168.0.95.exp",
-    "13 Skills/managing-local-servers/scripts/temp_shutdown_192.168.0.91.exp",
-    "13 Skills/temp_query_192.168.2.235.exp",
     "13 Skills/managing-local-servers/SKILL.md",
     "13 Skills/stopping-local-servers/SKILL.md",
     "13 Skills/stop-local-servers/SKILL.md",
