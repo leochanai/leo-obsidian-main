@@ -202,8 +202,11 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "15e90fe269434724",
+  "active": "ae7181696bd9f67b",
   "lastOpenFiles": [
+    "00 Inbox/朋友们，阿真的年度总结来啦。.md",
+    "10 Attachment/399b910f8e09757b215397d55a620005_MD5.jpg",
+    "01 Base/Agent Skills.base",
     "DesignerIdentity.html",
     "generate_design_html.py",
     "01 Base/Invenstment.base",
@@ -217,8 +220,6 @@
     "13 Skills/web-artifacts-builder",
     "13 Skills/skill-creator/references/workflows.md",
     "13 Skills/skill-creator/references/output-patterns.md",
-    "13 Skills/skill-creator/scripts/quick_validate.py",
-    "13 Skills/skill-creator/scripts/package_skill.py",
     "13 Skills/skill-creator/SKILL.md",
     "13 Skills/frontend-design/SKILL.md",
     "13 Skills/generating-html-from-content/SKILL.md",
@@ -245,10 +246,8 @@
     "13 Skills/managing-local-servers/SKILL.md",
     "13 Skills/stopping-local-servers/SKILL.md",
     "13 Skills/stop-local-servers/SKILL.md",
-    "13 Skills/generating-kids-poetry-prompts/SKILL.md",
     "hades-bbq/hero.png",
     "10 Attachment/d193fd7ee32acdb7ca6765a7bc72b3fd_MD5.webp",
-    "10 Attachment/dabc318a61a13e6bad410db1a098e663_MD5.webp",
-    "10 Attachment/a2e843f426f95e0e187430a248275ff4_MD5.webp"
+    "10 Attachment/dabc318a61a13e6bad410db1a098e663_MD5.webp"
   ]
 }
