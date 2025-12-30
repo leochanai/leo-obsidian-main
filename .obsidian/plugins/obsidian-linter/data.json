@@ -32,7 +32,7 @@
     },
     "insert-yaml-attributes": {
       "enabled": true,
-      "text-to-insert": "source: \nauthor:\npublished:\ncreated: \ndescription: \ntags:"
+      "text-to-insert": "source: \nauthor:\npublished:\ncreated: \ndescription: \ntags:\ncover: "
     },
     "move-tags-to-yaml": {
       "enabled": false,
