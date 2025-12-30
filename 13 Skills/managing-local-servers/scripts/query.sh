@@ -1,4 +1,4 @@
-#!/bin/bash
+ß#!/bin/bash
 # 服务器配置
 SERVERS=(
     "192.168.0.91:root:genew1234"
