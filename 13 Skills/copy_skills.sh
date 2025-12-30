@@ -24,18 +24,26 @@ echo -e "源目录: ${YELLOW}${SCRIPT_DIR}${NC}"
 echo -e "目标目录: ${YELLOW}${TARGET_DIR}${NC}"
 echo ""
 
-# 检查目标目录是否存在，不存在则创建
-if [ ! -d "$TARGET_DIR" ]; then
-    echo -e "${YELLOW}目标目录不存在，正在创建...${NC}"
-    mkdir -p "$TARGET_DIR"
+# 先删除目标目录（如果存在）
+if [ -d "$TARGET_DIR" ]; then
+    echo -e "${YELLOW}正在删除旧的目标目录...${NC}"
+    rm -rf "$TARGET_DIR"
     if [ $? -eq 0 ]; then
-        echo -e "${GREEN}✓ 目标目录创建成功${NC}"
+        echo -e "${GREEN}✓ 旧目录删除成功${NC}"
     else
-        echo -e "${RED}✗ 目标目录创建失败${NC}"
+        echo -e "${RED}✗ 旧目录删除失败${NC}"
         exit 1
     fi
+fi
+
+# 创建新的目标目录
+echo -e "${YELLOW}正在创建目标目录...${NC}"
+mkdir -p "$TARGET_DIR"
+if [ $? -eq 0 ]; then
+    echo -e "${GREEN}✓ 目标目录创建成功${NC}"
 else
-    echo -e "${GREEN}✓ 目标目录已存在${NC}"
+    echo -e "${RED}✗ 目标目录创建失败${NC}"
+    exit 1
 fi
 
 echo ""
