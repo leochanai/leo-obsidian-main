@@ -52,8 +52,8 @@ def extract_video_id(url_or_id: str) -> Optional[str]:
 
 
 def get_transcript(
-    video_id: str, 
-    languages: List[str] = None
+    video_id: str,
+    languages: Optional[List[str]] = None
 ) -> Dict[str, Any]:
     """
     获取视频转录文本
