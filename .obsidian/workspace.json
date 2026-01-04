@@ -202,8 +202,12 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "ae7181696bd9f67b",
+  "active": "15e90fe269434724",
   "lastOpenFiles": [
+    "14 Actions/pixel-level-character-deconstruction/SKILL.md",
+    "14 Actions/pixel-level-character-deconstruction",
+    "14 Actions/像素级拆解/SKILL.md",
+    "14 Actions/像素级拆解",
     "14 Actions/character-to-figure-photography/SKILL.md",
     "14 Actions/character-to-figure-photography",
     "14 Actions/3d/SKILL.md",
@@ -219,7 +223,6 @@
     "13 Skills/顶级写真摄影师/SKILL.md",
     "13 Skills/顶级写真摄影师",
     "03 Source/Cloudflare/将 Next.js 项目从 Vercel 迁移到 Cloudflare.md",
-    "01 Base/Collection.base",
     "03 Source/Design/A designer’s path from influence to identity.md",
     "03 Source/Investment/一家投资 OpenAI 的硅谷基金的深度研究.md",
     "03 Source/Obsidian/obsidian-baseline.md",
@@ -227,7 +230,6 @@
     "03 Source/Claude Code/Agent Skill 创作最佳实践.md",
     "03 Source/Claude Code/Agent Skills.md",
     "03 Source/Zzz/Doing well in your courses.md",
-    "01 Base/Obsidian.base",
     "00 Inbox/Meta_Acquires_Manus_Old.md",
     "13 Skills/frontend-design/SKILL.md",
     "13 Skills/extracting-app-icons/SKILL.md",
@@ -239,8 +241,6 @@
     "10 Attachment/399b910f8e09757b215397d55a620005_MD5.jpg",
     "13 Skills/web-artifacts-builder/SKILL.md",
     "13 Skills/skill-creator/references/workflows.md",
-    "13 Skills/skill-creator/references/output-patterns.md",
-    "13 Skills/skill-creator/SKILL.md",
     "10 Attachment/ebdfd5dbea293b607afa83d51c4222db_MD5.png",
     "10 Attachment/c5c774db0c76de8ad39bb448720a4280_MD5.png",
     "10 Attachment/e03b4897bc306a5ddc38a537f62b5bf3_MD5.png",
