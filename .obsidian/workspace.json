@@ -11,10 +11,24 @@
             "id": "7e9645b109f172e5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "14 Actions/aaa/SKILL.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "SKILL"
             }
           }
         ]
@@ -171,12 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "14 Actions/aaa/SKILL.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "SKILL 的大纲"
             }
           }
         ]
@@ -200,26 +215,28 @@
   },
   "active": "7e9645b109f172e5",
   "lastOpenFiles": [
+    "03 Source/Podwise/128_Manus决定出售前最后的访谈_啊_这奇幻的2025年漂流啊.txt",
+    "03 Source/Podwise/Vol_001_中国奇谭_之_小满_团队_带你揭秘剪纸动画.txt.tmp.36870.1767506571078",
+    "14 Actions/aaa/SKILL.md",
+    "14 Actions/aaa",
+    "03 Source/Podwise/Vol_001_中国奇谭_之_小满_团队_带你揭秘剪纸动画.txt",
+    "03 Source/Podwise/128_Manus决定出售前最后的访谈_啊_这奇幻的2025年漂流啊_校准版.txt",
+    "03 Source/Podwise",
+    "03 Source/AI/Vol_001_中国奇谭_之_小满_团队_带你揭秘剪纸动画.txt",
+    "03 Source/AI/128_Manus决定出售前最后的访谈_啊_这奇幻的2025年漂流啊_校准版.txt",
+    "03 Source/AI/128_Manus决定出售前最后的访谈_啊_这奇幻的2025年漂流啊.txt",
+    "03 Source/AI",
     "14 Actions/generate-fashion-magazine-cover/Comet 2026-01-04 11.28.10.png",
     "14 Actions/generate-fashion-magazine-cover/SKILL.md",
     "14 Actions/generate-fashion-magazine-cover",
     "14 Actions/国际顶流时尚杂志封面/SKILL.md",
-    "14 Actions/国际顶流时尚杂志封面",
     "14 Actions/portrait-photography-4panel/SKILL.md",
     "14 Actions/pixel-level-character-deconstruction/SKILL.md",
     "14 Actions/character-to-figure-photography/SKILL.md",
-    "01 Base/Agent Skills.base",
-    "14 Actions/pixel-level-character-deconstruction",
     "14 Actions/像素级拆解/SKILL.md",
-    "14 Actions/像素级拆解",
-    "14 Actions/character-to-figure-photography",
     "14 Actions/3d/SKILL.md",
-    "14 Actions/3d/SKILLS",
-    "14 Actions/3d",
     "AGENTS.md",
-    "14 Actions/portrait-photography-4panel",
     "13 Skills/portrait-photography-4panel/SKILL.md",
-    "13 Skills/portrait-photography-4panel",
     "13 Skills/顶级写真摄影师/SKILL.md",
     "03 Source/Cloudflare/将 Next.js 项目从 Vercel 迁移到 Cloudflare.md",
     "03 Source/Design/A designer’s path from influence to identity.md",
@@ -235,7 +252,6 @@
     "00 Inbox/Meta_Acquires_Manus.md",
     "13 Skills/writing-wechat-articles/SKILL.md",
     "13 Skills/authoring-skills/SKILL.md",
-    "13 Skills/author/SKILL.md",
     "10 Attachment/399b910f8e09757b215397d55a620005_MD5.jpg",
     "10 Attachment/ebdfd5dbea293b607afa83d51c4222db_MD5.png",
     "10 Attachment/c5c774db0c76de8ad39bb448720a4280_MD5.png",
@@ -244,7 +260,6 @@
     "10 Attachment/84435593a7757e9a7e3504fe8c82e713_MD5.png",
     "10 Attachment/39aa3cf8b30d2fc02e1a39cd4bd13451_MD5.png",
     "hades-bbq/hero.png",
-    "10 Attachment/d193fd7ee32acdb7ca6765a7bc72b3fd_MD5.webp",
-    "10 Attachment/dabc318a61a13e6bad410db1a098e663_MD5.webp"
+    "10 Attachment/d193fd7ee32acdb7ca6765a7bc72b3fd_MD5.webp"
   ]
 }
