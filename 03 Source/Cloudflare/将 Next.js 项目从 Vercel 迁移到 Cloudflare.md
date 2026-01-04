@@ -1,12 +1,13 @@
 ---
-source: "https://blog.meathill.com/next-js/migrate-next-js-from-vercel-to-cloudflare.html"
+source: https://blog.meathill.com/next-js/migrate-next-js-from-vercel-to-cloudflare.html
 author:
   - "[[meathill]]"
 published: 2025-11-23
 created: 2025-11-24
-description: "一起逃离 Vercel 拥抱 Cloudflare 吧Cloudflare 云服务迁移到 OpenNext安装…"
+description: 一起逃离 Vercel 拥抱 Cloudflare 吧Cloudflare 云服务迁移到 OpenNext安装…
 tags:
-  - "cloudflare"
+  - cloudflare
+cover: "![[https://i0.wp.com/blog.meathill.com/wp-content/uploads/2025/11/1.webp?w=1600&ssl=1]]"
 ---
 
 # 将 Next.js 项目从 Vercel 迁移到 Cloudflare

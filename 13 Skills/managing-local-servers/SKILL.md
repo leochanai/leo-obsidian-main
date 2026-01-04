@@ -20,7 +20,7 @@ version: 2.0.0
 
 进入脚本目录：
 ```bash
-cd "13 Skills/managing-local-servers/scripts"
+cd "scripts"
 ```
 
 ### 🔍 查询状态

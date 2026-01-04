@@ -1,5 +1,5 @@
 ---
-cover: "![[10 Attachment/604fb9d8222931e16d641abc50445668_MD5.webp]]"
+cover: "[[10 Attachment/604fb9d8222931e16d641abc50445668_MD5.webp]]"
 source: https://mp.weixin.qq.com/s/uUKGLg15xw4EfOezVc7ZOQ
 author:
   - "[[张小珺 x Freda]]"

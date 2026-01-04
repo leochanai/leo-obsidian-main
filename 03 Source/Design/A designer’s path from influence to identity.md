@@ -8,6 +8,7 @@ created: 2025-12-25
 description:
 tags:
   - design
+cover: "[[10 Attachment/20b4fc29c39004d3d17367340ea8b1bc_MD5.webp]]"
 ---
 
 # A designer’s path from influence to identity
