@@ -11,10 +11,24 @@
             "id": "7e9645b109f172e5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "13 Skills/chinese-zen-brand-vi/SKILL.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "SKILL"
             }
           }
         ]
@@ -171,12 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "13 Skills/chinese-zen-brand-vi/SKILL.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "SKILL 的大纲"
             }
           }
         ]
@@ -200,10 +215,10 @@
   },
   "active": "7e9645b109f172e5",
   "lastOpenFiles": [
+    "13 Skills/chinese-zen-brand-vi/REFERENCE-COLORS.md",
     "13 Skills/chinese-zen-brand-vi/REFERENCE-ELEMENTS.md",
     "13 Skills/chinese-zen-brand-vi/SKILL.md",
     "13 Skills/chinese-zen-brand-vi/REFERENCE-PROFILES.md",
-    "13 Skills/chinese-zen-brand-vi/REFERENCE-COLORS.md",
     "13 Skills/chinese-zen-brand-vi",
     "14 Actions/aaa/SKILL.md",
     "14 Actions/chinese-zen-brand-vi/SKILL.md",

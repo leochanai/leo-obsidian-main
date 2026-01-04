@@ -217,3 +217,77 @@ soft metallic sheen, gentle dimensional quality
 - `REFERENCE-PROFILES.md` - 角色/动物库、情绪描述库
 - `REFERENCE-COLORS.md` - 色彩系统库
 - `REFERENCE-ELEMENTS.md` - 装饰元素库、文化纹理库、品牌口号库、行业周边模板
+
+## 输出规格
+
+执行此 Skill 后，将生成一段可直接用于 AI 文生图的完整提示词。以下是一个咖啡品牌的完整示例：
+
+```
+A modern Chinese Zen aesthetic brand visual identity system displayed in a sophisticated bento grid layout on soft moon-white (#F0F0E8) background with smoke blue (#8FA3AD) accents. Professional brand showcase with natural woodland elegance.
+
+Graceful watercolor ink-wash portrait of an anthropomorphic deer.
+
+The deer has soft, contemplative eyes looking slightly downward with a serene expression, elegant antlers in smoke blue (#8FA3AD) with subtle natural linen weave texture.
+
+Wearing a refined robe in tea brown (#8B7355) with misty gradient as subtle texture.
+
+The deer is holding a delicate coffee cup with its front hooves in natural, relaxed gesture.
+
+Surrounded by generous negative space with asymmetric ink-brushed coffee cherries, pine needles in misty forest moss green (#6B8E5A) gradients.
+
+Elegant Chinese calligraphy "瑞幸" at top center in refined soft gold (#C9A961) foil with subtle embossing, soft metallic sheen, gentle dimensional quality.
+
+Below in serif typography "慢品时光·归心山林" in matching gentle soft gold treatment.
+
+Watercolor texture, soft edges, breathing space composition, wabi-sabi aesthetic, refined balance.
+
+[Top right position]
+Minimalist business card with watercolor deer icon and vast negative space on cream paper, subtle smoke blue edge painting, natural linen texture
+
+[Middle right position]
+Ceramic coffee cup with matte smoke blue glaze and subtle deer silhouette in soft gold line art, natural morning light with soft shadow
+
+[Bottom right position]
+Mobile app icon with soft rounded deer head in soft gold circle, modern minimal digital design
+
+[Top left position]
+Takeaway cup sleeve with single brushstroke deer and coffee cherries pattern, natural kraft paper with smoke blue ink, elegant typography
+
+[Middle left position, larger]
+Coffee ritual gift set in wooden box: ceramic cup with Song Dynasty crackle glaze, bamboo stirrer, soft gold coffee scoop, arranged with smoke blue fabric lining, artisan presentation
+
+[Center bottom position]
+Premium coffee bean storage tin collection: cylindrical metal tins with matte smoke blue finish, wax seal stamps featuring deer elements, different roast levels labeled with calligraphy, arranged in bamboo tray
+
+[Bottom left position]
+Collection of forest-themed merchandise:
+- Deer brooch pin
+- Pine needle bookmark
+- Coffee cherry pattern coaster
+- Deer figurine
+
+arranged on natural wood with forest accents
+
+[Lower right position]
+Premium coffee set: Crystal cups with special craft glaze and soft gold rim accent, museum-quality craftsmanship
+
+[Small corner position]
+Seasonal membership cards with watercolor illustrations of four seasons, each featuring deer in different landscape, soft gold foil headers
+
+All elements feature consistent refined soft gold foil treatment with subtle dimensional quality.
+
+Harmonious palette: moon-white (#F0F0E8), smoke blue (#8FA3AD), forest moss green (#6B8E5A), soft-sheen soft gold (#C9A961), charcoal ink (#3A3A3A).
+
+Consistent natural linen weave texture throughout, asymmetric Zen composition with 33% negative space breathing room, natural material textures with watercolor ink-wash effects.
+
+Modern Chinese coffee aesthetic with Japanese wabi-sabi minimalism influence, celebrating slow living and natural serenity.
+
+Bento grid layout with generous 24px gaps between elements,
+natural diffused morning light photography with soft shadows,
+contemporary natural setting quality, professional brand showcase,
+soft shadows 20% opacity,
+visible material textures (paper grain, natural linen, wood grain, ceramic),
+storytelling through artisan craftsmanship,
+cohesive serene harmony,
+8k resolution --ar 16:9 --stylize 245 --v 6.0
+```
