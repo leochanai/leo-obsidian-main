@@ -14,7 +14,7 @@ NC='\033[0m' # No Color
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # 目标目录
-TARGET_DIR="/Users/farghost/.gemini/antigravity/global_workflows"
+TARGET_DIR="~/.gemini/antigravity/global_workflows"
 
 echo -e "${GREEN}========================================${NC}"
 echo -e "${GREEN}Antigravity Skill 提取同步脚本${NC}"
