@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9a60da0ab7d85f8a",
+        "id": "378cc44cb416002e",
         "type": "tabs",
         "children": [
           {
-            "id": "209e99c2ea4bebab",
+            "id": "657d55caf798b35b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 Source/DeepResearch/Nano Banana Pro 最佳实践 - Gemini.md",
+                "file": "12 AI Chat/Deep Dive Research Summary.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Nano Banana Pro 最佳实践 - Gemini"
+              "title": "Deep Dive Research Summary"
             }
           }
         ]
@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 385.5
+    "width": 300
   },
   "right": {
     "id": "f4de798dc9827ed2",
@@ -100,50 +100,7 @@
         "dimension": 34.28270042194092,
         "children": [
           {
-            "id": "d490f6a00609dfd3",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "04 Person/哈哈.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "哈哈 的反向链接列表"
-            }
-          },
-          {
-            "id": "6d29898df4018ae5",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "04 Person/哈哈.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "哈哈 的出链列表"
-            }
-          },
-          {
-            "id": "daadc01746aec00b",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          },
-          {
-            "id": "235ae72f822eea2c",
+            "id": "a24b677c479d6728",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -158,7 +115,7 @@
             }
           },
           {
-            "id": "7bfc244f8c4cbc28",
+            "id": "4e4abf0ca13a6025",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -169,6 +126,39 @@
               },
               "icon": "lucide-archive",
               "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "d490f6a00609dfd3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "12 AI Chat/Deep Dive Research Summary.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Deep Dive Research Summary 的反向链接列表"
+            }
+          },
+          {
+            "id": "6d29898df4018ae5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "03 Source/Claude Code/Agent Skill 创作最佳实践.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Agent Skill 创作最佳实践 的出链列表"
             }
           }
         ],
@@ -185,20 +175,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03 Source/DeepResearch/Nano Banana Pro 最佳实践 - Gemini.md",
+                "file": "12 AI Chat/Deep Dive Research Summary.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Nano Banana Pro 最佳实践 - Gemini 的大纲"
+              "title": "Deep Dive Research Summary 的大纲"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 298.5
+    "width": 423.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,59 +196,58 @@
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
+      "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "209e99c2ea4bebab",
+  "active": "657d55caf798b35b",
   "lastOpenFiles": [
-    "03 Source/DeepResearch/Nano Banana Pro 最佳实践 - ChatGPT.md",
-    "03 Source/DeepResearch/Nano Banana Pro 最佳实践 - Gemini.md",
-    "03 Source/DeepResearch/Nano Banana Pro 最佳实践 - Gemini.md.bak",
-    "03 Source/DeepResearch/Nano Banana Pro 最佳实践 - ChatGPT.md.bak",
+    "13 Skills/optimizing-nano-banana-pro-prompts/SKILL.md",
+    "13 Skills/optimizing-nano-banana-pro-prompts",
     "13 Skills/formatting-deepresearch-reports/scripts/format_report.py",
     "13 Skills/formatting-deepresearch-reports/scripts",
     "13 Skills/formatting-deepresearch-reports/SKILL.md",
     "13 Skills/formatting-deepresearch-reports",
-    "13 Skills/optimizing-nano-banana-pro-prompts/SKILL.md",
-    "13 Skills/optimizing-nano-banana-pro-prompts",
-    "00 Inbox/未命名.base",
-    "13 Skills/chinese-zen-brand-vi/REFERENCE-COLORS.md",
-    "14 Actions/portrait-photography-4panel/SKILL.md",
+    "03 Source/DeepResearch/Nano Banana Pro 最佳实践 - Gemini.md",
+    "03 Source/DeepResearch/Nano Banana Pro 最佳实践 - ChatGPT.md",
     "03 Source/DeepResearch",
-    "03 Source/Nano Banana Pro",
-    "13 Skills/generating-oriental-beauty-prompts/SKILL.md",
-    "13 Skills/generating-oriental-beauty-prompts",
-    "14 Actions/pixel-level-character-deconstruction/SKILL.md",
+    "AGENTS.md",
+    "14 Actions/portrait-photography-4panel/SKILL.md",
     "14 Actions/generate-fashion-magazine-cover/SKILL.md",
+    "14 Actions/pixel-level-character-deconstruction/SKILL.md",
     "14 Actions/character-to-figure-photography/SKILL.md",
+    "14 Actions/portrait-photography-4panel",
+    "14 Actions/pixel-level-character-deconstruction",
+    "14 Actions/generate-fashion-magazine-cover",
+    "14 Actions/character-to-figure-photography",
+    "14 Actions",
+    "13 Skills/frontend-design/SKILL.md",
+    "13 Skills/chinese-zen-brand-vi/REFERENCE-COLORS.md",
     "13 Skills/chinese-zen-brand-vi/SKILL.md",
-    "13 Skills/replicating-image-style/SKILL.md",
-    "13 Skills/kids-hanzi-imagination-lab/REFERENCE-VOCABULARY.md",
-    "13 Skills/kids-hanzi-imagination-lab/REFERENCE-ETYMOLOGY.md",
-    "13 Skills/kids-hanzi-imagination-lab/REFERENCE-STROKES.md",
-    "13 Skills/kids-hanzi-imagination-lab/REFERENCE-COLORS.md",
-    "13 Skills/kids-hanzi-imagination-lab/REFERENCE-PROFILES.md",
-    "13 Skills/kids-hanzi-imagination-lab/REFERENCE-ELEMENTS.md",
-    "13 Skills/kids-hanzi-imagination-lab/SKILL.md",
-    "13 Skills/chinese-zen-brand-vi/REFERENCE-ELEMENTS.md",
     "13 Skills/chinese-zen-brand-vi/REFERENCE-PROFILES.md",
-    "14 Actions/aaa/SKILL.md",
-    "14 Actions/chinese-zen-brand-vi/SKILL.md",
-    "14 Actions/chinese-zen-brand-vi/REFERENCE-PROFILES.md",
-    "14 Actions/chinese-zen-brand-vi/REFERENCE-ELEMENTS.md",
-    "14 Actions/generate-fashion-magazine-cover/Comet 2026-01-04 11.28.10.png",
-    "10 Attachment/399b910f8e09757b215397d55a620005_MD5.jpg",
+    "13 Skills/chinese-zen-brand-vi/REFERENCE-ELEMENTS.md",
+    "03 Source/Investment/一家投资 OpenAI 的硅谷基金的深度研究.md",
+    "12 AI Chat/Deep Dive Research Summary.md",
+    "00 Inbox/Meta_Acquires_Manus_Old.md",
+    "00 Inbox/Anthropic工程师都在用的AI编程秘技！让AI\"采访\"你做出完美应用.md",
+    "03 Source/Vibe Coding/Anthropic工程师都在用的AI编程秘技！让AI\"采访\"你做出完美应用.md",
+    "06 Note/2026 年投资方向.md",
+    "13 Skills/extracting-app-icons/SKILL.md",
+    "13 Skills/writing-wechat-articles/SKILL.md",
+    "13 Skills/managing-local-servers/SKILL.md",
+    "13 Skills/generating-kids-poetry-prompts/SKILL.md",
+    "13 Skills/generating-html-from-content/SKILL.md",
+    "13 Skills/calibrating-transcribed-subtitles/SKILL.md",
     "10 Attachment/ebdfd5dbea293b607afa83d51c4222db_MD5.png",
-    "10 Attachment/c5c774db0c76de8ad39bb448720a4280_MD5.png",
-    "10 Attachment/e03b4897bc306a5ddc38a537f62b5bf3_MD5.png",
     "10 Attachment/e694072238189e8e9421868d26aa52ff_MD5.png",
+    "10 Attachment/e03b4897bc306a5ddc38a537f62b5bf3_MD5.png",
+    "10 Attachment/c5c774db0c76de8ad39bb448720a4280_MD5.png",
     "10 Attachment/84435593a7757e9a7e3504fe8c82e713_MD5.png",
-    "10 Attachment/39aa3cf8b30d2fc02e1a39cd4bd13451_MD5.png",
-    "hades-bbq/hero.png",
-    "10 Attachment/d193fd7ee32acdb7ca6765a7bc72b3fd_MD5.webp"
+    "10 Attachment/f6b5acc27935f185935c986fc04faf01_MD5.webp",
+    "10 Attachment/ca6eeab7f6eceef8a2495aab26f88810_MD5.webp",
+    "10 Attachment/661a5be68008e03b40dd7dc47348cf95_MD5.webp",
+    "10 Attachment/604fb9d8222931e16d641abc50445668_MD5.webp",
+    "10 Attachment/4d8911aeac1cbab43548a72a79ed0e76_MD5.webp"
   ]
 }
