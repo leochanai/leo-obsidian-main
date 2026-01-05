@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "74926a522e05cce0",
+        "id": "9a60da0ab7d85f8a",
         "type": "tabs",
         "children": [
           {
-            "id": "7e9645b109f172e5",
+            "id": "209e99c2ea4bebab",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 Source/DeepResearch/Nano Banana Pro (Gemini 3 Pro Image) 深度研究报告：生成式 AI 的逻辑转向与工程实践.md",
+                "file": "03 Source/DeepResearch/Nano Banana Pro 最佳实践 - ChatGPT.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Nano Banana Pro (Gemini 3 Pro Image) 深度研究报告：生成式 AI 的逻辑转向与工程实践"
+              "title": "Nano Banana Pro 最佳实践 - ChatGPT"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:12121a",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -185,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03 Source/DeepResearch/Nano Banana Pro (Gemini 3 Pro Image) 深度研究报告：生成式 AI 的逻辑转向与工程实践.md",
+                "file": "03 Source/DeepResearch/Nano Banana Pro 最佳实践 - ChatGPT.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Nano Banana Pro (Gemini 3 Pro Image) 深度研究报告：生成式 AI 的逻辑转向与工程实践 的大纲"
+              "title": "Nano Banana Pro 最佳实践 - ChatGPT 的大纲"
             }
           }
         ]
@@ -213,10 +213,14 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "7e9645b109f172e5",
+  "active": "209e99c2ea4bebab",
   "lastOpenFiles": [
-    "03 Source/DeepResearch/Nano Banana Pro 研究.md",
-    "03 Source/DeepResearch/Nano Banana Pro (Gemini 3 Pro Image) 深度研究报告：生成式 AI 的逻辑转向与工程实践.md",
+    "13 Skills/optimizing-nano-banana-pro-prompts/SKILL.md",
+    "13 Skills/optimizing-nano-banana-pro-prompts",
+    "03 Source/DeepResearch/Nano Banana Pro 最佳实践 - Gemini.md",
+    "03 Source/DeepResearch/Nano Banana Pro 最佳实践 - ChatGPT.md",
+    "00 Inbox/未命名.base",
+    "13 Skills/chinese-zen-brand-vi/REFERENCE-COLORS.md",
     "14 Actions/portrait-photography-4panel/SKILL.md",
     "03 Source/DeepResearch",
     "03 Source/Nano Banana Pro",
@@ -239,18 +243,14 @@
     "13 Skills/kids-hanzi-imagination-lab/REFERENCE-ELEMENTS.md",
     "13 Skills/kids-hanzi-imagination-lab/SKILL.md",
     "13 Skills/kids-hanzi-imagination-lab",
-    "13 Skills/chinese-zen-brand-vi/REFERENCE-COLORS.md",
     "13 Skills/chinese-zen-brand-vi/REFERENCE-ELEMENTS.md",
     "13 Skills/chinese-zen-brand-vi/REFERENCE-PROFILES.md",
-    "13 Skills/chinese-zen-brand-vi",
     "14 Actions/aaa/SKILL.md",
     "14 Actions/chinese-zen-brand-vi/SKILL.md",
     "14 Actions/chinese-zen-brand-vi/REFERENCE-PROFILES.md",
     "14 Actions/chinese-zen-brand-vi/REFERENCE-ELEMENTS.md",
     "14 Actions/chinese-zen-brand-vi/REFERENCE-COLORS.md",
-    "14 Actions/chinese-zen-brand-vi",
     "14 Actions/aaa/REFERENCE-ELEMENTS.md",
-    "14 Actions/aaa/REFERENCE-COLORS.md",
     "14 Actions/generate-fashion-magazine-cover/Comet 2026-01-04 11.28.10.png",
     "10 Attachment/399b910f8e09757b215397d55a620005_MD5.jpg",
     "10 Attachment/ebdfd5dbea293b607afa83d51c4222db_MD5.png",

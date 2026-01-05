@@ -7,9 +7,10 @@ created: 2026-01-05
 description:
 tags:
   - nano-banana-pro
+  - 2D2D2D
 cover:
 ---
-# Nano Banana Pro (Gemini 3 Pro Image) 深度研究报告：生成式 AI 的逻辑转向与工程实践
+# Nano Banana Pro 最佳实践 - Gemini
 
 ## 摘要
 
@@ -155,9 +156,9 @@ Nano Banana Pro 的智能化并不意味着用户可以随意输入。相反，�
 
 **JSON 提示词示例（3D 格斗游戏选人界面）：**
 
-JSON
 
-```
+
+```JSON
 {
   "title": "3D Fighting Game Character Select Screen",
   "description": "Generate a dark, gritty, high-intensity 3D character selection screen.",
