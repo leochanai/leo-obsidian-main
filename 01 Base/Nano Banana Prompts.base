@@ -1,0 +1,17 @@
+views:
+  - type: cards
+    name: 视图
+    filters:
+      and:
+        - file.tags.containsAll("nano-banana-pro", "prompt")
+    order:
+      - file.name
+      - file.ctime
+      - source
+    sort:
+      - property: source
+        direction: DESC
+    columnSize:
+      file.name: 298
+    image: note.cover
+    imageAspectRatio: 1.6

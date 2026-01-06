@@ -7,7 +7,6 @@ created: 2026-01-05
 description:
 tags:
   - nano-banana-pro
-  - 2D2D2D
 cover:
 ---
 

@@ -278,7 +278,7 @@
   "settingsConvertedToConfigKeyValues": true,
   "foldersToIgnore": [
     "13 Skills",
-    "14 Actions"
+    ""
   ],
   "filesToIgnore": [],
   "linterLocale": "system-default",

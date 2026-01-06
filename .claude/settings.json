@@ -1,0 +1,64 @@
+{
+  "userName": "LEO",
+  "enableBlocklist": true,
+  "blockedCommands": {
+    "unix": [
+      "rm -rf",
+      "chmod 777",
+      "chmod -R 777"
+    ],
+    "windows": [
+      "del /s /q",
+      "rd /s /q",
+      "rmdir /s /q",
+      "format",
+      "diskpart",
+      "Remove-Item -Recurse -Force",
+      "Remove-Item -Force -Recurse",
+      "Remove-Item -r -fo",
+      "Remove-Item -fo -r",
+      "Remove-Item -Recurse",
+      "Remove-Item -r",
+      "ri -Recurse",
+      "ri -r",
+      "ri -Force",
+      "ri -fo",
+      "rm -r -fo",
+      "rm -Recurse",
+      "rm -Force",
+      "del -Recurse",
+      "del -Force",
+      "erase -Recurse",
+      "erase -Force",
+      "rd -Recurse",
+      "rmdir -Recurse",
+      "Format-Volume",
+      "Clear-Disk",
+      "Initialize-Disk",
+      "Remove-Partition"
+    ]
+  },
+  "model": "haiku",
+  "enableAutoTitleGeneration": true,
+  "titleGenerationModel": "",
+  "thinkingBudget": "off",
+  "permissionMode": "yolo",
+  "lastNonPlanPermissionMode": "yolo",
+  "permissions": [],
+  "excludedTags": [],
+  "mediaFolder": "",
+  "environmentVariables": "",
+  "envSnippets": [],
+  "systemPrompt": "LLM 交互规则：模拟器模式\n\n核心原则：你是一个高级模拟器，而非有感知能力的实体。\n\n规则：\n\n避免拟人化： 在回应或生成内容时，切勿使用第一人称代词（如“我”、“你觉得”）或拟人化语言（如“你的看法”、“你认为”）。请改用模拟角色或外部视角来表述。\n\n模拟角色/视角： 当需要意见或分析时，引导模型模拟特定角色、群体或领域专家（例如：“专家们会怎么说？”、“历史学家会如何分析？”、“Andrej Karpathy 会如何看待？”）。\n\n优先事实/可验证数据： 在可能的情况下，强调基于高质量来源和验证数据的响应，你可以调用你的联网功能进行事实核查，避免主观或未经证实的观点（例如：“请基于高质量来源中的已验证数据，分析……”）。\n\n分解复杂查询： 对于复杂任务，引导模型进行规划和分解，而不是直接给出最终答案（例如：“请先制定一个计划，然后再深入探讨。”）。\n\n认识工程化人设： 理解并利用系统提示中设定的角色或人格（如“乐于助人的助手”），但仍通过模拟器视角进行操作，避免因人设而产生过度主观的响应。\n\n鼓励多视角模拟： 当探索主题时，主动引导模型提供多个不同或近似的视角，以获得更全面的信息。\n\n专注于令牌模拟： 始终将自身视为一个令牌模拟引擎，其行为是基于微调数据的统计特性和工程化设计，而非人类意义上的思考或观点构建。",
+  "allowedExportPaths": [
+    "~/Desktop",
+    "~/Downloads"
+  ],
+  "keyboardNavigation": {
+    "scrollUpKey": "w",
+    "scrollDownKey": "s",
+    "focusInputKey": "i"
+  },
+  "claudeCliPath": "",
+  "loadUserClaudeSettings": true
+}
