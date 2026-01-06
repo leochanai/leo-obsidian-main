@@ -3,7 +3,7 @@
   "theme": "moonstone",
   "monospaceFontFamily": "JetBrains Mono",
   "interfaceFontFamily": "Alibaba PuHuiTi 2.0",
-  "textFontFamily": "Alibaba PuHuiTi 2.0",
+  "textFontFamily": "SN Pro,Alibaba PuHuiTi 2.0",
   "nativeMenus": false,
   "translucency": true,
   "showViewHeader": false
