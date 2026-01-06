@@ -112,7 +112,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.18.3",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.19.0",
     "libraryItems": []
   },
   "imageElementNotice": true,
@@ -485,12 +485,12 @@
   "canvasImmersiveEmbed": true,
   "startupScriptPath": "",
   "aiEnabled": true,
-  "openAIAPIToken": "sk-6480c3f498db4fbcaeac393c0f805e2a",
+  "openAIAPIToken": "sk-0b2d5f604ae14ca88b586919f94f0cda",
   "openAIDefaultTextModel": "gemini-3-flash",
   "openAIDefaultTextModelMaxTokens": 4096,
   "openAIDefaultVisionModel": "gemini-3-flash",
   "openAIDefaultImageGenerationModel": "gemini-3-pro-image",
-  "openAIURL": "http://localhost:8045/v1/chat/completions",
+  "openAIURL": "http://127.0.0.1:8045/v1/chat/completions",
   "openAIImageGenerationURL": "https://api.openai.com/v1/images/generations",
   "openAIImageEditsURL": "https://api.openai.com/v1/images/edits",
   "openAIImageVariationURL": "https://api.openai.com/v1/images/variations",

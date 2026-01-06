@@ -11,16 +11,52 @@
             "id": "2e210b389d97381f",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "01 Base/Agent Skills.base",
-                "viewName": "表格"
+                "file": "14 Prompts/四格拼接构图的超写实写真.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "lucide-table",
-              "title": "Agent Skills"
+              "icon": "lucide-file",
+              "title": "四格拼接构图的超写实写真"
+            }
+          },
+          {
+            "id": "b146e51b492c5079",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "06 Note/Netconf 连接过程.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Netconf 连接过程"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -174,13 +210,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 Base/Agent Skills.base",
+                "file": "06 Note/Netconf 连接过程.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Agent Skills 的大纲"
+              "title": "Netconf 连接过程 的大纲"
             }
           }
         ]
@@ -202,24 +238,26 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "2e210b389d97381f",
+  "active": "b146e51b492c5079",
   "lastOpenFiles": [
-    "01 Base/Nano Banana Prompts.base",
+    "02 Map/Drawing 2026-01-06 18.12.46.excalidraw.md",
+    "02 Map/Netconf 连接过程.excalidraw.md",
+    "06 Note/Netconf 连接过程.md",
     "14 Prompts/四格拼接构图的超写实写真.md",
-    "14 Prompts/将角色插画转换为高品质手办产品.md",
+    "01 Base/Nano Banana Prompts.base",
     "14 Prompts/像素级角色拆解.md",
+    "14 Prompts/将照片转换为复古拍立得即时照片.md",
+    "14 Prompts/将角色插画转换为高品质手办产品.md",
+    "01 Base/Agent Skills.base",
     "10 Attachment/Gemini_Generated_Image_ydmmk4ydmmk4ydmm.png",
     "01 Base/Obsidian.base",
     "03 Source/Design/A designer’s path from influence to identity.md",
     "10 Attachment/Gemini_Generated_Image_yxe0n0yxe0n0yxe0.png",
-    "14 Prompts/将照片转换为复古拍立得即时照片.md",
     "03 Source/Investment/一家投资 OpenAI 的硅谷基金的深度研究.md",
     "01 Base/Collection.base",
-    "01 Base/Agent Skills.base",
     "03 Source/DeepResearch/Nano Banana Pro 最佳实践 - ChatGPT.md",
     "03 Source/DeepResearch/Nano Banana Pro 最佳实践 - Gemini.md",
     "01 Base/Agent Skills copy.base",
-    "06 Note/Netconf 连接过程.md",
     "14 Prompts/portrait-photography-4panel/四格拼接构图的超写实写真.md",
     "14 Prompts/pixel-level-character-deconstruction/像素级角色拆解.md",
     "14 Prompts/SKILL.md",
@@ -241,7 +279,6 @@
     "10 Attachment/Pasted image 20260106173516.png",
     "06 Note/2026 年投资方向.md",
     "00 Inbox/未命名.md",
-    "AGENTS.md",
     "14 Actions/generate-fashion-magazine-cover/Comet 2026-01-04 11.28.10.png",
     "10 Attachment/399b910f8e09757b215397d55a620005_MD5.jpg",
     "10 Attachment/ebdfd5dbea293b607afa83d51c4222db_MD5.png",
