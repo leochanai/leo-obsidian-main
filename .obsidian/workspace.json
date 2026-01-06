@@ -4,59 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "c354b292c2f4b13d",
+        "id": "0cee3edf58f50baa",
         "type": "tabs",
         "children": [
           {
-            "id": "2e210b389d97381f",
+            "id": "993687d050d3e5b8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "14 Prompts/四格拼接构图的超写实写真.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "四格拼接构图的超写实写真"
-            }
-          },
-          {
-            "id": "b146e51b492c5079",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "06 Note/Netconf 连接过程.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Netconf 连接过程"
+              "title": "新标签页"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -210,13 +171,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "06 Note/Netconf 连接过程.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Netconf 连接过程 的大纲"
+              "title": "大纲"
             }
           }
         ]
@@ -238,15 +198,16 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "b146e51b492c5079",
+  "active": "993687d050d3e5b8",
   "lastOpenFiles": [
+    "14 Prompts/四格拼接构图的超写实写真.md",
+    "01 Base/Nano Banana Prompts.base",
+    "10 Attachment/Pasted image 20260106185110.png",
+    "06 Note/Netconf 连接过程.md",
     "13 Skills/generating-poetry-clay-papercraft-prompts/SKILL.md",
     "13 Skills/generating-poetry-clay-papercraft-prompts",
     "02 Map/Drawing 2026-01-06 18.12.46.excalidraw.md",
     "02 Map/Netconf 连接过程.excalidraw.md",
-    "06 Note/Netconf 连接过程.md",
-    "14 Prompts/四格拼接构图的超写实写真.md",
-    "01 Base/Nano Banana Prompts.base",
     "14 Prompts/像素级角色拆解.md",
     "14 Prompts/将照片转换为复古拍立得即时照片.md",
     "14 Prompts/将角色插画转换为高品质手办产品.md",
@@ -278,13 +239,11 @@
     "14 Actions/pixel-level-character-deconstruction/SKILL.md",
     "14 Actions/generate-fashion-magazine-cover/SKILL.md",
     "10 Attachment/Pasted image 20260106173516.png",
-    "06 Note/2026 年投资方向.md",
     "14 Actions/generate-fashion-magazine-cover/Comet 2026-01-04 11.28.10.png",
     "10 Attachment/399b910f8e09757b215397d55a620005_MD5.jpg",
     "10 Attachment/ebdfd5dbea293b607afa83d51c4222db_MD5.png",
     "10 Attachment/c5c774db0c76de8ad39bb448720a4280_MD5.png",
     "10 Attachment/e03b4897bc306a5ddc38a537f62b5bf3_MD5.png",
-    "10 Attachment/e694072238189e8e9421868d26aa52ff_MD5.png",
-    "10 Attachment/84435593a7757e9a7e3504fe8c82e713_MD5.png"
+    "10 Attachment/e694072238189e8e9421868d26aa52ff_MD5.png"
   ]
 }
