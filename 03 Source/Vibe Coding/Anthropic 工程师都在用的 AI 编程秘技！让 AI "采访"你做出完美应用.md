@@ -1,16 +1,12 @@
 ---
-title: "Anthropic 工程师都在用的 AI 编程秘技！让 AI '采访' 你做出完美应用"
-source: "https://www.youtube.com/watch?v=iyXUf33JG_g"
+title: Anthropic 工程师都在用的 AI 编程秘技！让 AI '采访' 你做出完美应用
+source: https://www.youtube.com/watch?v=iyXUf33JG_g
 author:
   - "[[NiceKate AI]]"
 published: 2026-01-01
 created: 2026-01-02
-description: "欢迎关注我的知识星球：https://t.zsxq.com/FF0He。我会分享最新 AI 资讯、源代码、回答你的提问。Twitter：https://x.com/nicekate8888。微信公众号：kate人不错。今天这期我想给大家展示一个非常好用、但很少人真正用对的 AI 编程技巧：让 Claude Code ..."
+description: 欢迎关注我的知识星球：https://t.zsxq.com/FF0He。我会分享最新 AI 资讯、源代码、回答你的提问。Twitter：https://x.com/nicekate8888。微信公众号：kate人不错。今天这期我想给大家展示一个非常好用、但很少人真正用对的 AI 编程技巧：让 Claude Code ...
 tags:
-  - AI编程
-  - Anthropic
-  - ClaudeCode
-  - 开发技巧
 ---
 
 # Anthropic 工程师都在用的 AI 编程秘技！让 AI “采访”你做出完美应用
