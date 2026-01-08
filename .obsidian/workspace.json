@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 Source/Veo3/A Googler explains how to “meta prompt” for incredible Veo videos.md",
+                "file": "00 Inbox/Agent Skills 终极指南：入门、精通、预测.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "A Googler explains how to “meta prompt” for incredible Veo videos"
+              "title": "Agent Skills 终极指南：入门、精通、预测"
             }
           }
         ]
@@ -185,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03 Source/Veo3/A Googler explains how to “meta prompt” for incredible Veo videos.md",
+                "file": "00 Inbox/Agent Skills 终极指南：入门、精通、预测.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "A Googler explains how to “meta prompt” for incredible Veo videos 的大纲"
+              "title": "Agent Skills 终极指南：入门、精通、预测 的大纲"
             }
           }
         ]
@@ -210,11 +210,26 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "claudian:Open Claudian": false
+      "claudian:Open Claudian": false,
+      "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "15e90fe269434724",
+  "active": "993687d050d3e5b8",
   "lastOpenFiles": [
+    "10 Attachment/160a66847b34e7aa1ff072587d21fa49_MD5.svg",
+    "10 Attachment/1defdac5e966ae8edeea20f27991e002_MD5.svg",
+    "10 Attachment/28c52e555ecb4279b4776f7ba38e4fac_MD5.png",
+    "10 Attachment/b2975522e5822195b511cbe42e4e59bc_MD5.png",
+    "10 Attachment/74821b8c15fab7439641fd5ab555a31c_MD5.png",
+    "10 Attachment/94024a23b8a51f5b4d5d4d871d7c81ed_MD5.png",
+    "10 Attachment/0f077a47af63862e9df660580ab37093_MD5.png",
+    "10 Attachment/ecbd4b05138dab085cb6c28a7c9c2d1d_MD5.png",
+    "10 Attachment/36873028165e26f7c0ef7fca6e16eeb4_MD5.png",
+    "10 Attachment/fb9c0c7a87ef6a758fce229774872b4a_MD5.png",
+    "10 Attachment/845767c311f830d81f60f1c90f3df156_MD5.png",
+    "00 Inbox/Agent Skills 终极指南：入门、精通、预测.md",
+    "00 Inbox/Agent Skills 终极指南：入门、精通、预测.md",
+    "03 Source/Veo3/A Googler explains how to “meta prompt” for incredible Veo videos.md",
     "03 Source/Podwise/Vol_001_中国奇谭_之_小满_团队_带你揭秘剪纸动画.md",
     "03 Source/Podwise/128_Manus决定出售前最后的访谈_啊_这奇幻的2025年漂流啊.md",
     "03 Source/Vibe Coding/Anthropic 工程师都在用的 AI 编程秘技！让 AI \"采访\"你做出完美应用.md",
@@ -230,7 +245,6 @@
     "13 Skills/obsidian-bases/SKILL.md",
     "13 Skills/obsidian-bases",
     "14 Prompts/四格拼接构图的超写实写真.md",
-    "10 Attachment/Pasted image 20260106185110.png",
     "06 Note/Netconf 连接过程.md",
     "13 Skills/generating-poetry-clay-papercraft-prompts/SKILL.md",
     "13 Skills/generating-poetry-clay-papercraft-prompts",
@@ -238,10 +252,8 @@
     "14 Prompts/像素级角色拆解.md",
     "14 Prompts/将照片转换为复古拍立得即时照片.md",
     "14 Prompts/将角色插画转换为高品质手办产品.md",
-    "10 Attachment/Gemini_Generated_Image_ydmmk4ydmmk4ydmm.png",
     "01 Base/Obsidian.base",
     "03 Source/Design/A designer’s path from influence to identity.md",
-    "10 Attachment/Gemini_Generated_Image_yxe0n0yxe0n0yxe0.png",
     "03 Source/Investment/一家投资 OpenAI 的硅谷基金的深度研究.md",
     "03 Source/DeepResearch/Nano Banana Pro 最佳实践 - ChatGPT.md",
     "03 Source/DeepResearch/Nano Banana Pro 最佳实践 - Gemini.md",
@@ -249,17 +261,6 @@
     "14 Prompts/portrait-photography-4panel/四格拼接构图的超写实写真.md",
     "14 Prompts/pixel-level-character-deconstruction/像素级角色拆解.md",
     "14 Prompts/SKILL.md",
-    "14 Actions/character-to-figure-photography/SKILL.md",
-    "14 Prompts/portrait-photography-4panel/SKILL.md",
-    "14 Prompts/pixel-level-character-deconstruction/SKILL.md",
-    "14 Prompts/generate-fashion-magazine-cover/SKILL.md",
-    "14 Prompts/portrait-photography-4panel",
-    "10 Attachment/Pasted image 20260106173516.png",
-    "14 Actions/generate-fashion-magazine-cover/Comet 2026-01-04 11.28.10.png",
-    "10 Attachment/399b910f8e09757b215397d55a620005_MD5.jpg",
-    "10 Attachment/ebdfd5dbea293b607afa83d51c4222db_MD5.png",
-    "10 Attachment/c5c774db0c76de8ad39bb448720a4280_MD5.png",
-    "10 Attachment/e03b4897bc306a5ddc38a537f62b5bf3_MD5.png",
-    "10 Attachment/e694072238189e8e9421868d26aa52ff_MD5.png"
+    "14 Prompts/portrait-photography-4panel"
   ]
 }
