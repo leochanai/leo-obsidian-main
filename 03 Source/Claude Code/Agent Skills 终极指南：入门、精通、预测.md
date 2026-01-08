@@ -1,5 +1,5 @@
 ---
-cover: 
+cover:
 source: https://mp.weixin.qq.com/s/jUylk813LYbKw0sLiIttTQ
 author:
   - "[[一泽Eze]]"
@@ -7,6 +7,7 @@ published:
 created: 2026-01-07
 description: 应该是全网最好的 Skills 中文指南与教程
 tags:
+  - agent-skills
 ---
 
 # Agent Skills 终极指南：入门、精通、预测

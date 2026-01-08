@@ -11,13 +11,24 @@
             "id": "0480423e6a17e639",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "01 Base/Nano Banana Prompts.base",
-                "viewName": "视图"
+                "file": "14 Prompts/虫眼视角（底视仰拍）照片.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "lucide-layout-grid",
-              "title": "Nano Banana Prompts"
+              "icon": "lucide-file",
+              "title": "虫眼视角（底视仰拍）照片"
             }
           }
         ]
@@ -174,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 Inbox/Pasted image 20260106173516.png.md",
+                "file": "14 Prompts/虫眼视角（底视仰拍）照片.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Pasted image 20260106173516.png 的大纲"
+              "title": "虫眼视角（底视仰拍）照片 的大纲"
             }
           }
         ]
@@ -203,12 +214,17 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "15e90fe269434724",
+  "active": "0480423e6a17e639",
   "lastOpenFiles": [
-    "01 Base/Nano Banana Prompts.base",
+    "14 Prompts/像素级角色拆解.md",
+    "14 Prompts/四格拼接构图的超写实写真.md",
     "14 Prompts/将照片转换为复古拍立得即时照片.md",
-    "00 Inbox/Pasted image 20260106173516.png.md",
     "14 Prompts/将角色插画转换为高品质手办产品.md",
+    "14 Prompts/虫眼视角（底视仰拍）照片.md",
+    "03 Source/Claude Code/Agent Skills 终极指南：入门、精通、预测.md",
+    "01 Base/Agent Skills.base",
+    "00 Inbox/Pasted image 20260106173516.png.md",
+    "01 Base/Nano Banana Prompts.base",
     "10 Attachment/0e329a7397c45af0d6571abd33b9e5f8_MD5.jpg",
     "10 Attachment/Pasted image 20260106185110.png",
     "10 Attachment/Pasted image 20260106173516.png",
@@ -216,11 +232,7 @@
     "10 Attachment/Gemini_Generated_Image_ydmmk4ydmmk4ydmm.png",
     "10 Attachment/Gemini_Generated_Image_megkwgmegkwgmegk.png",
     "10 Attachment/fb9c0c7a87ef6a758fce229774872b4a_MD5.png",
-    "14 Prompts/像素级角色拆解.md",
-    "14 Prompts/四格拼接构图的超写实写真.md",
-    "14 Prompts/虫眼视角（底视仰拍）照片.md",
     "00 Inbox/未命名.base",
-    "03 Source/Claude Code/Agent Skills 终极指南：入门、精通、预测.md",
     "13 Skills/chinese-zen-brand-vi/REFERENCE-COLORS.md",
     "10 Attachment/Pasted image 20260108164110.png",
     "13 Skills/managing-local-cloudnms/SKILL.md",
@@ -236,7 +248,6 @@
     "03 Source/Vibe Coding/Anthropic 工程师都在用的 AI 编程秘技！让 AI \"采访\"你做出完美应用.md",
     "03 Source/Zzz/Doing well in your courses.md",
     "02 Map/Netconf 连接过程.excalidraw.md",
-    "01 Base/Agent Skills.base",
     "AGENTS.md",
     "01 Base/Collection.base",
     "13 Skills/obsidian-canvas/SKILL.md",
