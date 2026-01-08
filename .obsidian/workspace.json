@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 Inbox/Agent Skills 终极指南：入门、精通、预测.md",
+                "file": "13 Skills/managing-local-cloudnms/SKILL.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Agent Skills 终极指南：入门、精通、预测"
+              "title": "SKILL"
             }
           }
         ]
@@ -185,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 Inbox/Agent Skills 终极指南：入门、精通、预测.md",
+                "file": "13 Skills/managing-local-cloudnms/SKILL.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Agent Skills 终极指南：入门、精通、预测 的大纲"
+              "title": "SKILL 的大纲"
             }
           }
         ]
@@ -216,6 +216,12 @@
   },
   "active": "993687d050d3e5b8",
   "lastOpenFiles": [
+    "13 Skills/managing-local-cloudnms/scripts/deploy_cloudnms.sh",
+    "13 Skills/managing-local-cloudnms/scripts",
+    "13 Skills/managing-local-cloudnms/deploy_cloudnms.sh",
+    "00 Inbox/Agent Skills 终极指南：入门、精通、预测.md",
+    "13 Skills/managing-local-cloudnms/SKILL.md",
+    "13 Skills/managing-local-cloudnms",
     "10 Attachment/160a66847b34e7aa1ff072587d21fa49_MD5.svg",
     "10 Attachment/1defdac5e966ae8edeea20f27991e002_MD5.svg",
     "10 Attachment/28c52e555ecb4279b4776f7ba38e4fac_MD5.png",
@@ -226,9 +232,6 @@
     "10 Attachment/ecbd4b05138dab085cb6c28a7c9c2d1d_MD5.png",
     "10 Attachment/36873028165e26f7c0ef7fca6e16eeb4_MD5.png",
     "10 Attachment/fb9c0c7a87ef6a758fce229774872b4a_MD5.png",
-    "10 Attachment/845767c311f830d81f60f1c90f3df156_MD5.png",
-    "00 Inbox/Agent Skills 终极指南：入门、精通、预测.md",
-    "00 Inbox/Agent Skills 终极指南：入门、精通、预测.md",
     "03 Source/Veo3/A Googler explains how to “meta prompt” for incredible Veo videos.md",
     "03 Source/Podwise/Vol_001_中国奇谭_之_小满_团队_带你揭秘剪纸动画.md",
     "03 Source/Podwise/128_Manus决定出售前最后的访谈_啊_这奇幻的2025年漂流啊.md",
@@ -252,15 +255,12 @@
     "14 Prompts/像素级角色拆解.md",
     "14 Prompts/将照片转换为复古拍立得即时照片.md",
     "14 Prompts/将角色插画转换为高品质手办产品.md",
-    "01 Base/Obsidian.base",
     "03 Source/Design/A designer’s path from influence to identity.md",
     "03 Source/Investment/一家投资 OpenAI 的硅谷基金的深度研究.md",
     "03 Source/DeepResearch/Nano Banana Pro 最佳实践 - ChatGPT.md",
     "03 Source/DeepResearch/Nano Banana Pro 最佳实践 - Gemini.md",
-    "01 Base/Agent Skills copy.base",
     "14 Prompts/portrait-photography-4panel/四格拼接构图的超写实写真.md",
     "14 Prompts/pixel-level-character-deconstruction/像素级角色拆解.md",
-    "14 Prompts/SKILL.md",
-    "14 Prompts/portrait-photography-4panel"
+    "14 Prompts/SKILL.md"
   ]
 }
