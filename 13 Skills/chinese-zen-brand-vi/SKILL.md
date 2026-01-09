@@ -1,36 +1,61 @@
 ---
 name: chinese-zen-brand-vi
-description: 生成新中式禅意风格的品牌VI系统，包含Logo主视觉、品牌三件套、功能周边和创意周边。当用户需要创建东方美学品牌识别系统、新中式品牌全案、禅意风格VI设计时使用。
+description: 生成新中式禅意品牌VI系统提示词。当用户需要创建东方美学品牌识别、新中式品牌全案、禅意风格VI设计时使用。
 ---
 
 # 新中式禅意品牌VI生成系统
 
-## 核心设计哲学
-
-```
-东方留白美学 + 宋代极简主义 + 日式侘寂精神 = 不对称的平衡 + 克制的优雅 + 呼吸感的构图
-```
+**核心美学**：东方留白 + 宋代极简 + 日式侘寂 = 不对称平衡 + 克制优雅 + 呼吸感构图
 
 ---
 
-## 万能提示词结构
+## 工作流程
 
-### 基础框架
+### 第一步：收集品牌信息
 
-```
-A modern Chinese Zen aesthetic brand visual identity system displayed in a sophisticated bento grid layout on soft moon-white (#F0F0E8) background with [品牌主色] accents. Professional brand showcase with [行业特质].
-```
+向用户收集以下信息（未提供则引导补充）：
 
-**行业特质选项**：storytelling elements / refined elegance / natural woodland elegance / warm craftsmanship spirit / mysterious nocturnal elegance
+| 必填项 | 说明 | 示例 |
+|--------|------|------|
+| 品牌中文名 | 2-4字 | 瑞幸 |
+| 品牌口号 | 中文意境口号 | 慢品时光·归心山林 |
+| 行业类型 | 咖啡/茶饮/烘焙/酒吧/零食/面馆 | 咖啡 |
+| 核心角色 | 动物形象 | 鹿 |
+
+| 可选项 | 说明 | 默认值 |
+|--------|------|--------|
+| 角色情绪 | serene/peaceful/mysterious/playful | 根据行业推断 |
+| 主色调 | 含色值 | 查阅 `reference/COLORS.md` |
+| 辅助色 | 含色值 | 查阅 `reference/COLORS.md` |
+| 金属色 | gold/rose gold/bronze | gold |
+| 核心产品 | 角色手持物 | 根据行业推断 |
+| 装饰元素 | 背景点缀 | 查阅 `reference/ELEMENTS.md` |
 
 ---
 
-### 核心Logo主视觉（占画面 40-45%）
+### 第二步：组装提示词
+
+按以下结构生成完整提示词：
+
+#### 2.1 开场定调
+
+```
+A modern Chinese Zen aesthetic brand visual identity system displayed in a sophisticated bento grid layout on soft moon-white (#F0F0E8) background with [主色] accents. Professional brand showcase with [行业特质].
+```
+
+**行业特质映射**：
+- 咖啡/茶饮 → natural woodland elegance
+- 烘焙 → warm craftsmanship spirit
+- 酒吧 → mysterious nocturnal elegance
+- 零食 → refined elegance
+- 面馆 → storytelling elements
+
+#### 2.2 核心Logo（占 40-45%）
 
 ```
 [Center dominant logo, largest element]
 
-Graceful watercolor ink-wash portrait of an anthropomorphic [角色/动物].
+Graceful watercolor ink-wash portrait of an anthropomorphic [角色].
 
 The [角色] has soft, contemplative eyes looking [视线方向] with a [情绪] expression, [角色特征描述].
 
@@ -42,185 +67,100 @@ Surrounded by generous negative space with asymmetric ink-brushed [装饰元素]
 
 Elegant Chinese calligraphy "[品牌中文名]" at [位置] in refined [金属色] foil with subtle embossing, soft metallic sheen, gentle dimensional quality.
 
-Below in [文字样式] "[品牌口号/英文名]" in matching gentle [金属色] treatment.
+Below in [文字样式] "[品牌口号]" in matching gentle [金属色] treatment.
 
 Watercolor texture, soft edges, breathing space composition, wabi-sabi aesthetic, refined balance.
 ```
 
-**参数说明**：
-- 视线方向：slightly downward / to the side / gently at viewer
-- 情绪：serene / peaceful / wise / gentle / mysterious / alluring
-- 姿态：relaxed / refined / careful / mysterious
-- 位置：top center / top right corner / flowing vertically
-- 金属色：gold (#C9A961) / rose gold (#B76E79) / antique bronze (#8B6914)
-
----
-
-### 必备三件套（各占 8-10%）
+#### 2.3 必备三件套（各占 8-10%）
 
 ```
 [Top right position]
 Minimalist business card with watercolor [角色] icon and vast negative space on cream paper, subtle [主色] edge painting, [特殊材质]
 
 [Middle right position]
-Ceramic/Crystal [杯具] with [纹理] pattern and subtle [角色] silhouette in [金属色] line art, natural [光线] with [产品特征]
+Ceramic [杯具] with [纹理] pattern and subtle [角色] silhouette in [金属色] line art, natural [光线] with [产品特征]
 
 [Bottom right position]
 Mobile app icon with soft rounded [角色] [部位] in [主色] circle, modern minimal digital design
 ```
 
----
+#### 2.4 功能周边（3个，各占 6-8%）
 
-### 功能延展周边（3-4个，各占 6-8%）
+根据行业选择模板，详见 `reference/ELEMENTS.md` 中的行业周边模板。
 
-根据行业类型选择对应周边模块。详见参考文件 `REFERENCE-ELEMENTS.md`。
-
-#### 通用模板结构
-
-```
-[Top left position]
-[外带包装/包装设计] with [角色] and [装饰元素] pattern, [材质] with [主色] printing
-
-[Middle left position, larger]
-[核心器具/礼盒套装] in [容器材质]: [器具组合], arranged with [主色] fabric lining, artisan presentation
-
-[Center bottom position]
-[产品存储/收纳系列]: [容器类型] with [主色] finish, wax seal stamps featuring [角色元素], different [品类] labeled with calligraphy
-```
-
-**行业分类**：
-- ☕ 咖啡/茶饮：茶具礼盒、杯套、储茶罐
-- 🍞 烘焙/甜品：面包袋、木质砧板、早餐礼盒
-- 🍷 酒类/酒吧：杯垫套装、调酒礼盒、酒瓶系列
-- 🥜 零食/坚果：牛皮纸袋、竹木礼盒、储物罐
-- 🍜 面馆/中式正餐：外卖盒、餐具套装、调味罐
-
----
-
-### 惊喜创意周边（2-3个，各占 5-8%）
+#### 2.5 创意周边（2-3个，各占 5-8%）
 
 ```
 [Bottom left position]
 Collection of [主题]-themed merchandise:
-- [周边1: 徽章/胸针]
-- [周边2: 工具/实用配件]  
-- [周边3: 包装/场景插画]
-- [周边4: 摆件/装饰品]
+- [徽章/胸针]
+- [工具/配件]
+- [场景插画]
 arranged on natural [材质] with [自然装饰] accents
 
 [Lower right position]
-[高端产品套装]: Ceramic/Crystal [核心产品] set with [特殊工艺] glaze and [金属色] rim accent, museum-quality craftsmanship
+Premium [产品套装]: Ceramic/Crystal [核心产品] set with [特殊工艺] glaze and [金属色] rim accent, museum-quality craftsmanship
 
 [Small corner position]
-Seasonal [产品/会员卡] with watercolor illustrations of four seasons, each featuring [角色] in different landscape, [金属色] foil headers
+Seasonal [会员卡] with watercolor illustrations of four seasons, each featuring [角色] in different landscape, [金属色] foil headers
 ```
 
----
-
-### 设计系统统一性
+#### 2.6 设计系统统一声明
 
 ```
 All elements feature consistent refined [金属色] foil treatment with subtle dimensional quality.
 
 Harmonious palette: moon-white (#F0F0E8), [主色+色值], [辅助色+色值], soft-sheen [金属色], charcoal ink (#3A3A3A).
 
-Consistent [纹理风格] throughout, asymmetric Zen composition with 32-35% negative space breathing room, natural [材质] textures with watercolor ink-wash effects.
+Consistent [纹理] throughout, asymmetric Zen composition with 33% negative space breathing room, natural material textures with watercolor ink-wash effects.
 
 Modern Chinese [行业] aesthetic with Japanese wabi-sabi minimalism influence, celebrating [品牌价值观].
 ```
 
----
-
-### 技术参数
+#### 2.7 技术参数
 
 ```
 Bento grid layout with generous 24px gaps between elements,
-natural diffused/dramatic low-key [时间/氛围] light photography with soft [光影效果],
+natural diffused [时间/氛围] light photography with soft shadows,
 contemporary [场景] quality, professional brand showcase,
-gentle/deep shadows [18-25]% opacity,
+soft shadows 20% opacity,
 visible material textures (paper grain, [材质2], [材质3]),
-storytelling through [叙事方式],
+storytelling through artisan craftsmanship,
 cohesive [美学特质] harmony,
-8k resolution --ar 16:9 --stylize [240-250] --v 6.0
+8k resolution --ar 16:9 --stylize 245 --v 6.0
 ```
 
 ---
 
-## 快速配置表
+### 第三步：质量验证
 
-```
-┌─────────────────────────────────────────────┐
-│ 新中式禅意VI系统 - 品牌配置单              │
-├─────────────────────────────────────────────┤
-│ 品牌中文名: [          ]                    │
-│ 品牌英文名: [          ]                    │
-│ 品牌口号:   [          ]                    │
-│ 行业类型:   [咖啡/茶饮/烘焙/酒类/零食/面馆] │
-│ 核心角色:   [          ] (动物/人物)        │
-│ 角色情绪:   [          ]                    │
-│ 主色调:     [          ] + 色值 #           │
-│ 辅助色:     [          ] + 色值 #           │
-│ 金属色:     [gold/rose gold/bronze]         │
-│ 核心产品:   [          ]                    │
-│ 装饰元素:   [          ]                    │
-│ 文化纹理:   [          ]                    │
-└─────────────────────────────────────────────┘
-```
+生成前检查：
 
----
-
-## 设计原则检查清单
-
-生成前请确认：
-
-- [ ] 角色符合品牌调性（活泼/沉稳/智慧/神秘等）
-- [ ] 主色与行业匹配（茶=绿，咖啡=褐/蓝，烘焙=褐/金，酒吧=酒红/墨黑）
+- [ ] 留白比例 ≥ 32%（禅意核心）
+- [ ] 主色与行业匹配（参考色彩系统）
+- [ ] 角色情绪符合品牌调性
+- [ ] 烫金描述词：refined / subtle / gentle（非 bold / dramatic）
 - [ ] 装饰元素与产品相关
-- [ ] 口号有文化深度且易记
-- [ ] 整体留白比例 32-35%（禅意核心）
 - [ ] 避免过度对称（保持自然不做作）
-- [ ] 烫金效果克制优雅（subtle, gentle, refined）
-- [ ] 周边匹配行业特性
-
----
-
-## 烫金效果描述规范
-
-**推荐用法**：
-```
-refined [gold/rose gold/antique bronze] foil with subtle embossing,
-soft metallic sheen, gentle dimensional quality
-```
-
-**避免用法**：
-- ❌ Ultra-prominent 3D embossed
-- ❌ Dramatic depth
-- ❌ Bold confident strokes
-
----
-
-## 布局比例参考
-
-- 中心Logo: 40-45%（视觉焦点）
-- 必备三件套: 各 8-10%
-- 功能周边: 各 6-8%
-- 惊喜周边: 各 5-8%
-- 留白空间: 32-35%（呼吸感）
-- 格子间距: 最少 24px
 
 ---
 
 ## 参考资源
 
-详细的参数选择库请查阅：
+按需查阅：
 
-- `REFERENCE-PROFILES.md` - 角色/动物库、情绪描述库
-- `REFERENCE-COLORS.md` - 色彩系统库
-- `REFERENCE-ELEMENTS.md` - 装饰元素库、文化纹理库、品牌口号库、行业周边模板
+| 文件 | 内容 |
+|------|------|
+| `reference/PROFILES.md` | 角色/动物库、情绪描述词 |
+| `reference/COLORS.md` | 主色/辅助色/金属色系统、行业配色推荐 |
+| `reference/ELEMENTS.md` | 装饰元素、文化纹理、品牌口号库、行业周边模板 |
 
-## 输出规格
+---
 
-执行此 Skill 后，将生成一段可直接用于 AI 文生图的完整提示词。以下是一个咖啡品牌的完整示例：
+## 完整示例
+
+咖啡品牌「瑞幸」的完整输出：
 
 ```
 A modern Chinese Zen aesthetic brand visual identity system displayed in a sophisticated bento grid layout on soft moon-white (#F0F0E8) background with smoke blue (#8FA3AD) accents. Professional brand showcase with natural woodland elegance.
@@ -265,7 +205,6 @@ Collection of forest-themed merchandise:
 - Pine needle bookmark
 - Coffee cherry pattern coaster
 - Deer figurine
-
 arranged on natural wood with forest accents
 
 [Lower right position]
