@@ -11,24 +11,17 @@
             "id": "0480423e6a17e639",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "14 Prompts/虫眼视角（底视仰拍）照片.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
+                "file": "02 Map/唐朝历代皇帝.canvas",
+                "viewState": {
+                  "x": 1032.4871339853075,
+                  "y": 1127.3826258110669,
+                  "zoom": -1.4961588541666666
                 }
               },
-              "icon": "lucide-file",
-              "title": "虫眼视角（底视仰拍）照片"
+              "icon": "lucide-layout-dashboard",
+              "title": "唐朝历代皇帝"
             }
           }
         ]
@@ -185,13 +178,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "14 Prompts/虫眼视角（底视仰拍）照片.md",
+                "file": "02 Map/唐朝历代皇帝.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "虫眼视角（底视仰拍）照片 的大纲"
+              "title": "唐朝历代皇帝 的大纲"
             }
           }
         ]
@@ -216,12 +209,22 @@
   },
   "active": "0480423e6a17e639",
   "lastOpenFiles": [
+    "00 Inbox/未命名.md",
+    "13 Skills/managing-local-cloudnms/scripts/02_install.sh",
+    "02 Map/唐朝历代皇帝.canvas",
+    "13 Skills/managing-local-cloudnms/scripts/03_install.sh",
+    "13 Skills/managing-local-cloudnms/scripts/02_upload.sh",
+    "13 Skills/managing-local-cloudnms/scripts/01_uninstall.sh",
+    "13 Skills/managing-local-cloudnms/scripts/03_init_db.sh",
+    "13 Skills/managing-local-cloudnms/scripts/01_upload.sh",
+    "13 Skills/managing-local-cloudnms/scripts/common.sh",
+    "03 Source/Claude Code/Agent Skills 终极指南：入门、精通、预测.md",
+    "02 Map/generate_tang_canvas.py",
+    "14 Prompts/虫眼视角（底视仰拍）照片.md",
     "14 Prompts/像素级角色拆解.md",
     "14 Prompts/四格拼接构图的超写实写真.md",
     "14 Prompts/将照片转换为复古拍立得即时照片.md",
     "14 Prompts/将角色插画转换为高品质手办产品.md",
-    "14 Prompts/虫眼视角（底视仰拍）照片.md",
-    "03 Source/Claude Code/Agent Skills 终极指南：入门、精通、预测.md",
     "01 Base/Agent Skills.base",
     "00 Inbox/Pasted image 20260106173516.png.md",
     "01 Base/Nano Banana Prompts.base",
@@ -232,14 +235,9 @@
     "10 Attachment/Gemini_Generated_Image_ydmmk4ydmmk4ydmm.png",
     "10 Attachment/Gemini_Generated_Image_megkwgmegkwgmegk.png",
     "10 Attachment/fb9c0c7a87ef6a758fce229774872b4a_MD5.png",
-    "00 Inbox/未命名.base",
     "13 Skills/chinese-zen-brand-vi/REFERENCE-COLORS.md",
     "10 Attachment/Pasted image 20260108164110.png",
     "13 Skills/managing-local-cloudnms/SKILL.md",
-    "13 Skills/managing-local-cloudnms/scripts/deploy_cloudnms.sh",
-    "13 Skills/managing-local-cloudnms/scripts",
-    "13 Skills/managing-local-cloudnms/deploy_cloudnms.sh",
-    "13 Skills/managing-local-cloudnms",
     "10 Attachment/160a66847b34e7aa1ff072587d21fa49_MD5.svg",
     "10 Attachment/1defdac5e966ae8edeea20f27991e002_MD5.svg",
     "03 Source/Veo3/A Googler explains how to “meta prompt” for incredible Veo videos.md",
@@ -249,17 +247,13 @@
     "03 Source/Zzz/Doing well in your courses.md",
     "02 Map/Netconf 连接过程.excalidraw.md",
     "AGENTS.md",
-    "01 Base/Collection.base",
     "13 Skills/obsidian-canvas/SKILL.md",
-    "13 Skills/obsidian-canvas",
-    "13 Skills/obsidian-cavas",
     "13 Skills/obsidian-bases/SKILL.md",
     "06 Note/Netconf 连接过程.md",
     "13 Skills/generating-poetry-clay-papercraft-prompts/SKILL.md",
     "02 Map/Drawing 2026-01-06 18.12.46.excalidraw.md",
     "03 Source/Design/A designer’s path from influence to identity.md",
     "03 Source/Investment/一家投资 OpenAI 的硅谷基金的深度研究.md",
-    "03 Source/DeepResearch/Nano Banana Pro 最佳实践 - ChatGPT.md",
-    "03 Source/DeepResearch/Nano Banana Pro 最佳实践 - Gemini.md"
+    "03 Source/DeepResearch/Nano Banana Pro 最佳实践 - ChatGPT.md"
   ]
 }

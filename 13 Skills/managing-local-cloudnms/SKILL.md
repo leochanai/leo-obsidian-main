@@ -7,42 +7,68 @@ description: 管理本地 Cloud NMS 服务器的完整部署流程，包括卸�
 
 自动化管理本地 Cloud NMS 开发环境的部署、升级和维护。
 
+## 脚本架构
+
+```
+scripts/
+├── common.sh            # 公共配置和工具函数
+├── 01_uninstall.sh      # 步骤1: 卸载服务
+├── 02_upload.sh         # 步骤2: 上传安装包
+├── 03_install.sh        # 步骤3: 安装服务 (含数据库初始化)
+└── deploy_cloudnms.sh   # 主脚本（调度器）
+```
+
 ## 使用方法
 
-### 交互式模式（推荐新手）
+### 单步执行（推荐调试）
 
-直接运行脚本，通过菜单选择操作：
+每个脚本都包含校验功能，可独立运行：
 
 ```bash
+cd scripts/
+
+# 步骤 1: 卸载服务
+./01_uninstall.sh          # 交互式卸载
+./01_uninstall.sh --check  # 仅检查状态，不卸载
+
+# 步骤 2: 上传安装包
+./02_upload.sh 1.1.0.6          # 上传（跳过已存在）
+./02_upload.sh 1.1.0.6 --check  # 仅检查，不上传
+./02_upload.sh 1.1.0.6 --force  # 强制重新上传
+
+# 步骤 3: 安装服务
+./03_install.sh 1.1.0.6 fresh   # 全新安装 (含数据库初始化)
+./03_install.sh 1.1.0.6 lite    # 保留数据升级
+./03_install.sh 1.1.0.6 --check # 仅检查安装条件
+```
+
+### 校验逻辑
+
+| 脚本 | 校验项 |
+|------|--------|
+| `01_uninstall.sh` | 检查 `/usr/local/cloud_nms/service` 目录、`~/CloudNMS*.zip` 文件 |
+| `02_upload.sh` | 检查本地和服务器上的 `~/CloudNMSDummyBusiness_{version}.zip` |
+| `03_install.sh` | 检查 `/usr/local/cloud_nms/service` 目录、安装包、许可证 |
+
+### 完整流程
+
+使用主脚本一键完成所有步骤：
+
+```bash
+# 交互式模式（菜单选择）
 ./scripts/deploy_cloudnms.sh
+
+# 命令行模式
+./scripts/deploy_cloudnms.sh 1.1.0.6 fresh  # 上传 + 全新安装
+./scripts/deploy_cloudnms.sh 1.1.0.6 lite   # 上传 + 保留数据升级
 ```
 
-**版本号必填**：每次安装时都会要求输入版本号（如 `1.1.0.6`），不能为空。
+## 安装模式说明
 
-### 命令行模式（推荐自动化）
-
-直接传参快速执行：
-
-```bash
-# 语法
-./scripts/deploy_cloudnms.sh <version> <mode>
-
-# 示例
-./scripts/deploy_cloudnms.sh 1.1.0.6 fresh    # 全新安装（清空数据）
-./scripts/deploy_cloudnms.sh 1.1.0.6 lite     # 保留数据安装
-```
-
-**安装模式说明**：
-- `fresh` - 全新安装（清空所有数据，初始化数据库）
-- `lite` - 保留数据安装（仅升级服务，保留数据）
-
-**主要功能**：
-1. **卸载现有版本** - 清理旧服务和文件
-2. **上传安装包** - 从本地构建目录上传
-3. **全新安装** - 清空数据，安装新版本，初始化数据库
-4. **保留数据安装** - 升级服务，保留现有数据
-5. **验证部署** - 检查服务状态和日志
-6. **实时日志** - 查看服务运行日志
+| 模式 | 说明 | 包含步骤 |
+|------|------|----------|
+| `fresh` | 全新安装 | 解压、安装、启动、数据库初始化 |
+| `lite` | 保留数据升级 | 解压、升级安装、启动 |
 
 ## 环境配置
 
@@ -52,7 +78,7 @@ description: 管理本地 Cloud NMS 服务器的完整部署流程，包括卸�
 | SSH 用户 | cloud_nms / Genew1234 |
 | 数据库密码 | 1Z_kF8s2mHcTnQHC |
 | 本地构建路径 | `/Users/farghost/IdeaProjects/HuahaiPlatform2/output` |
-| Web 访问地址 | `http://192.168.0.98/platform` |
+| Web 访问地址 | `https://192.168.0.98:31943` |
 
 ## 前置要求
 
@@ -61,14 +87,28 @@ description: 管理本地 Cloud NMS 服务器的完整部署流程，包括卸�
 brew install sshpass
 ```
 
-## 工作流程
+## 故障排除
 
-脚本会按以下步骤执行：
+### 数据库初始化失败 (mysql: command not found)
 
-1. **上传** - 将 `CloudNMSPlatform_{version}.zip` 和 `CloudNMSDummyBusiness_{version}.zip` 上传到服务器
-2. **安装** - 解压、配置环境变量、执行安装脚本
-3. **初始化**（全新安装）- 重置数据库用户和测试账户
-4. **验证** - 检查进程、日志和 Web 访问
+`03_install.sh` 会自动尝试多个 MySQL 路径：
+1. `/usr/local/cloud_nms/env/mysql/bin/mysql`
+2. `/usr/bin/mysql`
+3. `mysql`
+
+若全部失败，会上传 SQL 文件并生成手动执行指南：
+```bash
+ssh cloud_nms@192.168.0.98
+/usr/local/cloud_nms/env/mysql/bin/mysql -u cloud_nms -p'1Z_kF8s2mHcTnQHC' cloud_nms < /tmp/init_cloudnms_users.sql
+```
+
+### Web 访问失败
+
+检查 nginx 服务：
+```bash
+ssh cloud_nms@192.168.0.98 "sudo systemctl status nginx"
+ssh cloud_nms@192.168.0.98 "sudo systemctl start nginx"
+```
 
 ## 注意事项
 

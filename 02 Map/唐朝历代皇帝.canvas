@@ -1,0 +1,414 @@
+{
+  "nodes": [
+    {
+      "id": "672bc8e2f6fc48c2",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 200,
+      "text": "### 唐高祖 李渊\n\n**在位**: 618-626\n\n唐朝开国皇帝，大唐奠基人。太原起兵反隋，定都长安。",
+      "color": "1"
+    },
+    {
+      "id": "c6b684bdbd8c4c52",
+      "type": "text",
+      "x": 0,
+      "y": 250,
+      "width": 320,
+      "height": 200,
+      "text": "### 唐太宗 李世民\n\n**在位**: 626-649\n\n贞观之治，天可汗。玄武门之变。",
+      "color": "1"
+    },
+    {
+      "id": "6096b45feedf4712",
+      "type": "text",
+      "x": 0,
+      "y": 500,
+      "width": 320,
+      "height": 200,
+      "text": "### 唐高宗 李治\n\n**在位**: 649-683\n\n永徽之治，版图最大。废王立武。",
+      "color": "1"
+    },
+    {
+      "id": "f42b8bcda2344090",
+      "type": "text",
+      "x": 350,
+      "y": 750,
+      "width": 320,
+      "height": 200,
+      "text": "### 武周圣神皇帝 武则天\n\n**在位**: 690-705\n\n中国唯一正统女皇帝。改国号为周。提拔科举，打击门阀。",
+      "color": "2"
+    },
+    {
+      "id": "d25de0ce251b47c4",
+      "type": "text",
+      "x": -250,
+      "y": 875.0,
+      "width": 320,
+      "height": 200,
+      "text": "### 唐中宗 李显\n\n**在位**: 683-684, 705-710\n\n两度在位。神龙政变复辟。被韦后毒杀（疑）。",
+      "color": "3"
+    },
+    {
+      "id": "85db6ccdaec04b51",
+      "type": "text",
+      "x": 250,
+      "y": 875.0,
+      "width": 320,
+      "height": 200,
+      "text": "### 唐睿宗 李旦\n\n**在位**: 684-690, 710-712\n\n两度在位，三让天下。",
+      "color": "3"
+    },
+    {
+      "id": "1fdf1771d5bd4aae",
+      "type": "text",
+      "x": 250,
+      "y": 1125.0,
+      "width": 320,
+      "height": 200,
+      "text": "### 唐玄宗 李隆基\n\n**在位**: 712-756\n\n开元盛世。安史之乱爆发，唐朝由盛转衰。",
+      "color": "3"
+    },
+    {
+      "id": "ef5dda5cd07d4e6a",
+      "type": "text",
+      "x": 250,
+      "y": 1375.0,
+      "width": 320,
+      "height": 200,
+      "text": "### 唐肃宗 李亨\n\n**在位**: 756-762\n\n灵武即位，平定安史之乱。",
+      "color": "4"
+    },
+    {
+      "id": "755bbf45bd464978",
+      "type": "text",
+      "x": 250,
+      "y": 1625.0,
+      "width": 320,
+      "height": 200,
+      "text": "### 唐代宗 李豫\n\n**在位**: 762-779\n\n收复两京，平定安史之乱。吐蕃攻陷长安。",
+      "color": "4"
+    },
+    {
+      "id": "659d354b47634b8a",
+      "type": "text",
+      "x": 250,
+      "y": 1875.0,
+      "width": 320,
+      "height": 200,
+      "text": "### 唐德宗 李适\n\n**在位**: 779-805\n\n两税法，削藩失败，泾原兵变。",
+      "color": "4"
+    },
+    {
+      "id": "0c9bc3475a8949c1",
+      "type": "text",
+      "x": 250,
+      "y": 2125.0,
+      "width": 320,
+      "height": 200,
+      "text": "### 唐顺宗 李诵\n\n**在位**: 805\n\n永贞革新，在位仅不到一年。",
+      "color": "4"
+    },
+    {
+      "id": "b6a65b19eef04fb7",
+      "type": "text",
+      "x": 250,
+      "y": 2375.0,
+      "width": 320,
+      "height": 200,
+      "text": "### 唐宪宗 李纯\n\n**在位**: 805-820\n\n元和中兴，削藩成功。",
+      "color": "4"
+    },
+    {
+      "id": "21e30ac55381461b",
+      "type": "text",
+      "x": 0,
+      "y": 2625.0,
+      "width": 320,
+      "height": 200,
+      "text": "### 唐穆宗 李恒\n\n**在位**: 820-824\n\n嬉戏无度，牛李党争始。",
+      "color": "4"
+    },
+    {
+      "id": "93eab8243210447b",
+      "type": "text",
+      "x": 500,
+      "y": 2625.0,
+      "width": 320,
+      "height": 200,
+      "text": "### 唐宣宗 李忱\n\n**在位**: 846-859\n\n小太宗，大中之治。",
+      "color": "4"
+    },
+    {
+      "id": "efb84eba5c5d4d36",
+      "type": "text",
+      "x": -250,
+      "y": 2875.0,
+      "width": 320,
+      "height": 200,
+      "text": "### 唐敬宗 李湛\n\n**在位**: 824-826\n\n沉迷击鞠，被宦官杀害。",
+      "color": "4"
+    },
+    {
+      "id": "2bb4837929134482",
+      "type": "text",
+      "x": 0,
+      "y": 2875.0,
+      "width": 320,
+      "height": 200,
+      "text": "### 唐文宗 李昂\n\n**在位**: 826-840\n\n甘露之变，受制家奴。",
+      "color": "4"
+    },
+    {
+      "id": "f0fb03f220e94d84",
+      "type": "text",
+      "x": 250,
+      "y": 2875.0,
+      "width": 320,
+      "height": 200,
+      "text": "### 唐武宗 李炎\n\n**在位**: 840-846\n\n会昌中兴，会昌灭佛。",
+      "color": "4"
+    },
+    {
+      "id": "744eb24b7a0b4963",
+      "type": "text",
+      "x": 500,
+      "y": 2875.0,
+      "width": 320,
+      "height": 200,
+      "text": "### 唐懿宗 李漼\n\n**在位**: 859-873\n\n骄奢淫逸，庞勋起义。",
+      "color": "5"
+    },
+    {
+      "id": "44e1cad03b3f44e3",
+      "type": "text",
+      "x": 350,
+      "y": 3125.0,
+      "width": 320,
+      "height": 200,
+      "text": "### 唐僖宗 李儇\n\n**在位**: 873-888\n\n黄巢起义，唐朝名存实亡。",
+      "color": "5"
+    },
+    {
+      "id": "76ac7115e5d14572",
+      "type": "text",
+      "x": 650,
+      "y": 3125.0,
+      "width": 320,
+      "height": 200,
+      "text": "### 唐昭宗 李晔\n\n**在位**: 888-904\n\n有志中兴，无力回天。被朱温弑杀。",
+      "color": "5"
+    },
+    {
+      "id": "83eac183f11c4eff",
+      "type": "text",
+      "x": 650,
+      "y": 3375.0,
+      "width": 320,
+      "height": 200,
+      "text": "### 唐哀帝 李柷\n\n**在位**: 904-907\n\n傀儡皇帝，禅位朱温，唐亡。",
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "4b785c9832494400",
+      "fromNode": "672bc8e2f6fc48c2",
+      "fromSide": "bottom",
+      "toNode": "c6b684bdbd8c4c52",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": ""
+    },
+    {
+      "id": "d10b116af57f4c89",
+      "fromNode": "c6b684bdbd8c4c52",
+      "fromSide": "bottom",
+      "toNode": "6096b45feedf4712",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": ""
+    },
+    {
+      "id": "07d02237dfbe4d24",
+      "fromNode": "6096b45feedf4712",
+      "fromSide": "bottom",
+      "toNode": "f42b8bcda2344090",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "皇后"
+    },
+    {
+      "id": "a824a8ab3ad74ec9",
+      "fromNode": "6096b45feedf4712",
+      "fromSide": "bottom",
+      "toNode": "d25de0ce251b47c4",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": ""
+    },
+    {
+      "id": "81416aa1be7443f6",
+      "fromNode": "6096b45feedf4712",
+      "fromSide": "bottom",
+      "toNode": "85db6ccdaec04b51",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": ""
+    },
+    {
+      "id": "db7fe5cfd6ca44fe",
+      "fromNode": "85db6ccdaec04b51",
+      "fromSide": "bottom",
+      "toNode": "1fdf1771d5bd4aae",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": ""
+    },
+    {
+      "id": "9349610e8a2146c2",
+      "fromNode": "1fdf1771d5bd4aae",
+      "fromSide": "bottom",
+      "toNode": "ef5dda5cd07d4e6a",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": ""
+    },
+    {
+      "id": "1a09e603d4164c3d",
+      "fromNode": "ef5dda5cd07d4e6a",
+      "fromSide": "bottom",
+      "toNode": "755bbf45bd464978",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": ""
+    },
+    {
+      "id": "e9c10f72413d4bf0",
+      "fromNode": "755bbf45bd464978",
+      "fromSide": "bottom",
+      "toNode": "659d354b47634b8a",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": ""
+    },
+    {
+      "id": "73658f82f1984ea7",
+      "fromNode": "659d354b47634b8a",
+      "fromSide": "bottom",
+      "toNode": "0c9bc3475a8949c1",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": ""
+    },
+    {
+      "id": "98b91064c6d14ead",
+      "fromNode": "0c9bc3475a8949c1",
+      "fromSide": "bottom",
+      "toNode": "b6a65b19eef04fb7",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": ""
+    },
+    {
+      "id": "14df008f29d041cf",
+      "fromNode": "b6a65b19eef04fb7",
+      "fromSide": "bottom",
+      "toNode": "21e30ac55381461b",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": ""
+    },
+    {
+      "id": "6a34a76734be4009",
+      "fromNode": "b6a65b19eef04fb7",
+      "fromSide": "bottom",
+      "toNode": "93eab8243210447b",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": ""
+    },
+    {
+      "id": "be0b59652aa14ead",
+      "fromNode": "21e30ac55381461b",
+      "fromSide": "bottom",
+      "toNode": "efb84eba5c5d4d36",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": ""
+    },
+    {
+      "id": "8965193122c74d8f",
+      "fromNode": "21e30ac55381461b",
+      "fromSide": "bottom",
+      "toNode": "2bb4837929134482",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": ""
+    },
+    {
+      "id": "6ab6e91624e04c41",
+      "fromNode": "21e30ac55381461b",
+      "fromSide": "bottom",
+      "toNode": "f0fb03f220e94d84",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": ""
+    },
+    {
+      "id": "2229195a6f6a4ab3",
+      "fromNode": "93eab8243210447b",
+      "fromSide": "bottom",
+      "toNode": "744eb24b7a0b4963",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": ""
+    },
+    {
+      "id": "6c9680101ae04e6b",
+      "fromNode": "744eb24b7a0b4963",
+      "fromSide": "bottom",
+      "toNode": "44e1cad03b3f44e3",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": ""
+    },
+    {
+      "id": "f2af0d81c7044630",
+      "fromNode": "744eb24b7a0b4963",
+      "fromSide": "bottom",
+      "toNode": "76ac7115e5d14572",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": ""
+    },
+    {
+      "id": "a97bf2bcf4a844e8",
+      "fromNode": "76ac7115e5d14572",
+      "fromSide": "bottom",
+      "toNode": "83eac183f11c4eff",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": ""
+    },
+    {
+      "id": "fc88beae80684f01",
+      "fromNode": "f42b8bcda2344090",
+      "fromSide": "bottom",
+      "toNode": "d25de0ce251b47c4",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "复辟"
+    },
+    {
+      "id": "73e4eee37e124cc1",
+      "fromNode": "f42b8bcda2344090",
+      "fromSide": "bottom",
+      "toNode": "85db6ccdaec04b51",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "复辟"
+    }
+  ]
+}
