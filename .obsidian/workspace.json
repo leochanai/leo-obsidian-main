@@ -4,24 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "e26844897682b509",
+        "id": "21e19051d5cf7db2",
         "type": "tabs",
         "children": [
           {
-            "id": "0480423e6a17e639",
+            "id": "15fdebd09a9a94a4",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "02 Map/唐朝历代皇帝.canvas",
-                "viewState": {
-                  "x": 1032.4871339853075,
-                  "y": 1127.3826258110669,
-                  "zoom": -1.4961588541666666
+                "file": "14 Prompts/数字手绘草图.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
                 }
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "唐朝历代皇帝"
+              "icon": "lucide-file",
+              "title": "数字手绘草图"
             }
           }
         ]
@@ -178,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 Map/唐朝历代皇帝.canvas",
+                "file": "14 Prompts/数字手绘草图.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "唐朝历代皇帝 的大纲"
+              "title": "数字手绘草图 的大纲"
             }
           }
         ]
@@ -203,16 +210,25 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "claudian:Open Claudian": false,
       "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "0480423e6a17e639",
+  "active": "15fdebd09a9a94a4",
   "lastOpenFiles": [
+    "10 Attachment/03d4cc0066ab8307199381a60ad40d07_MD5.jpg",
+    "14 Prompts/数字手绘草图.md",
+    "01 Base/Nano Banana Prompts.base",
+    "10 Attachment/Gemini_Generated_Image_6pfiiw6pfiiw6pfi.png",
+    "14 Prompts/虫眼视角（底视仰拍）照片.md",
+    "01 Base/Agent Skills.base",
+    "AGENTS.md",
+    "01 Base/Obsidian.base",
+    "01 Base/Invenstment.base",
+    "01 Base/Collection.base",
+    "02 Map/唐朝历代皇帝.canvas",
     "13 Skills/obsidian-markdown/SKILL.md",
     "13 Skills/obsidian-markdown",
     "00 Inbox/未命名.md",
-    "02 Map/唐朝历代皇帝.canvas",
     "13 Skills/~",
     "13 Skills/chinese-zen-brand-vi/reference/PROFILES.md",
     "13 Skills/chinese-zen-brand-vi/reference/ELEMENTS.md",
@@ -220,13 +236,7 @@
     "13 Skills/chinese-zen-brand-vi/reference",
     "13 Skills/managing-local-cloudnms/scripts/02_install.sh",
     "13 Skills/managing-local-cloudnms/scripts/03_install.sh",
-    "13 Skills/managing-local-cloudnms/scripts/02_upload.sh",
-    "13 Skills/managing-local-cloudnms/scripts/01_uninstall.sh",
-    "13 Skills/managing-local-cloudnms/scripts/03_init_db.sh",
-    "13 Skills/managing-local-cloudnms/scripts/01_upload.sh",
-    "13 Skills/managing-local-cloudnms/scripts/common.sh",
     "03 Source/Claude Code/Agent Skills 终极指南：入门、精通、预测.md",
-    "14 Prompts/虫眼视角（底视仰拍）照片.md",
     "14 Prompts/像素级角色拆解.md",
     "14 Prompts/四格拼接构图的超写实写真.md",
     "14 Prompts/将照片转换为复古拍立得即时照片.md",
@@ -242,19 +252,14 @@
     "13 Skills/chinese-zen-brand-vi/REFERENCE-COLORS.md",
     "10 Attachment/Pasted image 20260108164110.png",
     "13 Skills/managing-local-cloudnms/SKILL.md",
-    "10 Attachment/160a66847b34e7aa1ff072587d21fa49_MD5.svg",
-    "10 Attachment/1defdac5e966ae8edeea20f27991e002_MD5.svg",
     "03 Source/Veo3/A Googler explains how to “meta prompt” for incredible Veo videos.md",
     "03 Source/Podwise/Vol_001_中国奇谭_之_小满_团队_带你揭秘剪纸动画.md",
     "03 Source/Podwise/128_Manus决定出售前最后的访谈_啊_这奇幻的2025年漂流啊.md",
     "03 Source/Vibe Coding/Anthropic 工程师都在用的 AI 编程秘技！让 AI \"采访\"你做出完美应用.md",
     "03 Source/Zzz/Doing well in your courses.md",
     "02 Map/Netconf 连接过程.excalidraw.md",
-    "AGENTS.md",
     "13 Skills/obsidian-canvas/SKILL.md",
     "13 Skills/obsidian-bases/SKILL.md",
-    "06 Note/Netconf 连接过程.md",
-    "13 Skills/generating-poetry-clay-papercraft-prompts/SKILL.md",
-    "02 Map/Drawing 2026-01-06 18.12.46.excalidraw.md"
+    "06 Note/Netconf 连接过程.md"
   ]
 }
