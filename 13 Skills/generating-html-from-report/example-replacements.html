@@ -1,0 +1,79 @@
+<!-- 
+  这是一个示例文件，展示如何替换占位符
+  完整 HTML 见 template.html
+-->
+
+<!-- 1. 基础信息替换示例 -->
+{{DATE}} → 2026-01-12
+{{MARKET_SUMMARY}} → 沪指17连阳创历史 成交额3.6万亿创新高
+
+<!-- 2. 指数卡片示例 -->
+{{INDEX_CARDS}} →
+
+<div class="index-card">
+    <div class="index-name">上证指数</div>
+    <div class="index-trend">
+        <span class="trend-label">17 连阳</span>
+        <span class="trend-badge">历史性纪录</span>
+    </div>
+    <div class="index-change rise">
+        <span class="change-value">+1.09%</span>
+    </div>
+    <div class="index-note">历史性连涨纪录</div>
+</div>
+
+<!-- 3. 统计卡片示例 -->
+{{STAT_CARDS}} →
+
+<div class="stat-card">
+    <span class="stat-label">上涨家数</span>
+    <span class="stat-value text-rise">4100+</span>
+</div>
+
+<div class="stat-card">
+    <span class="stat-label">涨停家数</span>
+    <span class="stat-value highlight">201 只</span>
+    <span class="stat-change">含一字板约 50 只</span>
+</div>
+
+<!-- 4. 连板龙头示例 -->
+{{LEADER_CARDS}} →
+
+<div class="leader-card limit-up">
+    <div class="leader-header">
+        <div class="leader-name">锋龙股份</div>
+        <div class="board-badge">12 连板</div>
+    </div>
+    <div class="leader-sector">低空经济</div>
+    <div class="leader-logic">空中的士核心标的</div>
+</div>
+
+<!-- 5. 策略卡片示例 -->
+{{STRATEGY_CARDS}} →
+
+<div class="strategy-card aggressive">
+    <div class="strategy-label">激进策略</div>
+    <div class="strategy-content">
+        <ul>
+            <li>关注 AI 应用端低位补涨标的</li>
+        </ul>
+    </div>
+</div>
+
+<div class="strategy-card balanced">
+    <div class="strategy-label">稳健策略</div>
+    <div class="strategy-content">
+        <ul>
+            <li>逢低布局 AI 应用 ETF</li>
+        </ul>
+    </div>
+</div>
+
+<div class="strategy-card defensive">
+    <div class="strategy-label">防守策略</div>
+    <div class="strategy-content">
+        <ul>
+            <li>控制仓位，避免追高</li>
+        </ul>
+    </div>
+</div>

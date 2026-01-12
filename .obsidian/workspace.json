@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "14 Prompts/数字手绘草图.md",
+                "file": "15 Reports/2026-01-12 A股复盘.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "数字手绘草图"
+              "title": "2026-01-12 A股复盘"
             }
           }
         ]
@@ -185,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "14 Prompts/数字手绘草图.md",
+                "file": "15 Reports/2026-01-12 A股复盘.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "数字手绘草图 的大纲"
+              "title": "2026-01-12 A股复盘 的大纲"
             }
           }
         ]
@@ -215,27 +215,34 @@
   },
   "active": "15fdebd09a9a94a4",
   "lastOpenFiles": [
-    "10 Attachment/03d4cc0066ab8307199381a60ad40d07_MD5.jpg",
+    "13 Skills/generating-html-from-report/2026-01-12-复盘.html",
+    "13 Skills/generating-html-from-report/generate_report.py",
+    "13 Skills/generating-html-from-report/example-replacements.html",
+    "13 Skills/generating-html-from-report/README.md",
+    "13 Skills/generating-html-from-report/template.html",
+    "13 Skills/generating-html-from-report/SKILL.md",
+    "13 Skills/generating-html-from-report",
+    "13 Skills/generating-html-from-content/SKILL.md",
+    "15 Reports/2026-01-12 A股复盘.html",
+    "15 Reports/2026-01-12 A股复盘.md",
+    "13 Skills/a-share-daily-review/SKILL.md",
+    "13 Skills/a-share-daily-review",
+    "15 Reports",
+    "13 Skills/15 Reports",
+    "13 Skills/frontend-design/SKILL.md",
     "14 Prompts/数字手绘草图.md",
+    "10 Attachment/03d4cc0066ab8307199381a60ad40d07_MD5.jpg",
     "01 Base/Nano Banana Prompts.base",
     "10 Attachment/Gemini_Generated_Image_6pfiiw6pfiiw6pfi.png",
     "14 Prompts/虫眼视角（底视仰拍）照片.md",
     "01 Base/Agent Skills.base",
     "AGENTS.md",
-    "01 Base/Obsidian.base",
-    "01 Base/Invenstment.base",
-    "01 Base/Collection.base",
     "02 Map/唐朝历代皇帝.canvas",
     "13 Skills/obsidian-markdown/SKILL.md",
-    "13 Skills/obsidian-markdown",
     "00 Inbox/未命名.md",
-    "13 Skills/~",
     "13 Skills/chinese-zen-brand-vi/reference/PROFILES.md",
     "13 Skills/chinese-zen-brand-vi/reference/ELEMENTS.md",
     "13 Skills/chinese-zen-brand-vi/reference/COLORS.md",
-    "13 Skills/chinese-zen-brand-vi/reference",
-    "13 Skills/managing-local-cloudnms/scripts/02_install.sh",
-    "13 Skills/managing-local-cloudnms/scripts/03_install.sh",
     "03 Source/Claude Code/Agent Skills 终极指南：入门、精通、预测.md",
     "14 Prompts/像素级角色拆解.md",
     "14 Prompts/四格拼接构图的超写实写真.md",
@@ -254,12 +261,6 @@
     "13 Skills/managing-local-cloudnms/SKILL.md",
     "03 Source/Veo3/A Googler explains how to “meta prompt” for incredible Veo videos.md",
     "03 Source/Podwise/Vol_001_中国奇谭_之_小满_团队_带你揭秘剪纸动画.md",
-    "03 Source/Podwise/128_Manus决定出售前最后的访谈_啊_这奇幻的2025年漂流啊.md",
-    "03 Source/Vibe Coding/Anthropic 工程师都在用的 AI 编程秘技！让 AI \"采访\"你做出完美应用.md",
-    "03 Source/Zzz/Doing well in your courses.md",
-    "02 Map/Netconf 连接过程.excalidraw.md",
-    "13 Skills/obsidian-canvas/SKILL.md",
-    "13 Skills/obsidian-bases/SKILL.md",
-    "06 Note/Netconf 连接过程.md"
+    "03 Source/Podwise/128_Manus决定出售前最后的访谈_啊_这奇幻的2025年漂流啊.md"
   ]
 }
