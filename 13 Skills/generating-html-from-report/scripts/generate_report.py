@@ -750,13 +750,6 @@ def generate_html_report(markdown_file, output_file=None, template_file=None):
     else:
         template_file = Path(template_file)
     
-    if output_file is None:
-        # 自动生成输出文件名
-        date_str = markdown_path.stem.split()[-1]  # 提取日期部分
-        output_file = script_dir / f'{date_str}-复盘.html'
-    else:
-        output_file = Path(output_file)
-    
     # 读取模板
     print(f'📖 读取模板: {template_file}')
     template = template_file.read_text(encoding='utf-8')
@@ -765,6 +758,13 @@ def generate_html_report(markdown_file, output_file=None, template_file=None):
     print(f'📝 解析报告: {markdown_path}')
     parser = ReportParser(markdown_path)
     data = parser.parse()
+    
+    if output_file is None:
+        # 自动生成输出文件名，保存到 Markdown 文件所在目录
+        date_str = data.get('date', markdown_path.stem.split()[0])
+        output_file = markdown_path.parent / f'{date_str}-复盘.html'
+    else:
+        output_file = Path(output_file)
     
     # 生成 HTML 组件
     print('🎨 生成 HTML 组件...')
