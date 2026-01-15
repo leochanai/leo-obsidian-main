@@ -4,24 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "21e19051d5cf7db2",
+        "id": "5c3d13275453c4ea",
         "type": "tabs",
         "children": [
           {
-            "id": "15fdebd09a9a94a4",
+            "id": "d75d5b74c9d926e9",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "02 Map/唐朝历代皇帝.canvas",
-                "viewState": {
-                  "x": 122.07117766806874,
-                  "y": 226.94768092352442,
-                  "zoom": 0.3719441731770837
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "唐朝历代皇帝"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -178,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 Map/唐朝历代皇帝.canvas",
+                "file": "03 Source/Podwise/128_Manus决定出售前最后的访谈_啊_这奇幻的2025年漂流啊.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "唐朝历代皇帝 的大纲"
+              "title": "128_Manus决定出售前最后的访谈_啊_这奇幻的2025年漂流啊 的大纲"
             }
           }
         ]
@@ -206,11 +199,17 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "15fdebd09a9a94a4",
+  "active": "15e90fe269434724",
   "lastOpenFiles": [
+    "03 Source/Podwise/Vol_001_中国奇谭_之_小满_团队_带你揭秘剪纸动画.md",
+    "03 Source/Podwise/128_Manus决定出售前最后的访谈_啊_这奇幻的2025年漂流啊.md",
+    "13 Skills/a-share-daily-review/SKILL.md",
+    "14 Prompts/虫眼视角（底视仰拍）照片.md",
+    "03 Source/Zzz/If you have multiple interests, do not waste the next 2-3 years.md",
+    "If you have multiple interests, do not waste the next 2-3 years.pdf",
+    "02 Map/唐朝历代皇帝.canvas",
     "10 Attachment/8203cf9b02f47a49f1a109d349af7674_MD5.png",
     "10 Attachment/2eee8282e59977fb9977c1b09d556b92_MD5.png",
-    "03 Source/Zzz/If you have multiple interests, do not waste the next 2-3 years.md",
     "15 Reports/2026-01-12-复盘.html",
     "13 Skills/generating-html-from-report/scripts/template.html",
     "13 Skills/generating-html-from-report/scripts/generate_report.py",
@@ -222,18 +221,14 @@
     "13 Skills/generating-html-from-report/A股复盘-复盘.html",
     "13 Skills/generating-html-from-report/2026-01-12-复盘.html",
     "13 Skills/generating-html-from-report/generate_report.py",
-    "13 Skills/generating-html-from-report/example-replacements.html",
     "13 Skills/generating-html-from-report/README.md",
     "13 Skills/generating-html-from-report/SKILL.md",
     "13 Skills/generating-html-from-content/SKILL.md",
-    "13 Skills/a-share-daily-review/SKILL.md",
     "13 Skills/frontend-design/SKILL.md",
     "14 Prompts/数字手绘草图.md",
     "10 Attachment/03d4cc0066ab8307199381a60ad40d07_MD5.jpg",
     "10 Attachment/Gemini_Generated_Image_6pfiiw6pfiiw6pfi.png",
-    "14 Prompts/虫眼视角（底视仰拍）照片.md",
     "AGENTS.md",
-    "02 Map/唐朝历代皇帝.canvas",
     "13 Skills/obsidian-markdown/SKILL.md",
     "00 Inbox/未命名.md",
     "13 Skills/chinese-zen-brand-vi/reference/PROFILES.md",
@@ -251,9 +246,7 @@
     "10 Attachment/Gemini_Generated_Image_yxe0n0yxe0n0yxe0.png",
     "10 Attachment/Gemini_Generated_Image_ydmmk4ydmmk4ydmm.png",
     "10 Attachment/Gemini_Generated_Image_megkwgmegkwgmegk.png",
-    "10 Attachment/fb9c0c7a87ef6a758fce229774872b4a_MD5.png",
     "13 Skills/chinese-zen-brand-vi/REFERENCE-COLORS.md",
-    "13 Skills/managing-local-cloudnms/SKILL.md",
-    "03 Source/Veo3/A Googler explains how to “meta prompt” for incredible Veo videos.md"
+    "13 Skills/managing-local-cloudnms/SKILL.md"
   ]
 }

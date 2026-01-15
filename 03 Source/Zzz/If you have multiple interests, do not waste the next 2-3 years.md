@@ -117,7 +117,7 @@ Humans became assembly lines working 9 to 5 because frankly, governments don’t
 
 Schools were designed to serve that interest. Their sole purpose was to create factory workers who were punctual and obedient.
 
-学校的设计就是为了服务于这种利益。它们的唯一目的是培养守时、听话的工厂工人。
+***学校的设计就是为了服务于这种利益。它们的唯一目的是培养守时、听话的工厂工人。***
 
 ---
 
