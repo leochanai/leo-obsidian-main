@@ -1,11 +1,11 @@
 ---
 name: a-share-daily-review
-description: 生成 A 股每日市场复盘报告。从东方财富、同花顺等财经网站抓取当日市场数据和新闻，生成 Markdown 格式的复盘报告，并转换为可视化 HTML 页面。当用户需要 A 股复盘、股市分析、市场总结时使用。
+description: 生成 A 股每日市场复盘报告。从东方财富、同花顺等财经网站抓取当日市场数据和新闻，生成 Markdown 格式的复盘报告。当用户需要 A 股复盘、股市分析、市场总结时使用。
 ---
 
 # A 股每日复盘
 
-从东方财富、同花顺等财经网站抓取当日市场数据和新闻，生成结构化的 Markdown 复盘报告，并调用 `generating-html-from-report` Skill 生成可视化 HTML 页面。
+从东方财富、同花顺等财经网站抓取当日市场数据和新闻，生成结构化的 Markdown 复盘报告。
 
 ## 工作流
 
@@ -16,7 +16,6 @@ description: 生成 A 股每日市场复盘报告。从东方财富、同花顺�
 - [ ] 步骤 1：获取市场数据
 - [ ] 步骤 2：分析市场行情
 - [ ] 步骤 3：生成 Markdown 报告
-- [ ] 步骤 4：调用 Skill 生成 HTML 报告
 ```
 
 ---
@@ -83,7 +82,7 @@ description: 生成 A 股每日市场复盘报告。从东方财富、同花顺�
 ### 报告保存位置
 
 ```
-/Users/farghost/GithubProjects/leo-obsidian-main/15 Reports/YYYY-MM-DD A股复盘.md
+15 Reports/YYYY-MM-DD A股复盘.md
 ```
 
 ### 报告模板
@@ -193,21 +192,6 @@ tags:
 
 本报告仅供参考，不构成任何投资建议。股市有风险，投资需谨慎。
 ```
-
----
-
-## 步骤 4：生成 HTML 报告
-
-完成 Markdown 报告后，调用 `generating-html-from-report` Skill 将 Markdown 报告转换为可视化 HTML，并将 HTML 保存到同目录：`/Users/farghost/GithubProjects/leo-obsidian-main/15 Reports/YYYY-MM-DD A股复盘.html`
-
-### HTML 设计要点
-
-针对股票复盘报告，推荐采用以下设计方向：
-
-- **风格**：高频交易终端风 / 金融数据仪表盘风格
-- **配色**：深色背景 + 绿涨红跌（符合中国 A 股习惯）
-- **字体**：数据使用等宽字体（JetBrains Mono），标题使用思源黑体
-- **动效**：数据卡片渐入动画、涨跌幅动态变色
 
 ---
 

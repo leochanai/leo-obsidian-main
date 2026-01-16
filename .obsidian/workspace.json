@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "378cc44cb416002e",
+        "id": "a857110cf0f471b6",
         "type": "tabs",
         "children": [
           {
-            "id": "657d55caf798b35b",
+            "id": "d117aac748424d78",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "14 Prompts/四格拼接构图的超写实写真.md",
+                "file": "13 Skills/generating-html-from-content/SKILL.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,35 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "四格拼接构图的超写实写真"
-            }
-          },
-          {
-            "id": "f07353fede59ee8a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "15 Reports/2026-01-13 A股复盘.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "2026-01-13 A股复盘"
+              "title": "SKILL"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -159,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "15 Reports/2026-01-13 A股复盘.md",
+                "file": "13 Skills/generating-html-from-content/SKILL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +144,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "2026-01-13 A股复盘 的反向链接列表"
+              "title": "SKILL 的反向链接列表"
             }
           },
           {
@@ -210,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "15 Reports/2026-01-13 A股复盘.md",
+                "file": "13 Skills/generating-html-from-content/SKILL.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2026-01-13 A股复盘 的大纲"
+              "title": "SKILL 的大纲"
             }
           }
         ]
@@ -227,6 +202,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false,
       "daily-notes:打开/创建今天的日记": false,
       "bases:新建数据库": false,
       "switcher:打开快速切换": false,
@@ -237,8 +213,14 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "f07353fede59ee8a",
+  "active": "d117aac748424d78",
   "lastOpenFiles": [
+    "13 Skills/a-share-daily-review/SKILL.md",
+    "14 Prompts/四格拼接构图的超写实写真.md",
+    "15 Reports/2026-01-16 A股复盘.md",
+    "15 Reports/2026-01-13 A股复盘.md",
+    "10 Attachment/8203cf9b02f47a49f1a109d349af7674_MD5.png",
+    "10 Attachment/2eee8282e59977fb9977c1b09d556b92_MD5.png",
     "15 Reports/2026-01-12 A股复盘.md",
     "13 Skills/generating-html-from-report/template.html",
     "13 Skills/generating-html-from-report/generate_report.py",
@@ -249,10 +231,8 @@
     "13 Skills/generating-html-from-report",
     "15 Reports/2026-01-13 A股复盘.html",
     "03 Source/Zzz/If you have multiple interests, do not waste the next 2-3 years.md",
-    "15 Reports/2026-01-13 A股复盘.md",
     "13 Skills/copy_skills_to_clis.sh",
     "03 Source/Zzz/Doing well in your courses.md",
-    "13 Skills/a-share-daily-review/SKILL.md",
     "14 Prompts/数字手绘草图.md",
     "01 Base/Nano Banana Prompts.base",
     "14 Prompts/新中式水墨绘本.md",
@@ -272,8 +252,6 @@
     "10 Attachment/ecbd4b05138dab085cb6c28a7c9c2d1d_MD5.png",
     "10 Attachment/e9ada98b74792d6de357453c07068f53_MD5.png",
     "10 Attachment/e9721f4242bf311445656bf3571922b5_MD5.png",
-    "10 Attachment/df0822ddef1c2bec247d3bfaff3ec8f8_MD5.png",
-    "10 Attachment/de74986fc2297a0b3f708ac75e707344_MD5.png",
     "03 Source/Claude Code/Agent Skills 终极指南：入门、精通、预测.md",
     "02 Map/唐朝历代皇帝.canvas",
     "13 Skills/obsidian-canvas/SKILL.md",
@@ -282,7 +260,6 @@
     "03 Source/Podwise/Vol_001_中国奇谭_之_小满_团队_带你揭秘剪纸动画.md",
     "03 Source/Podwise/128_Manus决定出售前最后的访谈_啊_这奇幻的2025年漂流啊.md",
     "14 Prompts/将角色插画转换为高品质手办产品.md",
-    "14 Prompts/四格拼接构图的超写实写真.md",
     "12 AI Chat/Deep Dive Research Summary.md",
     "14 Prompts/将照片转换为复古拍立得即时照片.md"
   ]
