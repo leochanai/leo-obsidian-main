@@ -11,24 +11,10 @@
             "id": "d117aac748424d78",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "13 Skills/generating-html-from-content/SKILL.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "SKILL"
+              "title": "新标签页"
             }
           }
         ]
@@ -134,7 +120,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "13 Skills/generating-html-from-content/SKILL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +129,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "SKILL 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
@@ -213,54 +198,55 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "d117aac748424d78",
+  "active": "15e90fe269434724",
   "lastOpenFiles": [
-    "13 Skills/a-share-daily-review/SKILL.md",
-    "14 Prompts/四格拼接构图的超写实写真.md",
-    "15 Reports/2026-01-16 A股复盘.md",
-    "15 Reports/2026-01-13 A股复盘.md",
-    "10 Attachment/8203cf9b02f47a49f1a109d349af7674_MD5.png",
-    "10 Attachment/2eee8282e59977fb9977c1b09d556b92_MD5.png",
-    "15 Reports/2026-01-12 A股复盘.md",
-    "13 Skills/generating-html-from-report/template.html",
-    "13 Skills/generating-html-from-report/generate_report.py",
-    "13 Skills/generating-html-from-report/example-replacements.html",
-    "13 Skills/generating-html-from-report/SKILL.md",
-    "13 Skills/generating-html-from-report/README.md",
-    "13 Skills/generating-html-from-report/2026-01-12-复盘.html",
-    "13 Skills/generating-html-from-report",
-    "15 Reports/2026-01-13 A股复盘.html",
-    "03 Source/Zzz/If you have multiple interests, do not waste the next 2-3 years.md",
-    "13 Skills/copy_skills_to_clis.sh",
-    "03 Source/Zzz/Doing well in your courses.md",
-    "14 Prompts/数字手绘草图.md",
-    "01 Base/Nano Banana Prompts.base",
-    "14 Prompts/新中式水墨绘本.md",
-    "15 Reports",
+    "03 Source/If you have multiple interests, do not waste the next 2-3 years.md",
+    "03 Source/Doing well in your courses.md",
+    "03 Source/Anthropic 工程师都在用的 AI 编程秘技！让 AI \"采访\"你做出完美应用.md",
+    "03 Source/Vol_001_中国奇谭_之_小满_团队_带你揭秘剪纸动画.md",
+    "03 Source/128_Manus决定出售前最后的访谈_啊_这奇幻的2025年漂流啊.md",
+    "03 Source/obsidian-baseline.md",
+    "03 Source/一家投资 OpenAI 的硅谷基金的深度研究.md",
+    "03 Source/A designer’s path from influence to identity.md",
+    "03 Source/Nano Banana Pro 最佳实践 - Gemini.md",
+    "03 Source/Nano Banana Pro 最佳实践 - ChatGPT.md",
+    "03 Source/将 Next.js 项目从 Vercel 迁移到 Cloudflare.md",
+    "03 Source/Agent Skills.md",
+    "03 Source/Agent Skills 终极指南：入门、精通、预测.md",
+    "03 Source/Agent Skill 创作最佳实践.md",
+    "01 Base/Investment.base",
+    "10 Attachment/70fa756f1a43bf5aa29466ec2da47d3f_MD5.webp",
+    "10 Attachment/6bb65944005f2884944b99044842341d_MD5.webp",
+    "10 Attachment/fccb36390e01dfd2af6e2c92ebbaa93a_MD5.webp",
+    "10 Attachment/ce9236f0f36b272d22ae6293e49877f8_MD5.webp",
     "14 Prompts/虫眼视角（底视仰拍）照片.md",
-    "13 Skills/obsidian-markdown/SKILL.md",
-    "13 Skills/obsidian-markdown",
-    "13 Skills/managing-local-cloudnms/SKILL.md",
+    "14 Prompts/数字手绘草图.md",
+    "14 Prompts/将角色插画转换为高品质手办产品.md",
+    "14 Prompts/将照片转换为复古拍立得即时照片.md",
+    "14 Prompts/四格拼接构图的超写实写真.md",
+    "14 Prompts/像素级角色拆解.md",
+    "14 Prompts",
     "13 Skills/chinese-zen-brand-vi/reference/PROFILES.md",
     "13 Skills/chinese-zen-brand-vi/reference/ELEMENTS.md",
     "13 Skills/chinese-zen-brand-vi/reference/COLORS.md",
+    "13 Skills/summarizing-youtube-videos/scripts/get_transcript.py",
+    "13 Skills/managing-local-servers/scripts/stop_servers.py",
+    "13 Skills/managing-local-servers/scripts/start_servers.py",
+    "13 Skills/managing-local-servers/scripts/servers.json",
+    "13 Skills/managing-local-servers/scripts/query_servers.py",
+    "13 Skills/formatting-deepresearch-reports/scripts/format_report.py",
+    "13 Skills/managing-local-cloudnms/scripts/deploy_cloudnms.sh",
+    "13 Skills/managing-local-cloudnms/scripts/common.sh",
+    "13 Skills/generating-landing-pages/SKILL.md",
+    "13 Skills/calibrating-transcribed-subtitles/SKILL.md",
+    "13 Skills/calibrating-transcribed-subtitles/GLOSSARY.md",
+    "02 Map/唐朝历代皇帝.canvas",
+    "Notes/Map/唐朝历代皇帝.canvas",
+    "10 Attachment/8203cf9b02f47a49f1a109d349af7674_MD5.png",
+    "10 Attachment/2eee8282e59977fb9977c1b09d556b92_MD5.png",
     "10 Attachment/fbd338a9a4b0d20aa27a212a29f7b375_MD5.png",
     "10 Attachment/fb9c0c7a87ef6a758fce229774872b4a_MD5.png",
     "10 Attachment/f17f8e6d27e7e59298cddc11e1642e6f_MD5.png",
-    "10 Attachment/f05ff4dd60dbb1d58cc4da2d0c744718_MD5.png",
-    "10 Attachment/ee83b501ae2a5832963478af550f4ae1_MD5.jpg",
-    "10 Attachment/ecbd4b05138dab085cb6c28a7c9c2d1d_MD5.png",
-    "10 Attachment/e9ada98b74792d6de357453c07068f53_MD5.png",
-    "10 Attachment/e9721f4242bf311445656bf3571922b5_MD5.png",
-    "03 Source/Claude Code/Agent Skills 终极指南：入门、精通、预测.md",
-    "02 Map/唐朝历代皇帝.canvas",
-    "13 Skills/obsidian-canvas/SKILL.md",
-    "13 Skills/obsidian-bases/SKILL.md",
-    "03 Source/Vibe Coding/Anthropic 工程师都在用的 AI 编程秘技！让 AI \"采访\"你做出完美应用.md",
-    "03 Source/Podwise/Vol_001_中国奇谭_之_小满_团队_带你揭秘剪纸动画.md",
-    "03 Source/Podwise/128_Manus决定出售前最后的访谈_啊_这奇幻的2025年漂流啊.md",
-    "14 Prompts/将角色插画转换为高品质手办产品.md",
-    "12 AI Chat/Deep Dive Research Summary.md",
-    "14 Prompts/将照片转换为复古拍立得即时照片.md"
+    "10 Attachment/f05ff4dd60dbb1d58cc4da2d0c744718_MD5.png"
   ]
 }
