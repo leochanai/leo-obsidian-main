@@ -82,7 +82,7 @@ description: 生成 A 股每日市场复盘报告。从东方财富、同花顺�
 ### 报告保存位置
 
 ```
-15 Reports/YYYY-MM-DD A股复盘.md
+./15 Reports/YYYY-MM-DD A股复盘.md
 ```
 
 ### 报告模板

@@ -1,0 +1,3 @@
+{"type":"meta","id":"conv-1768813341461-en6j5y4x1","title":"你好啊～","createdAt":1768813341463,"updatedAt":1768813398375,"lastResponseAt":1768813398369,"sessionId":null,"titleGenerationStatus":"failed"}
+{"type":"message","message":{"id":"msg-1768813398360-u9uo4tug9","role":"user","content":"你好啊～","timestamp":1768813398360}}
+{"type":"message","message":{"id":"msg-1768813398363-g7oy40fee","role":"assistant","content":"","timestamp":1768813398363,"toolCalls":[],"contentBlocks":[{"type":"text","content":"\n\n❌ **Error:** Claude CLI not found. Please install Claude Code CLI."}]}}

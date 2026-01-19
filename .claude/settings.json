@@ -44,7 +44,7 @@
   "thinkingBudget": "off",
   "permissionMode": "yolo",
   "lastNonPlanPermissionMode": "yolo",
-  "permissions": [],
+  "permissions": {},
   "excludedTags": [],
   "mediaFolder": "",
   "environmentVariables": "",
