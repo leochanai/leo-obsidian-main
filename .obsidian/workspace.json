@@ -11,12 +11,24 @@
             "id": "fa2984ac469c795b",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "02 Map/李清照作品集.timeline.md"
+                "file": "00 Inbox/oh-my-opencode.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "excalidraw-icon",
-              "title": "李清照作品集.timeline"
+              "icon": "lucide-file",
+              "title": "oh-my-opencode"
             }
           }
         ]
@@ -183,13 +195,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 Map/李清照作品集.timeline.md",
+                "file": "00 Inbox/oh-my-opencode.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "李清照作品集.timeline 的大纲"
+              "title": "oh-my-opencode 的大纲"
             }
           }
         ]
@@ -213,42 +225,44 @@
   },
   "active": "fa2984ac469c795b",
   "lastOpenFiles": [
+    "10 Attachment/328aa21719748ef127cb2886f3db9428_MD5.png",
+    "10 Attachment/35f12f6c709dbd64c413094183b41868_MD5.jpg",
+    "10 Attachment/e32a29a8cc5abd96a7faf3838729b27c_MD5.png",
+    "15 Reports/2026-01-21 A股复盘.md",
+    "00 Inbox/oh-my-opencode.md",
+    "13 Skills/skill-creator/SKILL.md",
+    "13 Skills/skill-creator/LICENSE.txt",
+    "13 Skills/skill-creator/references/workflows.md",
+    "13 Skills/skill-creator/references/output-patterns.md",
+    "13 Skills/skill-creator/references",
+    "13 Skills/skill-creator/scripts/quick_validate.py",
+    "13 Skills/skill-creator/scripts/package_skill.py",
+    "13 Skills/skill-creator/scripts/init_skill.py",
+    "13 Skills/skill-creator/scripts",
+    "13 Skills/skill-creator",
+    "13 Skills/LICENSE.txt",
+    "13 Skills/SKILL.md",
+    "13 Skills/scripts/quick_validate.py",
+    "13 Skills/scripts/package_skill.py",
+    "13 Skills/references/workflows.md",
+    "13 Skills/references/output-patterns.md",
+    "03 Source/Agent Skills.md",
+    "03 Source/A designer’s path from influence to identity.md",
+    "03 Source/If you have multiple interests, do not waste the next 2-3 years.md",
+    "03 Source/Doing well in your courses.md",
+    "03 Source/Agent Skill 创作最佳实践.md",
+    "03 Source/obsidian-baseline.md",
+    "13 Skills/a-share-daily-review/SKILL.md",
+    "14 Prompts/将照片转换为复古拍立得即时照片.md",
+    "14 Prompts/将角色插画转换为高品质手办产品.md",
+    "14 Prompts/虫眼视角（底视仰拍）照片.md",
+    "02 Map/李清照作品集.timeline.md",
     "13 Skills/web-design-guidelines/SKILL.md",
-    "13 Skills/web-design-guidelines",
     "13 Skills/vercel-react-best-practices/rules/server-serialization.md",
     "13 Skills/vercel-react-best-practices/rules/server-parallel-fetching.md",
     "13 Skills/vercel-react-best-practices/rules/server-dedup-props.md",
     "13 Skills/vercel-react-best-practices/rules/server-cache-react.md",
     "13 Skills/vercel-react-best-practices/rules/server-cache-lru.md",
-    "13 Skills/vercel-react-best-practices/rules/server-auth-actions.md",
-    "13 Skills/vercel-react-best-practices/rules/server-after-nonblocking.md",
-    "13 Skills/vercel-react-best-practices/rules/rerender-transitions.md",
-    "13 Skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md",
-    "13 Skills/vercel-react-best-practices/rules/rerender-memo.md",
-    "13 Skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md",
-    "13 Skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md",
-    "13 Skills/vercel-react-best-practices/rules/rerender-functional-setstate.md",
-    "13 Skills/vercel-react-best-practices/rules/rerender-derived-state.md",
-    "13 Skills/vercel-react-best-practices/rules/rerender-dependencies.md",
-    "13 Skills/vercel-react-best-practices/rules/rerender-defer-reads.md",
-    "13 Skills/vercel-react-best-practices/rules/rendering-svg-precision.md",
-    "13 Skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md",
-    "13 Skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md",
-    "13 Skills/vercel-react-best-practices/rules/rendering-content-visibility.md",
-    "13 Skills/vercel-react-best-practices/rules/rendering-conditional-render.md",
-    "13 Skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md",
-    "13 Skills/vercel-react-best-practices/rules/rendering-activity.md",
-    "13 Skills/vercel-react-best-practices/rules/js-tosorted-immutable.md",
-    "13 Skills/vercel-react-best-practices/rules/js-set-map-lookups.md",
-    "13 Skills/vercel-react-best-practices/rules",
-    "13 Skills/vercel-react-best-practices",
-    "13 Skills/rules",
-    "13 Skills/obsidian-excalidraw/reference/excalidraw",
-    "13 Skills/obsidian-excalidraw/reference",
-    "13 Skills/obsidian-excalidraw",
-    "15 Reports",
-    "14 Prompts/15 Reports",
-    "15 Reports/2026-01-19 A股复盘.html",
     "10 Attachment/fccb36390e01dfd2af6e2c92ebbaa93a_MD5.webp",
     "10 Attachment/ce9236f0f36b272d22ae6293e49877f8_MD5.webp",
     "10 Attachment/70fa756f1a43bf5aa29466ec2da47d3f_MD5.webp",
@@ -257,8 +271,6 @@
     "10 Attachment/8203cf9b02f47a49f1a109d349af7674_MD5.png",
     "10 Attachment/2eee8282e59977fb9977c1b09d556b92_MD5.png",
     "10 Attachment/03d4cc0066ab8307199381a60ad40d07_MD5.jpg",
-    "10 Attachment/Gemini_Generated_Image_6pfiiw6pfiiw6pfi.png",
-    "10 Attachment/0e329a7397c45af0d6571abd33b9e5f8_MD5.jpg",
-    "10 Attachment/Pasted image 20260106185110.png"
+    "10 Attachment/Gemini_Generated_Image_6pfiiw6pfiiw6pfi.png"
   ]
 }
