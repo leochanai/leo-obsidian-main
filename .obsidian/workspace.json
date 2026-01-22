@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "eb1c3c91801aae89",
+        "id": "db5c40400edf86fd",
         "type": "tabs",
         "children": [
           {
-            "id": "578f27c5ada85b32",
+            "id": "989737bf7b33e21d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -208,17 +208,21 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "578f27c5ada85b32",
+  "active": "989737bf7b33e21d",
   "lastOpenFiles": [
+    "01 Base/Nano Banana Prompts.base",
+    "14 Prompts/风格转换 - 复古动漫风格.md",
+    "13 Skills/a-share-daily-review/SKILL.md",
+    "13 Skills/a-share-daily-review/15 Reports/2026-01-22 A股复盘.md",
+    "13 Skills/a-share-daily-review/15 Reports",
+    "13 Skills/a-share-daily-review/references/report-template.md",
     "15 Reports/2026-01-22 A股复盘 (auto-auto-news).md",
     "15 Reports/2026-01-22 A股复盘 (auto-news).md",
     "13 Skills/a-share-daily-review/references/news-example.json",
     "15 Reports/2026-01-22 A股复盘 (auto-fast2).md",
     "15 Reports/2026-01-22 A股复盘 (auto8).md",
     "15 Reports/2026-01-22 A股复盘 (auto-fast).md",
-    "14 Prompts/风格转换 - 复古动漫风格.md",
     "14 Prompts/数字手绘草图.md",
-    "01 Base/Nano Banana Prompts.base",
     "10 Attachment/01436c7ce47e72a13a94d5fb0c77f04e_MD5.jpg",
     "15 Reports/2026-01-22 A股复盘 (auto6).md",
     "10 Attachment/ChatGPT Image 2026年1月22日 16_44_05.png",
@@ -238,16 +242,11 @@
     "03 Source/Agent Skill 创作最佳实践.md",
     "13 Skills/video/SKILL.md",
     "13 Skills/video",
-    "13 Skills/remotion-best-practices/rules/assets/text-animations-typewriter.tsx",
     "13 Skills/remotion-best-practices/rules/videos.md",
     "13 Skills/remotion-best-practices/rules/trimming.md",
     "13 Skills/remotion-best-practices/rules/transitions.md",
     "13 Skills/remotion-best-practices/rules/transcribe-captions.md",
     "13 Skills/remotion-best-practices/rules/timing.md",
-    "13 Skills/remotion-best-practices/rules/text-animations.md",
-    "13 Skills/remotion-best-practices/rules/tailwind.md",
-    "13 Skills/remotion-best-practices/rules/sequencing.md",
-    "13 Skills/remotion-best-practices/rules/measuring-text.md",
     "10 Attachment/52d7c8a8c47838a1a4fd65212f48bacb_MD5.svg",
     "10 Attachment/5e4f631aa3db39a78a3a6e8dca7de263_MD5.svg",
     "10 Attachment/328aa21719748ef127cb2886f3db9428_MD5.png",
