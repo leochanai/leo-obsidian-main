@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 Inbox/oh-my-opencode.md",
+                "file": "03 Source/Agent Skill 创作最佳实践.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "oh-my-opencode"
+              "title": "Agent Skill 创作最佳实践"
             }
           }
         ]
@@ -195,13 +195,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 Inbox/oh-my-opencode.md",
+                "file": "03 Source/Agent Skill 创作最佳实践.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "oh-my-opencode 的大纲"
+              "title": "Agent Skill 创作最佳实践 的大纲"
             }
           }
         ]
@@ -225,28 +225,31 @@
   },
   "active": "fa2984ac469c795b",
   "lastOpenFiles": [
+    "01 Base/Agent Skills.base",
+    "03 Source/Agent Skills.md",
+    "03 Source/Agent Skills 终极指南：入门、精通、预测.md",
+    "03 Source/oh-my-opencode.md",
+    "01 Base/Nano Banana Prompts.base",
+    "01 Base/Investment.base",
+    "01 Base/Obsidian.base",
+    "01 Base/Collection.base",
+    "13 Skills/pake-web-to-app/references/cli-options.md",
+    "13 Skills/pake-web-to-app/SKILL.md",
+    "13 Skills/pake-web-to-app/references",
+    "13 Skills/pake-web-to-app",
     "10 Attachment/328aa21719748ef127cb2886f3db9428_MD5.png",
     "10 Attachment/35f12f6c709dbd64c413094183b41868_MD5.jpg",
     "10 Attachment/e32a29a8cc5abd96a7faf3838729b27c_MD5.png",
     "15 Reports/2026-01-21 A股复盘.md",
-    "00 Inbox/oh-my-opencode.md",
     "13 Skills/skill-creator/SKILL.md",
     "13 Skills/skill-creator/LICENSE.txt",
     "13 Skills/skill-creator/references/workflows.md",
     "13 Skills/skill-creator/references/output-patterns.md",
     "13 Skills/skill-creator/references",
     "13 Skills/skill-creator/scripts/quick_validate.py",
-    "13 Skills/skill-creator/scripts/package_skill.py",
-    "13 Skills/skill-creator/scripts/init_skill.py",
-    "13 Skills/skill-creator/scripts",
-    "13 Skills/skill-creator",
-    "13 Skills/LICENSE.txt",
     "13 Skills/SKILL.md",
-    "13 Skills/scripts/quick_validate.py",
-    "13 Skills/scripts/package_skill.py",
     "13 Skills/references/workflows.md",
     "13 Skills/references/output-patterns.md",
-    "03 Source/Agent Skills.md",
     "03 Source/A designer’s path from influence to identity.md",
     "03 Source/If you have multiple interests, do not waste the next 2-3 years.md",
     "03 Source/Doing well in your courses.md",
@@ -260,9 +263,6 @@
     "13 Skills/web-design-guidelines/SKILL.md",
     "13 Skills/vercel-react-best-practices/rules/server-serialization.md",
     "13 Skills/vercel-react-best-practices/rules/server-parallel-fetching.md",
-    "13 Skills/vercel-react-best-practices/rules/server-dedup-props.md",
-    "13 Skills/vercel-react-best-practices/rules/server-cache-react.md",
-    "13 Skills/vercel-react-best-practices/rules/server-cache-lru.md",
     "10 Attachment/fccb36390e01dfd2af6e2c92ebbaa93a_MD5.webp",
     "10 Attachment/ce9236f0f36b272d22ae6293e49877f8_MD5.webp",
     "10 Attachment/70fa756f1a43bf5aa29466ec2da47d3f_MD5.webp",
@@ -270,7 +270,6 @@
     "02 Map/唐朝历代皇帝.canvas",
     "10 Attachment/8203cf9b02f47a49f1a109d349af7674_MD5.png",
     "10 Attachment/2eee8282e59977fb9977c1b09d556b92_MD5.png",
-    "10 Attachment/03d4cc0066ab8307199381a60ad40d07_MD5.jpg",
-    "10 Attachment/Gemini_Generated_Image_6pfiiw6pfiiw6pfi.png"
+    "10 Attachment/03d4cc0066ab8307199381a60ad40d07_MD5.jpg"
   ]
 }

@@ -1,5 +1,5 @@
 ---
-cover:
+cover: "[[10 Attachment/0843be065a6054d58c3df96750c8ed5d_MD5.webp]]"
 source: https://mp.weixin.qq.com/s/jUylk813LYbKw0sLiIttTQ
 author:
   - "[[一泽Eze]]"

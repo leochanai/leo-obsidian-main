@@ -1,12 +1,14 @@
 ---
-cover: 
-source: "https://github.com/code-yeongyu/oh-my-opencode/blob/dev/README.zh-cn.md#google-%E8%AE%A4%E8%AF%81"
+cover: "[[10 Attachment/328aa21719748ef127cb2886f3db9428_MD5.png]]"
+source: https://github.com/code-yeongyu/oh-my-opencode/blob/dev/README.zh-cn.md#google-%E8%AE%A4%E8%AF%81
 author:
   - "[[sisyphus-dev-ai]]"
 published:
 created: 2026-01-21
 description:
 tags:
+  - open-code
+  - agent-skills
 ---
 
 # oh-my-opencode

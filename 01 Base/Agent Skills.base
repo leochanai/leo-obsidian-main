@@ -11,3 +11,10 @@ views:
     sort:
       - property: source
         direction: DESC
+  - type: cards
+    name: 视图
+    filters:
+      and:
+        - file.tags.contains("agent-skills")
+    image: note.cover
+    imageAspectRatio: 0.65
