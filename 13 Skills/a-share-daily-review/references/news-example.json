@@ -1,0 +1,23 @@
+{
+  "policy": [
+    {
+      "title": "示例：某部委发布稳增长政策",
+      "source": "新华社",
+      "url": "https://example.com/policy"
+    }
+  ],
+  "funding": [
+    {
+      "title": "示例：两融余额变化/资金面数据",
+      "source": "证券时报",
+      "url": "https://example.com/funding"
+    }
+  ],
+  "market": [
+    {
+      "title": "示例：行业/公司重要消息",
+      "source": "财联社",
+      "url": "https://example.com/market"
+    }
+  ]
+}
