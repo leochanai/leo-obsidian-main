@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b074ea286c9a1ec1",
+        "id": "eb1c3c91801aae89",
         "type": "tabs",
         "children": [
           {
-            "id": "fa2984ac469c795b",
+            "id": "578f27c5ada85b32",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03 Source/Agent Skill 创作最佳实践.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Agent Skill 创作最佳实践"
+              "title": "新标签页"
             }
           }
         ]
@@ -195,13 +181,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03 Source/Agent Skill 创作最佳实践.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Agent Skill 创作最佳实践 的大纲"
+              "title": "大纲"
             }
           }
         ]
@@ -223,53 +208,54 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "fa2984ac469c795b",
+  "active": "578f27c5ada85b32",
   "lastOpenFiles": [
-    "01 Base/Agent Skills.base",
-    "03 Source/Agent Skills.md",
-    "03 Source/Agent Skills 终极指南：入门、精通、预测.md",
-    "03 Source/oh-my-opencode.md",
+    "15 Reports/2026-01-22 A股复盘 (auto-auto-news).md",
+    "15 Reports/2026-01-22 A股复盘 (auto-news).md",
+    "13 Skills/a-share-daily-review/references/news-example.json",
+    "15 Reports/2026-01-22 A股复盘 (auto-fast2).md",
+    "15 Reports/2026-01-22 A股复盘 (auto8).md",
+    "15 Reports/2026-01-22 A股复盘 (auto-fast).md",
+    "14 Prompts/风格转换 - 复古动漫风格.md",
+    "14 Prompts/数字手绘草图.md",
     "01 Base/Nano Banana Prompts.base",
-    "01 Base/Investment.base",
-    "01 Base/Obsidian.base",
-    "01 Base/Collection.base",
-    "13 Skills/pake-web-to-app/references/cli-options.md",
-    "13 Skills/pake-web-to-app/SKILL.md",
-    "13 Skills/pake-web-to-app/references",
-    "13 Skills/pake-web-to-app",
+    "10 Attachment/01436c7ce47e72a13a94d5fb0c77f04e_MD5.jpg",
+    "15 Reports/2026-01-22 A股复盘 (auto6).md",
+    "10 Attachment/ChatGPT Image 2026年1月22日 16_44_05.png",
+    "15 Reports/2026-01-22 A股复盘 (auto5).md",
+    "16 Tools",
+    "未命名文件夹",
+    "15 Reports/2026-01-22 A股复盘 (auto4).md",
+    "15 Reports/2026-01-22 A股复盘 (auto3).md",
+    "15 Reports/2026-01-22 A股复盘 (auto2).md",
+    "15 Reports/2026-01-22 A股复盘 (auto).md",
+    "13 Skills/a-share-daily-review/scripts/__pycache__/a_share_daily_review.cpython-314.pyc",
+    "13 Skills/a-share-daily-review/scripts/__pycache__",
+    "13 Skills/a-share-daily-review/scripts/a_share_daily_review.py",
+    "13 Skills/a-share-daily-review/scripts",
+    "15 Reports/2026-01-22 A股复盘.md",
+    "15 Reports/2025-01-22 A股复盘.md",
+    "03 Source/Agent Skill 创作最佳实践.md",
+    "13 Skills/video/SKILL.md",
+    "13 Skills/video",
+    "13 Skills/remotion-best-practices/rules/assets/text-animations-typewriter.tsx",
+    "13 Skills/remotion-best-practices/rules/videos.md",
+    "13 Skills/remotion-best-practices/rules/trimming.md",
+    "13 Skills/remotion-best-practices/rules/transitions.md",
+    "13 Skills/remotion-best-practices/rules/transcribe-captions.md",
+    "13 Skills/remotion-best-practices/rules/timing.md",
+    "13 Skills/remotion-best-practices/rules/text-animations.md",
+    "13 Skills/remotion-best-practices/rules/tailwind.md",
+    "13 Skills/remotion-best-practices/rules/sequencing.md",
+    "13 Skills/remotion-best-practices/rules/measuring-text.md",
+    "10 Attachment/52d7c8a8c47838a1a4fd65212f48bacb_MD5.svg",
+    "10 Attachment/5e4f631aa3db39a78a3a6e8dca7de263_MD5.svg",
     "10 Attachment/328aa21719748ef127cb2886f3db9428_MD5.png",
     "10 Attachment/35f12f6c709dbd64c413094183b41868_MD5.jpg",
     "10 Attachment/e32a29a8cc5abd96a7faf3838729b27c_MD5.png",
-    "15 Reports/2026-01-21 A股复盘.md",
-    "13 Skills/skill-creator/SKILL.md",
-    "13 Skills/skill-creator/LICENSE.txt",
-    "13 Skills/skill-creator/references/workflows.md",
-    "13 Skills/skill-creator/references/output-patterns.md",
-    "13 Skills/skill-creator/references",
-    "13 Skills/skill-creator/scripts/quick_validate.py",
-    "13 Skills/SKILL.md",
-    "13 Skills/references/workflows.md",
-    "13 Skills/references/output-patterns.md",
-    "03 Source/A designer’s path from influence to identity.md",
-    "03 Source/If you have multiple interests, do not waste the next 2-3 years.md",
-    "03 Source/Doing well in your courses.md",
-    "03 Source/Agent Skill 创作最佳实践.md",
-    "03 Source/obsidian-baseline.md",
-    "13 Skills/a-share-daily-review/SKILL.md",
-    "14 Prompts/将照片转换为复古拍立得即时照片.md",
-    "14 Prompts/将角色插画转换为高品质手办产品.md",
-    "14 Prompts/虫眼视角（底视仰拍）照片.md",
-    "02 Map/李清照作品集.timeline.md",
-    "13 Skills/web-design-guidelines/SKILL.md",
-    "13 Skills/vercel-react-best-practices/rules/server-serialization.md",
-    "13 Skills/vercel-react-best-practices/rules/server-parallel-fetching.md",
     "10 Attachment/fccb36390e01dfd2af6e2c92ebbaa93a_MD5.webp",
     "10 Attachment/ce9236f0f36b272d22ae6293e49877f8_MD5.webp",
     "10 Attachment/70fa756f1a43bf5aa29466ec2da47d3f_MD5.webp",
-    "10 Attachment/6bb65944005f2884944b99044842341d_MD5.webp",
-    "02 Map/唐朝历代皇帝.canvas",
-    "10 Attachment/8203cf9b02f47a49f1a109d349af7674_MD5.png",
-    "10 Attachment/2eee8282e59977fb9977c1b09d556b92_MD5.png",
-    "10 Attachment/03d4cc0066ab8307199381a60ad40d07_MD5.jpg"
+    "02 Map/唐朝历代皇帝.canvas"
   ]
 }
