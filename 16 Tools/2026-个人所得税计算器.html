@@ -1,0 +1,2192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 个人所得税计算器</title>
+    <style>
+        /* === 基础重置 === */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* === CSS 变量 === */
+        :root {
+            /* 深色背景渐变 */
+            --bg-primary: #0a0e27;
+            --bg-secondary: #1a1f3a;
+
+            /* 玻璃态效果 */
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+            /* 霓虹色 */
+            --neon-cyan: #00D9FF;
+            --neon-green: #00FF88;
+            --neon-yellow: #FFD600;
+            --neon-pink: #FF3366;
+
+            /* 文字颜色 */
+            --text-primary: #E4E6EB;
+            --text-secondary: #B0B3B8;
+            --text-tertiary: #8A8D91;
+
+            /* 间距 */
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+
+            /* 圆角 */
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+
+            /* 动画 */
+            --transition-fast: 0.2s ease;
+            --transition-normal: 0.3s ease;
+        }
+
+        /* === 全局样式 === */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+                'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* 背景动画效果 */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:
+                radial-gradient(circle at 20% 50%, rgba(0, 217, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(0, 255, 136, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* === 容器 === */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: var(--spacing-md);
+            position: relative;
+            z-index: 1;
+        }
+
+        /* === 头部 === */
+        .header {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-md) var(--spacing-lg);
+            margin-bottom: var(--spacing-lg);
+            box-shadow: var(--glass-shadow);
+            position: sticky;
+            top: var(--spacing-md);
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--spacing-md);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+
+        .logo-icon {
+            font-size: 2rem;
+        }
+
+        .logo-text h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--neon-cyan) 0%, var(--neon-green) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(0, 217, 255, 0.3);
+        }
+
+        .logo-text p {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        /* === 模式切换 === */
+        .mode-switch {
+            display: flex;
+            gap: var(--spacing-xs);
+            background: rgba(0, 0, 0, 0.3);
+            padding: 0.25rem;
+            border-radius: var(--radius-md);
+        }
+
+        .mode-btn {
+            padding: 0.5rem 1.5rem;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            cursor: pointer;
+            border-radius: var(--radius-sm);
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all var(--transition-normal);
+        }
+
+        .mode-btn.active {
+            background: linear-gradient(135deg, var(--neon-cyan) 0%, var(--neon-green) 100%);
+            color: #000;
+            box-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+        }
+
+        .mode-btn:hover:not(.active) {
+            color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        /* === 工具栏按钮 === */
+        .toolbar {
+            display: flex;
+            gap: var(--spacing-sm);
+        }
+
+        .toolbar-btn {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--glass-border);
+            background: var(--glass-bg);
+            color: var(--text-primary);
+            cursor: pointer;
+            border-radius: var(--radius-sm);
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all var(--transition-normal);
+            backdrop-filter: blur(10px);
+        }
+
+        .toolbar-btn:hover {
+            border-color: var(--neon-cyan);
+            box-shadow: 0 0 15px rgba(0, 217, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .toolbar-btn.danger:hover {
+            border-color: var(--neon-pink);
+            box-shadow: 0 0 15px rgba(255, 51, 102, 0.3);
+        }
+
+        /* === 主体布局 === */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-lg);
+        }
+
+        /* === 卡片 === */
+        .card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-lg);
+            box-shadow: var(--glass-shadow);
+            transition: all var(--transition-normal);
+            animation: fadeInUp 0.5s ease forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .card:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .card:hover {
+            border-color: rgba(0, 217, 255, 0.3);
+            box-shadow:
+                var(--glass-shadow),
+                0 0 30px rgba(0, 217, 255, 0.1);
+        }
+
+        .card-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: var(--spacing-md);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+            color: var(--text-primary);
+        }
+
+        .card-title::before {
+            content: '';
+            width: 4px;
+            height: 1.125rem;
+            background: linear-gradient(135deg, var(--neon-cyan) 0%, var(--neon-green) 100%);
+            border-radius: 2px;
+            box-shadow: 0 0 10px var(--neon-cyan);
+        }
+
+        /* === 表单元素 === */
+        .form-group {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: var(--spacing-xs);
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-sm);
+            color: var(--text-primary);
+            font-size: 0.875rem;
+            transition: all var(--transition-normal);
+            font-family: 'SF Mono', 'Consolas', monospace;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--neon-cyan);
+            box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+        }
+
+        .form-input::placeholder {
+            color: var(--text-tertiary);
+        }
+
+        /* === 按钮组 === */
+        .button-group {
+            display: flex;
+            gap: var(--spacing-xs);
+            flex-wrap: wrap;
+        }
+
+        .btn-option {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--glass-border);
+            background: rgba(0, 0, 0, 0.3);
+            color: var(--text-secondary);
+            cursor: pointer;
+            border-radius: var(--radius-sm);
+            font-size: 0.875rem;
+            transition: all var(--transition-normal);
+        }
+
+        .btn-option:hover {
+            border-color: var(--neon-cyan);
+            color: var(--text-primary);
+        }
+
+        .btn-option.active {
+            background: linear-gradient(135deg, var(--neon-cyan) 0%, var(--neon-green) 100%);
+            border-color: transparent;
+            color: #000;
+            font-weight: 600;
+            box-shadow: 0 0 20px rgba(0, 217, 255, 0.4);
+        }
+
+        /* === 单选按钮 === */
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-xs);
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem;
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: all var(--transition-normal);
+        }
+
+        .radio-option:hover {
+            background: rgba(0, 0, 0, 0.4);
+            border-color: var(--neon-cyan);
+        }
+
+        .radio-option.active {
+            background: rgba(0, 217, 255, 0.1);
+            border-color: var(--neon-cyan);
+            box-shadow: 0 0 15px rgba(0, 217, 255, 0.2);
+        }
+
+        .radio-circle {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--glass-border);
+            border-radius: 50%;
+            margin-right: var(--spacing-sm);
+            position: relative;
+            transition: all var(--transition-normal);
+        }
+
+        .radio-option.active .radio-circle {
+            border-color: var(--neon-cyan);
+        }
+
+        .radio-option.active .radio-circle::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 10px;
+            height: 10px;
+            background: var(--neon-cyan);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--neon-cyan);
+        }
+
+        .radio-label {
+            flex: 1;
+            font-size: 0.875rem;
+            color: var(--text-primary);
+        }
+
+        .radio-value {
+            font-size: 0.875rem;
+            color: var(--neon-cyan);
+            font-weight: 600;
+        }
+
+        /* === 分隔线 === */
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--glass-border), transparent);
+            margin: var(--spacing-md) 0;
+        }
+
+        /* === 合计显示 === */
+        .total-display {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--spacing-md);
+            background: rgba(0, 217, 255, 0.05);
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            border-radius: var(--radius-sm);
+            margin-top: var(--spacing-sm);
+        }
+
+        .total-label {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .total-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--neon-cyan);
+            font-family: 'SF Mono', 'Consolas', monospace;
+            text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+        }
+
+        /* === 结果显示区 === */
+        .result-main {
+            text-align: center;
+            padding: var(--spacing-xl) 0;
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.05) 0%, rgba(0, 255, 136, 0.05) 100%);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .result-label {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-sm);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .result-amount {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--neon-cyan);
+            font-family: 'SF Mono', 'Consolas', monospace;
+            text-shadow: 0 0 30px rgba(0, 217, 255, 0.6);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .result-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-md);
+        }
+
+        .result-item {
+            padding: var(--spacing-md);
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: var(--radius-sm);
+        }
+
+        .result-item-label {
+            font-size: 0.75rem;
+            color: var(--text-tertiary);
+            margin-bottom: 0.25rem;
+        }
+
+        .result-item-value {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--neon-green);
+            font-family: 'SF Mono', 'Consolas', monospace;
+        }
+
+        .result-item-value.rate {
+            color: var(--neon-yellow);
+        }
+
+        /* === 警告提示 === */
+        .alert {
+            padding: var(--spacing-sm);
+            border-radius: var(--radius-sm);
+            font-size: 0.875rem;
+            margin-top: var(--spacing-sm);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+        }
+
+        .alert-warning {
+            background: rgba(255, 214, 0, 0.1);
+            border: 1px solid rgba(255, 214, 0, 0.3);
+            color: var(--neon-yellow);
+        }
+
+        .alert-error {
+            background: rgba(255, 51, 102, 0.1);
+            border: 1px solid rgba(255, 51, 102, 0.3);
+            color: var(--neon-pink);
+            animation: shake 0.5s ease;
+        }
+
+        @keyframes shake {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-5px);
+            }
+
+            75% {
+                transform: translateX(5px);
+            }
+        }
+
+        /* === 提示图标 === */
+        .info-icon {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 1px solid var(--text-tertiary);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 14px;
+            font-size: 12px;
+            cursor: help;
+            margin-left: 0.25rem;
+            color: var(--text-tertiary);
+            transition: all var(--transition-fast);
+        }
+
+        .info-icon:hover {
+            border-color: var(--neon-cyan);
+            color: var(--neon-cyan);
+            box-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
+        }
+
+        /* === 折叠面板 === */
+        .collapse-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: var(--spacing-sm);
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: var(--radius-sm);
+            margin-bottom: var(--spacing-sm);
+            transition: all var(--transition-normal);
+        }
+
+        .collapse-header:hover {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .collapse-icon {
+            transition: transform var(--transition-normal);
+        }
+
+        .collapse-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .collapse-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--transition-normal);
+        }
+
+        .collapse-content.expanded {
+            max-height: 2000px;
+        }
+
+        /* === 响应式 === */
+        @media (max-width: 1024px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: var(--spacing-sm);
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .logo-text h1 {
+                font-size: 1.25rem;
+            }
+
+            .toolbar {
+                flex-wrap: wrap;
+            }
+
+            .result-amount {
+                font-size: 2rem;
+            }
+
+            .result-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* === 隐藏类 === */
+        .hidden {
+            display: none !important;
+        }
+
+        /* === 加载动画 === */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--glass-border);
+            border-top-color: var(--neon-cyan);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* === 数字输入框增强 === */
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            opacity: 0.5;
+        }
+
+        input[type="number"]:hover::-webkit-inner-spin-button,
+        input[type="number"]:hover::-webkit-outer-spin-button {
+            opacity: 1;
+        }
+
+        /* === 选择框样式 === */
+        select.form-input {
+            cursor: pointer;
+            background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%2300D9FF' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            padding-right: 2.5rem;
+        }
+
+        /* === 比例选择按钮增强 === */
+        .button-group [data-ratio] {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .button-group [data-ratio]::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 217, 255, 0.2), transparent);
+            transition: width 0.3s ease;
+        }
+
+        .button-group [data-ratio]:hover::before {
+            width: 100%;
+        }
+
+        /* === 数值高亮动画 === */
+        @keyframes valueChange {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .value-changed {
+            animation: valueChange 0.3s ease;
+        }
+
+        /* === 进度条容器 === */
+        .progress-bar-container {
+            width: 100%;
+            height: 8px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-bar {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .progress-bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        /* === 工具提示 === */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            min-width: 200px;
+            background: rgba(0, 0, 0, 0.95);
+            color: var(--text-primary);
+            text-align: left;
+            border-radius: var(--radius-sm);
+            padding: var(--spacing-sm);
+            position: absolute;
+            z-index: 1000;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity var(--transition-normal);
+            font-size: 0.75rem;
+            line-height: 1.4;
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* === 滚动条样式 === */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--glass-border);
+            border-radius: 4px;
+            transition: background var(--transition-fast);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--neon-cyan);
+        }
+
+        /* === 打印样式 === */
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+
+            .header,
+            .toolbar,
+            .mode-switch,
+            .toolbar-btn {
+                display: none;
+            }
+
+            .card {
+                break-inside: avoid;
+                border: 1px solid #ddd;
+                background: white;
+            }
+
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* === 焦点可见性 === */
+        *:focus-visible {
+            outline: 2px solid var(--neon-cyan);
+            outline-offset: 2px;
+        }
+
+        button:focus-visible,
+        input:focus-visible,
+        select:focus-visible {
+            outline: 2px solid var(--neon-cyan);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">💰</div>
+                    <div class="logo-text">
+                        <h1>2026 个人所得税计算器</h1>
+                        <p>精准计算 · 智能分析 · 实时更新</p>
+                    </div>
+                </div>
+
+                <div class="mode-switch">
+                    <button class="mode-btn active" data-mode="monthly">月度计税</button>
+                    <button class="mode-btn" data-mode="yearly">年度汇算</button>
+                </div>
+
+                <div class="toolbar">
+                    <button class="toolbar-btn" id="importBtn">导入</button>
+                    <button class="toolbar-btn" id="exportBtn">导出</button>
+                    <button class="toolbar-btn danger" id="clearBtn">清空</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 主体内容 -->
+        <div class="main-grid">
+            <!-- 左侧：输入区 -->
+            <div class="left-column">
+                <!-- 收入信息 -->
+                <div class="card">
+                    <h3 class="card-title">收入信息</h3>
+
+                    <!-- 年度汇算模式：显示年度总收入 -->
+                    <div class="form-group yearly-only hidden">
+                        <label class="form-label">年度总收入</label>
+                        <input type="number" class="form-input" id="yearlyIncomeInput" placeholder="请输入年度总收入" min="0"
+                            step="100">
+                    </div>
+
+                    <!-- 月度计税模式 -->
+                    <div class="monthly-only">
+                        <!-- 快捷输入：适合工资固定的情况 -->
+                        <div class="form-group">
+                            <label class="form-label">月工资收入（自动应用到全年）</label>
+                            <input type="number" class="form-input" id="monthlyIncomeInput" placeholder="请输入月工资" min="0"
+                                step="100">
+                        </div>
+
+                        <!-- 可展开的月度明细：用于特殊情况调整 -->
+                        <div class="collapse-section">
+                            <div class="collapse-header" data-target="monthlyIncomeDetails">
+                                <span>月度工资明细（点击展开单独调整）</span>
+                                <span class="collapse-icon">▼</span>
+                            </div>
+                            <div class="collapse-content" id="monthlyIncomeDetails">
+                                <div
+                                    style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-sm); margin-top: var(--spacing-sm);">
+                                    <div class="form-group" style="margin-bottom: var(--spacing-sm);">
+                                        <label class="form-label" style="font-size: 0.75rem;">1月工资</label>
+                                        <input type="number" class="form-input monthly-income-input" data-month="1"
+                                            placeholder="0" min="0" step="100">
+                                    </div>
+                                    <div class="form-group" style="margin-bottom: var(--spacing-sm);">
+                                        <label class="form-label" style="font-size: 0.75rem;">2月工资</label>
+                                        <input type="number" class="form-input monthly-income-input" data-month="2"
+                                            placeholder="0" min="0" step="100">
+                                    </div>
+                                    <div class="form-group" style="margin-bottom: var(--spacing-sm);">
+                                        <label class="form-label" style="font-size: 0.75rem;">3月工资</label>
+                                        <input type="number" class="form-input monthly-income-input" data-month="3"
+                                            placeholder="0" min="0" step="100">
+                                    </div>
+                                    <div class="form-group" style="margin-bottom: var(--spacing-sm);">
+                                        <label class="form-label" style="font-size: 0.75rem;">4月工资</label>
+                                        <input type="number" class="form-input monthly-income-input" data-month="4"
+                                            placeholder="0" min="0" step="100">
+                                    </div>
+                                    <div class="form-group" style="margin-bottom: var(--spacing-sm);">
+                                        <label class="form-label" style="font-size: 0.75rem;">5月工资</label>
+                                        <input type="number" class="form-input monthly-income-input" data-month="5"
+                                            placeholder="0" min="0" step="100">
+                                    </div>
+                                    <div class="form-group" style="margin-bottom: var(--spacing-sm);">
+                                        <label class="form-label" style="font-size: 0.75rem;">6月工资</label>
+                                        <input type="number" class="form-input monthly-income-input" data-month="6"
+                                            placeholder="0" min="0" step="100">
+                                    </div>
+                                    <div class="form-group" style="margin-bottom: var(--spacing-sm);">
+                                        <label class="form-label" style="font-size: 0.75rem;">7月工资</label>
+                                        <input type="number" class="form-input monthly-income-input" data-month="7"
+                                            placeholder="0" min="0" step="100">
+                                    </div>
+                                    <div class="form-group" style="margin-bottom: var(--spacing-sm);">
+                                        <label class="form-label" style="font-size: 0.75rem;">8月工资</label>
+                                        <input type="number" class="form-input monthly-income-input" data-month="8"
+                                            placeholder="0" min="0" step="100">
+                                    </div>
+                                    <div class="form-group" style="margin-bottom: var(--spacing-sm);">
+                                        <label class="form-label" style="font-size: 0.75rem;">9月工资</label>
+                                        <input type="number" class="form-input monthly-income-input" data-month="9"
+                                            placeholder="0" min="0" step="100">
+                                    </div>
+                                    <div class="form-group" style="margin-bottom: var(--spacing-sm);">
+                                        <label class="form-label" style="font-size: 0.75rem;">10月工资</label>
+                                        <input type="number" class="form-input monthly-income-input" data-month="10"
+                                            placeholder="0" min="0" step="100">
+                                    </div>
+                                    <div class="form-group" style="margin-bottom: var(--spacing-sm);">
+                                        <label class="form-label" style="font-size: 0.75rem;">11月工资</label>
+                                        <input type="number" class="form-input monthly-income-input" data-month="11"
+                                            placeholder="0" min="0" step="100">
+                                    </div>
+                                    <div class="form-group" style="margin-bottom: var(--spacing-sm);">
+                                        <label class="form-label" style="font-size: 0.75rem;">12月工资</label>
+                                        <input type="number" class="form-input monthly-income-input" data-month="12"
+                                            placeholder="0" min="0" step="100">
+                                    </div>
+                                </div>
+                                <div class="alert alert-warning" style="margin-top: var(--spacing-sm);">
+                                    💡 提示：如果工资有变动（如加薪、补交社保等），可单独调整对应月份的工资
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="total-display" style="margin-top: var(--spacing-md);">
+                            <span class="total-label">年度工资总计</span>
+                            <span class="total-value" id="totalYearlyIncome">¥ 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 专项扣除（社保公积金） -->
+                <div class="card">
+                    <h3 class="card-title">专项扣除（社保公积金）</h3>
+
+                    <div class="button-group" style="margin-bottom: var(--spacing-md);">
+                        <button class="btn-option active" data-preset="22.5">企业标准 22.5%</button>
+                        <button class="btn-option" data-preset="custom">自定义</button>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">养老保险 (8%)</label>
+                        <input type="number" class="form-input social-input" id="pensionInput" placeholder="0" min="0"
+                            step="10">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">医疗保险 (2%)</label>
+                        <input type="number" class="form-input social-input" id="medicalInput" placeholder="0" min="0"
+                            step="10">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">失业保险 (0.5%)</label>
+                        <input type="number" class="form-input social-input" id="unemploymentInput" placeholder="0"
+                            min="0" step="10">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">住房公积金 (12%)</label>
+                        <input type="number" class="form-input social-input" id="housingFundInput" placeholder="0"
+                            min="0" step="10">
+                    </div>
+
+                    <div class="total-display">
+                        <span class="total-label">专项扣除合计</span>
+                        <span class="total-value" id="socialTotal">¥ 0</span>
+                    </div>
+                </div>
+
+                <!-- 专项附加扣除 -->
+                <div class="card">
+                    <h3 class="card-title">专项附加扣除</h3>
+
+                    <!-- 子女教育 -->
+                    <div class="collapse-section">
+                        <div class="collapse-header" data-target="childEducation">
+                            <span>子女教育</span>
+                            <span class="collapse-icon">▼</span>
+                        </div>
+                        <div class="collapse-content" id="childEducation">
+                            <div class="form-group">
+                                <label class="form-label">孩子数量</label>
+                                <div class="button-group">
+                                    <button class="btn-option active" data-children="0">0</button>
+                                    <button class="btn-option" data-children="1">1</button>
+                                    <button class="btn-option" data-children="2">2</button>
+                                    <button class="btn-option" data-children="3">3+</button>
+                                </div>
+                            </div>
+                            <div class="form-group child-options hidden">
+                                <label class="form-label">扣除比例</label>
+                                <div class="button-group">
+                                    <button class="btn-option active" data-ratio="100">100%</button>
+                                    <button class="btn-option" data-ratio="50">50%</button>
+                                </div>
+                            </div>
+                            <div class="total-display child-options hidden">
+                                <span class="total-label">扣除金额</span>
+                                <span class="total-value" id="childEduAmount">¥ 0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- 3岁以下婴幼儿照护 -->
+                    <div class="collapse-section">
+                        <div class="collapse-header" data-target="infantCare">
+                            <span>3岁以下婴幼儿照护</span>
+                            <span class="collapse-icon">▼</span>
+                        </div>
+                        <div class="collapse-content" id="infantCare">
+                            <div class="form-group">
+                                <label class="form-label">婴儿数量</label>
+                                <div class="button-group">
+                                    <button class="btn-option active" data-infants="0">0</button>
+                                    <button class="btn-option" data-infants="1">1</button>
+                                    <button class="btn-option" data-infants="2">2</button>
+                                    <button class="btn-option" data-infants="3">3+</button>
+                                </div>
+                            </div>
+                            <div class="form-group infant-options hidden">
+                                <label class="form-label">扣除比例</label>
+                                <div class="button-group">
+                                    <button class="btn-option active" data-ratio="100">100%</button>
+                                    <button class="btn-option" data-ratio="50">50%</button>
+                                </div>
+                            </div>
+                            <div class="total-display infant-options hidden">
+                                <span class="total-label">扣除金额</span>
+                                <span class="total-value" id="infantAmount">¥ 0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- 继续教育 -->
+                    <div class="collapse-section">
+                        <div class="collapse-header" data-target="education">
+                            <span>继续教育</span>
+                            <span class="collapse-icon">▼</span>
+                        </div>
+                        <div class="collapse-content" id="education">
+                            <div class="radio-group">
+                                <div class="radio-option active" data-edu-type="none">
+                                    <div class="radio-circle"></div>
+                                    <span class="radio-label">无</span>
+                                    <span class="radio-value">¥ 0</span>
+                                </div>
+                                <div class="radio-option" data-edu-type="academic">
+                                    <div class="radio-circle"></div>
+                                    <span class="radio-label">学历(学位)教育</span>
+                                    <span class="radio-value">¥ 400/月</span>
+                                </div>
+                                <div class="radio-option" data-edu-type="vocational">
+                                    <div class="radio-circle"></div>
+                                    <span class="radio-label">职业资格证书</span>
+                                    <span class="radio-value yearly-only hidden">¥ 3,600/年</span>
+                                    <span class="radio-value monthly-only">¥ 300/月</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- 住房支出 -->
+                    <div class="collapse-section">
+                        <div class="collapse-header" data-target="housing">
+                            <span>住房支出</span>
+                            <span class="collapse-icon">▼</span>
+                        </div>
+                        <div class="collapse-content" id="housing">
+                            <div class="radio-group">
+                                <div class="radio-option active" data-housing-type="none">
+                                    <div class="radio-circle"></div>
+                                    <span class="radio-label">无</span>
+                                    <span class="radio-value">¥ 0</span>
+                                </div>
+                                <div class="radio-option" data-housing-type="loan">
+                                    <div class="radio-circle"></div>
+                                    <span class="radio-label">首套房贷利息</span>
+                                    <span class="radio-value">¥ 1,000/月</span>
+                                </div>
+                                <div class="radio-option" data-housing-type="rent">
+                                    <div class="radio-circle"></div>
+                                    <span class="radio-label">住房租金</span>
+                                    <span class="radio-value">根据城市</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group rent-options hidden" style="margin-top: var(--spacing-sm);">
+                                <label class="form-label">城市档次</label>
+                                <div class="radio-group">
+                                    <div class="radio-option active" data-city-tier="tier1">
+                                        <div class="radio-circle"></div>
+                                        <span class="radio-label">直辖市/省会/计划单列市</span>
+                                        <span class="radio-value">¥ 1,500/月</span>
+                                    </div>
+                                    <div class="radio-option" data-city-tier="tier2">
+                                        <div class="radio-circle"></div>
+                                        <span class="radio-label">百万人口以上城市</span>
+                                        <span class="radio-value">¥ 1,100/月</span>
+                                    </div>
+                                    <div class="radio-option" data-city-tier="tier3">
+                                        <div class="radio-circle"></div>
+                                        <span class="radio-label">其他城市</span>
+                                        <span class="radio-value">¥ 800/月</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-warning housing-warning hidden">
+                                ⚠️ 房贷利息和住房租金不能同时扣除
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- 赡养老人 -->
+                    <div class="collapse-section">
+                        <div class="collapse-header" data-target="elderCare">
+                            <span>赡养老人</span>
+                            <span class="collapse-icon">▼</span>
+                        </div>
+                        <div class="collapse-content" id="elderCare">
+                            <div class="form-group">
+                                <label class="form-label">父母年龄</label>
+                                <div class="radio-group">
+                                    <div class="radio-option active" data-elder-age="none">
+                                        <div class="radio-circle"></div>
+                                        <span class="radio-label">均未满60岁</span>
+                                    </div>
+                                    <div class="radio-option" data-elder-age="qualified">
+                                        <div class="radio-circle"></div>
+                                        <span class="radio-label">至少一方年满60岁</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group elder-options hidden">
+                                <label class="form-label">赡养人数（兄弟姐妹）</label>
+                                <div class="button-group">
+                                    <button class="btn-option active" data-siblings="1">1人（独生）</button>
+                                    <button class="btn-option" data-siblings="2">2人</button>
+                                    <button class="btn-option" data-siblings="3">3人</button>
+                                    <button class="btn-option" data-siblings="4">4人+</button>
+                                </div>
+                            </div>
+
+                            <div class="form-group elder-share hidden">
+                                <label class="form-label">分摊金额 (最高 ¥1,500/月)</label>
+                                <input type="number" class="form-input" id="elderShareInput" placeholder="0" min="0"
+                                    max="1500" step="100">
+                            </div>
+
+                            <div class="total-display elder-options hidden">
+                                <span class="total-label">扣除金额</span>
+                                <span class="total-value" id="elderAmount">¥ 0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- 大病医疗（仅年度） -->
+                    <div class="collapse-section yearly-only hidden">
+                        <div class="collapse-header" data-target="medical">
+                            <span>大病医疗</span>
+                            <span class="collapse-icon">▼</span>
+                        </div>
+                        <div class="collapse-content" id="medical">
+                            <div class="form-group">
+                                <label class="form-label">个人自付金额（超过1.5万元的部分）</label>
+                                <input type="number" class="form-input" id="medicalExpenseInput" placeholder="0" min="0"
+                                    step="1000">
+                            </div>
+                            <div class="alert alert-warning">
+                                ⓘ 扣除范围：超过15,000元的部分，最高80,000元
+                            </div>
+                            <div class="total-display">
+                                <span class="total-label">扣除金额</span>
+                                <span class="total-value" id="medicalAmount">¥ 0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="total-display">
+                        <span class="total-label">附加扣除合计</span>
+                        <span class="total-value" id="additionalTotal">¥ 0</span>
+                    </div>
+                </div>
+
+                <!-- 年终奖 -->
+                <div class="card">
+                    <h3 class="card-title">年终奖</h3>
+
+                    <div class="form-group">
+                        <label class="form-label">年终奖金额</label>
+                        <input type="number" class="form-input" id="bonusInput" placeholder="0" min="0" step="1000">
+                    </div>
+
+                    <div id="bonusComparison" class="hidden">
+                        <div class="divider"></div>
+                        <div
+                            style="margin-bottom: var(--spacing-sm); color: var(--text-secondary); font-size: 0.875rem;">
+                            💡 计税方式对比
+                        </div>
+
+                        <div class="result-grid" style="margin-bottom: var(--spacing-sm);">
+                            <div class="result-item">
+                                <div class="result-item-label">单独计税</div>
+                                <div class="result-item-value" id="bonusSeparateTax">¥ 0</div>
+                            </div>
+                            <div class="result-item">
+                                <div class="result-item-label">合并计税</div>
+                                <div class="result-item-value" id="bonusCombinedTax">¥ 0</div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-warning" id="bonusRecommendation">
+                            ✓ 推荐使用单独计税，可节省 ¥0
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右侧：结果区 -->
+            <div class="right-column">
+                <!-- 计算结果 -->
+                <div class="card">
+                    <div class="result-main">
+                        <div class="result-label">应纳税额</div>
+                        <div class="result-amount" id="totalTaxAmount">¥ 0</div>
+
+                        <div class="result-grid">
+                            <div class="result-item">
+                                <div class="result-item-label">实际到手</div>
+                                <div class="result-item-value" id="netIncome">¥ 0</div>
+                            </div>
+                            <div class="result-item">
+                                <div class="result-item-label">有效税率</div>
+                                <div class="result-item-value rate" id="effectiveRate">0%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 收入分解 -->
+                <div class="card">
+                    <h3 class="card-title">收入分解</h3>
+                    <div id="incomeBreakdown">
+                        <!-- 这里将通过JavaScript动态生成可视化内容 -->
+                    </div>
+                </div>
+
+                <!-- 税额明细 -->
+                <div class="card">
+                    <h3 class="card-title">税额明细</h3>
+                    <div id="taxDetails">
+                        <!-- 这里将通过JavaScript动态生成税额明细 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 隐藏的文件上传input -->
+    <input type="file" id="fileInput" accept=".json" style="display: none;">
+
+    <script>
+        const TAX_BRACKETS = [
+            { threshold: 36000, rate: 0.03, deduction: 0 },
+            { threshold: 144000, rate: 0.10, deduction: 2520 },
+            { threshold: 300000, rate: 0.20, deduction: 16920 },
+            { threshold: 420000, rate: 0.25, deduction: 31920 },
+            { threshold: 660000, rate: 0.30, deduction: 52920 },
+            { threshold: 960000, rate: 0.35, deduction: 85920 },
+            { threshold: Infinity, rate: 0.45, deduction: 181920 }
+        ];
+
+        const MONTHLY_TAX_BRACKETS = [
+            { threshold: 3000, rate: 0.03, deduction: 0 },
+            { threshold: 12000, rate: 0.10, deduction: 210 },
+            { threshold: 25000, rate: 0.20, deduction: 1410 },
+            { threshold: 35000, rate: 0.25, deduction: 2660 },
+            { threshold: 55000, rate: 0.30, deduction: 4410 },
+            { threshold: 80000, rate: 0.35, deduction: 7160 },
+            { threshold: Infinity, rate: 0.45, deduction: 15160 }
+        ];
+
+        let appState = {
+            mode: 'monthly',
+            income: {
+                monthlyIncomes: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], // 12个月的工资数组
+                yearly: 0,
+                prepaidTax: 0,
+                bonus: 0
+            },
+            deductions: {
+                social: {
+                    pension: 0,
+                    medical: 0,
+                    unemployment: 0,
+                    housingFund: 0
+                },
+                additional: {
+                    childEducation: { count: 0, ratio: 100 },
+                    infantCare: { count: 0, ratio: 100 },
+                    continuingEducation: { type: 'none' },
+                    housing: { type: 'none', cityTier: 'tier1' },
+                    elderCare: { qualified: false, siblings: 1, share: 0 }
+                }
+            }
+        };
+
+        function calculateTax(taxableIncome, brackets) {
+            for (let i = 0; i < brackets.length; i++) {
+                if (taxableIncome <= brackets[i].threshold) {
+                    return taxableIncome * brackets[i].rate - brackets[i].deduction;
+                }
+            }
+            return 0;
+        }
+
+        function calculateTaxDetails(taxableIncome) {
+            const details = [];
+            let remaining = taxableIncome;
+
+            for (let i = 0; i < TAX_BRACKETS.length; i++) {
+                const bracket = TAX_BRACKETS[i];
+                const prevThreshold = i > 0 ? TAX_BRACKETS[i - 1].threshold : 0;
+                const bracketSize = bracket.threshold - prevThreshold;
+
+                if (remaining > 0) {
+                    const taxedAmount = Math.min(remaining, bracketSize);
+                    const tax = taxedAmount * bracket.rate;
+
+                    details.push({
+                        rate: bracket.rate,
+                        amount: taxedAmount,
+                        tax: tax
+                    });
+
+                    remaining -= taxedAmount;
+                }
+            }
+
+            return details;
+        }
+
+        function getSocialDeductionTotal() {
+            const { pension, medical, unemployment, housingFund } = appState.deductions.social;
+            return pension + medical + unemployment + housingFund;
+        }
+
+        function getAdditionalDeductionTotal() {
+            let total = 0;
+            const additional = appState.deductions.additional;
+            const perMonth = appState.mode === 'monthly';
+
+            total += additional.childEducation.count * 2000 * (additional.childEducation.ratio / 100);
+            total += additional.infantCare.count * 2000 * (additional.infantCare.ratio / 100);
+
+            if (additional.continuingEducation.type === 'academic') {
+                total += 400;
+            } else if (additional.continuingEducation.type === 'vocational') {
+                total += perMonth ? 300 : 3600;
+            }
+
+            if (additional.housing.type === 'loan') {
+                total += 1000;
+            } else if (additional.housing.type === 'rent') {
+                const rentAmounts = { tier1: 1500, tier2: 1100, tier3: 800 };
+                total += rentAmounts[additional.housing.cityTier] || 0;
+            }
+
+            if (additional.elderCare.qualified) {
+                if (additional.elderCare.siblings === 1) {
+                    total += 3000;
+                } else {
+                    total += Math.min(additional.elderCare.share, 1500);
+                }
+            }
+
+            return total;
+        }
+
+        function calculateMonthlyTax() {
+            const monthlyIncomes = appState.income.monthlyIncomes || [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+            const prepaidTax = appState.income.prepaidTax || 0;
+
+            // 计算累计收入（所有有收入的月份）
+            const accumulatedIncome = monthlyIncomes.reduce((sum, income) => sum + income, 0);
+
+            // 计算累计月数（有收入的月份数）
+            const monthsWithIncome = monthlyIncomes.filter(income => income > 0).length;
+            const effectiveMonths = monthsWithIncome > 0 ? monthsWithIncome : 12; // 如果没有输入，默认按12个月
+
+            const basicDeduction = 5000 * effectiveMonths;
+            const socialDeduction = getSocialDeductionTotal() * effectiveMonths;
+            const additionalDeduction = getAdditionalDeductionTotal() * effectiveMonths;
+
+            const taxableIncome = Math.max(0, accumulatedIncome - basicDeduction - socialDeduction - additionalDeduction);
+            const accumulatedTax = calculateTax(taxableIncome, TAX_BRACKETS);
+            const currentTax = Math.max(0, accumulatedTax - prepaidTax);
+
+            return {
+                taxableIncome: taxableIncome,
+                tax: currentTax,
+                accumulatedTax: accumulatedTax,
+                totalIncome: accumulatedIncome,
+                totalDeductions: basicDeduction + socialDeduction + additionalDeduction,
+                netIncome: accumulatedIncome - getSocialDeductionTotal() * effectiveMonths - currentTax,
+                effectiveMonths: effectiveMonths
+            };
+        }
+
+        function calculateYearlyTax() {
+            const yearlyIncome = appState.income.yearly;
+            const basicDeduction = 60000;
+            const socialDeduction = getSocialDeductionTotal() * 12;
+            const additionalDeduction = getAdditionalDeductionTotal() * 12;
+
+            const taxableIncome = Math.max(0, yearlyIncome - basicDeduction - socialDeduction - additionalDeduction);
+            const tax = calculateTax(taxableIncome, TAX_BRACKETS);
+
+            return {
+                taxableIncome: taxableIncome,
+                tax: tax,
+                totalIncome: yearlyIncome,
+                totalDeductions: basicDeduction + socialDeduction + additionalDeduction,
+                netIncome: yearlyIncome - getSocialDeductionTotal() * 12 - tax
+            };
+        }
+
+        function calculateBonus() {
+            const bonus = appState.income.bonus;
+            if (bonus <= 0) return null;
+
+            const separateTax = calculateTax(bonus / 12, MONTHLY_TAX_BRACKETS) * 12;
+
+            const baseResult = appState.mode === 'monthly' ? calculateMonthlyTax() : calculateYearlyTax();
+            const combinedTaxableIncome = baseResult.taxableIncome + bonus;
+            const combinedTax = calculateTax(combinedTaxableIncome, TAX_BRACKETS);
+            const combinedBonusTax = combinedTax - baseResult.tax;
+
+            return {
+                separate: separateTax,
+                combined: combinedBonusTax,
+                recommendation: separateTax < combinedBonusTax ? 'separate' : 'combined',
+                savings: Math.abs(separateTax - combinedBonusTax)
+            };
+        }
+
+        function updateUI() {
+            const result = appState.mode === 'monthly' ? calculateMonthlyTax() : calculateYearlyTax();
+
+            document.getElementById('totalTaxAmount').textContent = `¥ ${result.tax.toLocaleString('zh-CN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+            document.getElementById('netIncome').textContent = `¥ ${result.netIncome.toLocaleString('zh-CN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+
+            const effectiveRate = result.totalIncome > 0 ? (result.tax / result.totalIncome * 100) : 0;
+            document.getElementById('effectiveRate').textContent = `${effectiveRate.toFixed(2)}%`;
+
+            document.getElementById('socialTotal').textContent = `¥ ${getSocialDeductionTotal().toLocaleString('zh-CN')}`;
+            document.getElementById('additionalTotal').textContent = `¥ ${getAdditionalDeductionTotal().toLocaleString('zh-CN')}`;
+
+            updateChildEducationDisplay();
+            updateInfantCareDisplay();
+            updateElderCareDisplay();
+            updateEducationDisplay();
+            updateHousingDisplay();
+            updateTotalYearlyIncome();
+            updateIncomeBreakdown(result);
+            updateTaxDetails(result);
+            updateBonusComparison();
+
+            saveToLocalStorage();
+        }
+
+        function updateChildEducationDisplay() {
+            const count = appState.deductions.additional.childEducation.count;
+            const ratio = appState.deductions.additional.childEducation.ratio;
+            const amount = count * 2000 * (ratio / 100);
+            document.getElementById('childEduAmount').textContent = `¥ ${amount.toLocaleString('zh-CN')}`;
+
+            // 同步显示状态
+            document.querySelectorAll('.child-options').forEach(el => {
+                el.classList.toggle('hidden', count === 0);
+            });
+            document.querySelectorAll('#childEducation [data-ratio]').forEach(btn => {
+                btn.classList.toggle('active', parseInt(btn.dataset.ratio) === ratio);
+            });
+        }
+
+        function updateInfantCareDisplay() {
+            const count = appState.deductions.additional.infantCare.count;
+            const ratio = appState.deductions.additional.infantCare.ratio;
+            const amount = count * 2000 * (ratio / 100);
+            document.getElementById('infantAmount').textContent = `¥ ${amount.toLocaleString('zh-CN')}`;
+
+            // 同步显示状态
+            document.querySelectorAll('.infant-options').forEach(el => {
+                el.classList.toggle('hidden', count === 0);
+            });
+            document.querySelectorAll('#infantCare [data-ratio]').forEach(btn => {
+                btn.classList.toggle('active', parseInt(btn.dataset.ratio) === ratio);
+            });
+        }
+
+        function updateElderCareDisplay() {
+            const elder = appState.deductions.additional.elderCare;
+            let amount = 0;
+            if (elder.qualified) {
+                amount = elder.siblings === 1 ? 3000 : Math.min(elder.share, 1500);
+            }
+            document.getElementById('elderAmount').textContent = `¥ ${amount.toLocaleString('zh-CN')}`;
+
+            // 同步显示状态
+            const isQualified = appState.deductions.additional.elderCare.qualified;
+            document.querySelectorAll('.elder-options').forEach(el => {
+                el.classList.toggle('hidden', !isQualified);
+            });
+            document.querySelectorAll('.elder-share').forEach(el => {
+                el.classList.toggle('hidden', !isQualified || elder.siblings === 1);
+            });
+        }
+
+        function updateEducationDisplay() {
+            const type = appState.deductions.additional.continuingEducation.type;
+            document.querySelectorAll('[data-edu-type]').forEach(opt => {
+                opt.classList.toggle('active', opt.dataset.eduType === type);
+            });
+        }
+
+        function updateHousingDisplay() {
+            const type = appState.deductions.additional.housing.type;
+            const cityTier = appState.deductions.additional.housing.cityTier;
+            document.querySelectorAll('[data-housing-type]').forEach(opt => {
+                opt.classList.toggle('active', opt.dataset.housingType === type);
+            });
+            document.querySelectorAll('.rent-options').forEach(el => {
+                el.classList.toggle('hidden', type !== 'rent');
+            });
+            document.querySelectorAll('.housing-warning').forEach(el => {
+                el.classList.toggle('hidden', type === 'none');
+            });
+            document.querySelectorAll('[data-city-tier]').forEach(opt => {
+                opt.classList.toggle('active', opt.dataset.cityTier === cityTier);
+            });
+        }
+
+        function updateTotalYearlyIncome() {
+            if (appState.mode === 'monthly') {
+                const total = appState.income.monthlyIncomes.reduce((sum, income) => sum + income, 0);
+                document.getElementById('totalYearlyIncome').textContent = `¥ ${total.toLocaleString('zh-CN')}`;
+            }
+        }
+
+        function updateIncomeBreakdown(result) {
+            const container = document.getElementById('incomeBreakdown');
+            const total = result.totalIncome;
+
+            if (total === 0) {
+                container.innerHTML = '<div style="color: var(--text-secondary); text-align: center; padding: 2rem;">请输入收入信息</div>';
+                return;
+            }
+
+            const effectiveMonths = result.effectiveMonths || 12;
+            const items = [
+                { label: '税前收入', amount: total, color: '#00D9FF' },
+                { label: '基本扣除', amount: appState.mode === 'monthly' ? 5000 * effectiveMonths : 60000, color: '#8A8D91' },
+                { label: '专项扣除', amount: getSocialDeductionTotal() * (appState.mode === 'monthly' ? effectiveMonths : 12), color: '#8A8D91' },
+                { label: '附加扣除', amount: getAdditionalDeductionTotal() * (appState.mode === 'monthly' ? effectiveMonths : 12), color: '#8A8D91' },
+                { label: '应纳税所得额', amount: result.taxableIncome, color: '#00FF88' },
+                { label: '个人所得税', amount: result.tax, color: '#FF3366' },
+                { label: '实际到手', amount: result.netIncome, color: '#00FF88' }
+            ];
+
+            let html = '<div style="display: flex; flex-direction: column; gap: 0.75rem;">';
+            items.forEach(item => {
+                const percentage = total > 0 ? (item.amount / total * 100) : 0;
+                html += `
+                    <div style="display: flex; flex-direction: column; gap: 0.25rem;">
+                        <div style="display: flex; justify-content: space-between; font-size: 0.875rem;">
+                            <span style="color: var(--text-secondary);">${item.label}</span>
+                            <span style="color: ${item.color}; font-weight: 600;">¥ ${item.amount.toLocaleString('zh-CN')}</span>
+                        </div>
+                        <div style="width: 100%; height: 8px; background: rgba(0,0,0,0.3); border-radius: 4px; overflow: hidden;">
+                            <div style="width: ${percentage}%; height: 100%; background: ${item.color}; border-radius: 4px; transition: width 0.5s ease;"></div>
+                        </div>
+                    </div>
+                `;
+            });
+            html += '</div>';
+
+            container.innerHTML = html;
+        }
+
+        function updateTaxDetails(result) {
+            const container = document.getElementById('taxDetails');
+
+            if (result.taxableIncome === 0) {
+                container.innerHTML = '<div style="color: var(--text-secondary); text-align: center; padding: 2rem;">无需纳税</div>';
+                return;
+            }
+
+            const details = calculateTaxDetails(result.taxableIncome);
+
+            let html = `
+                <div style="margin-bottom: var(--spacing-md);">
+                    <div style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 0.5rem;">应纳税所得额</div>
+                    <div style="color: var(--neon-cyan); font-size: 1.5rem; font-weight: 600; font-family: 'SF Mono', monospace;">¥ ${result.taxableIncome.toLocaleString('zh-CN')}</div>
+                </div>
+                <div class="divider"></div>
+                <div style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: var(--spacing-sm);">税率分档计算</div>
+                <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            `;
+
+            details.forEach(detail => {
+                html += `
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: var(--spacing-sm); padding: 0.75rem; background: rgba(0,0,0,0.2); border-radius: var(--radius-sm); font-size: 0.875rem;">
+                        <div>
+                            <div style="color: var(--text-tertiary); font-size: 0.75rem;">税率</div>
+                            <div style="color: var(--neon-yellow); font-weight: 600;">${(detail.rate * 100).toFixed(0)}%</div>
+                        </div>
+                        <div>
+                            <div style="color: var(--text-tertiary); font-size: 0.75rem;">金额</div>
+                            <div style="color: var(--text-primary);">¥ ${detail.amount.toLocaleString('zh-CN')}</div>
+                        </div>
+                        <div>
+                            <div style="color: var(--text-tertiary); font-size: 0.75rem;">税额</div>
+                            <div style="color: var(--neon-pink); font-weight: 600;">¥ ${detail.tax.toLocaleString('zh-CN', { minimumFractionDigits: 2 })}</div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            html += '</div>';
+
+            if (appState.mode === 'monthly' && appState.income.prepaidTax > 0) {
+                const shouldPay = result.tax;
+                html += `
+                    <div class="divider"></div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: var(--spacing-sm); background: rgba(0,217,255,0.05); border-radius: var(--radius-sm);">
+                        <span style="color: var(--text-secondary); font-size: 0.875rem;">本月应补(退)税</span>
+                        <span style="color: var(--neon-cyan); font-size: 1.25rem; font-weight: 700; font-family: 'SF Mono', monospace;">¥ ${shouldPay.toLocaleString('zh-CN', { minimumFractionDigits: 2 })}</span>
+                    </div>
+                `;
+            }
+
+            container.innerHTML = html;
+        }
+
+        function updateBonusComparison() {
+            const bonusResult = calculateBonus();
+            const container = document.getElementById('bonusComparison');
+
+            if (!bonusResult) {
+                container.classList.add('hidden');
+                return;
+            }
+
+            container.classList.remove('hidden');
+
+            document.getElementById('bonusSeparateTax').textContent = `¥ ${bonusResult.separate.toLocaleString('zh-CN', { minimumFractionDigits: 2 })}`;
+            document.getElementById('bonusCombinedTax').textContent = `¥ ${bonusResult.combined.toLocaleString('zh-CN', { minimumFractionDigits: 2 })}`;
+
+            const recommendation = document.getElementById('bonusRecommendation');
+            if (bonusResult.recommendation === 'separate') {
+                recommendation.textContent = `✓ 推荐使用单独计税，可节省 ¥${bonusResult.savings.toLocaleString('zh-CN', { minimumFractionDigits: 2 })}`;
+                recommendation.className = 'alert alert-warning';
+            } else {
+                recommendation.textContent = `✓ 推荐使用合并计税，可节省 ¥${bonusResult.savings.toLocaleString('zh-CN', { minimumFractionDigits: 2 })}`;
+                recommendation.className = 'alert alert-warning';
+            }
+        }
+
+        function initEventListeners() {
+            document.querySelectorAll('.mode-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    appState.mode = btn.dataset.mode;
+
+                    document.querySelectorAll('.monthly-only').forEach(el => {
+                        el.classList.toggle('hidden', appState.mode !== 'monthly');
+                    });
+                    document.querySelectorAll('.yearly-only').forEach(el => {
+                        el.classList.toggle('hidden', appState.mode !== 'yearly');
+                    });
+
+                    updateUI();
+                });
+            });
+
+            // 年度收入输入
+            document.getElementById('yearlyIncomeInput').addEventListener('input', debounce((e) => {
+                appState.income.yearly = parseFloat(e.target.value) || 0;
+                updateUI();
+            }, 300));
+
+            // 主月度收入输入（自动应用到全年）
+            document.getElementById('monthlyIncomeInput').addEventListener('input', debounce((e) => {
+                const value = parseFloat(e.target.value) || 0;
+                // 更新状态数组
+                appState.income.monthlyIncomes.fill(value);
+
+                // 同步更新 12 个月明细输入框的值
+                document.querySelectorAll('.monthly-income-input').forEach(input => {
+                    input.value = value || '';
+                });
+
+                updateUI();
+            }, 300));
+
+            // 月度收入明细输入框（单独调整）
+            document.querySelectorAll('.monthly-income-input').forEach(input => {
+                input.addEventListener('input', debounce((e) => {
+                    const month = parseInt(e.target.dataset.month);
+                    const value = parseFloat(e.target.value) || 0;
+                    appState.income.monthlyIncomes[month - 1] = value;
+
+                    // 当明细被修改时，主输入框的值就不再代表全年统一，清空它或保持现状（这里选择保持现状，通常用户会知道他在做微调）
+                    updateUI();
+                }, 300));
+            });
+
+            document.querySelectorAll('[data-preset]').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('[data-preset]').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const preset = btn.dataset.preset;
+                    if (preset === '22.5') {
+                        let income = 0;
+                        if (appState.mode === 'monthly') {
+                            // 计算有收入月份的平均工资
+                            const totalIncome = appState.income.monthlyIncomes.reduce((sum, val) => sum + val, 0);
+                            const monthsWithIncome = appState.income.monthlyIncomes.filter(val => val > 0).length;
+                            income = monthsWithIncome > 0 ? totalIncome / monthsWithIncome : 0;
+                        } else {
+                            income = appState.income.yearly / 12;
+                        }
+
+                        document.getElementById('pensionInput').value = Math.round(income * 0.08);
+                        document.getElementById('medicalInput').value = Math.round(income * 0.02);
+                        document.getElementById('unemploymentInput').value = Math.round(income * 0.005);
+                        document.getElementById('housingFundInput').value = Math.round(income * 0.12);
+
+                        appState.deductions.social.pension = Math.round(income * 0.08);
+                        appState.deductions.social.medical = Math.round(income * 0.02);
+                        appState.deductions.social.unemployment = Math.round(income * 0.005);
+                        appState.deductions.social.housingFund = Math.round(income * 0.12);
+
+                        updateUI();
+                    }
+                });
+            });
+
+            document.querySelectorAll('.social-input').forEach(input => {
+                input.addEventListener('input', debounce((e) => {
+                    const id = e.target.id;
+                    const value = parseFloat(e.target.value) || 0;
+
+                    if (id === 'pensionInput') appState.deductions.social.pension = value;
+                    else if (id === 'medicalInput') appState.deductions.social.medical = value;
+                    else if (id === 'unemploymentInput') appState.deductions.social.unemployment = value;
+                    else if (id === 'housingFundInput') appState.deductions.social.housingFund = value;
+
+                    document.querySelectorAll('[data-preset]').forEach(b => b.classList.remove('active'));
+                    document.querySelector('[data-preset="custom"]').classList.add('active');
+
+                    updateUI();
+                }, 300));
+            });
+
+            document.querySelectorAll('.collapse-header').forEach(header => {
+                header.addEventListener('click', () => {
+                    const target = document.getElementById(header.dataset.target);
+                    const icon = header.querySelector('.collapse-icon');
+
+                    target.classList.toggle('expanded');
+                    icon.classList.toggle('expanded');
+                });
+            });
+
+            document.querySelectorAll('[data-children]').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('[data-children]').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const count = parseInt(btn.dataset.children);
+                    appState.deductions.additional.childEducation.count = count;
+
+                    document.querySelectorAll('.child-options').forEach(el => {
+                        el.classList.toggle('hidden', count === 0);
+                    });
+
+                    updateUI();
+                });
+            });
+
+            document.querySelectorAll('#childEducation [data-ratio]').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('#childEducation [data-ratio]').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    appState.deductions.additional.childEducation.ratio = parseInt(btn.dataset.ratio);
+                    updateUI();
+                });
+            });
+
+            document.querySelectorAll('[data-infants]').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('[data-infants]').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const count = parseInt(btn.dataset.infants);
+                    appState.deductions.additional.infantCare.count = count;
+
+                    document.querySelectorAll('.infant-options').forEach(el => {
+                        el.classList.toggle('hidden', count === 0);
+                    });
+
+                    updateUI();
+                });
+            });
+
+            document.querySelectorAll('#infantCare [data-ratio]').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('#infantCare [data-ratio]').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    appState.deductions.additional.infantCare.ratio = parseInt(btn.dataset.ratio);
+                    updateUI();
+                });
+            });
+
+            document.querySelectorAll('[data-edu-type]').forEach(option => {
+                option.addEventListener('click', () => {
+                    document.querySelectorAll('[data-edu-type]').forEach(o => o.classList.remove('active'));
+                    option.classList.add('active');
+
+                    appState.deductions.additional.continuingEducation.type = option.dataset.eduType;
+                    updateUI();
+                });
+            });
+
+            document.querySelectorAll('[data-housing-type]').forEach(option => {
+                option.addEventListener('click', () => {
+                    document.querySelectorAll('[data-housing-type]').forEach(o => o.classList.remove('active'));
+                    option.classList.add('active');
+
+                    const type = option.dataset.housingType;
+                    appState.deductions.additional.housing.type = type;
+
+                    document.querySelectorAll('.rent-options').forEach(el => {
+                        el.classList.toggle('hidden', type !== 'rent');
+                    });
+
+                    updateUI();
+                });
+            });
+
+            document.querySelectorAll('[data-city-tier]').forEach(option => {
+                option.addEventListener('click', () => {
+                    document.querySelectorAll('[data-city-tier]').forEach(o => o.classList.remove('active'));
+                    option.classList.add('active');
+
+                    appState.deductions.additional.housing.cityTier = option.dataset.cityTier;
+                    updateUI();
+                });
+            });
+
+            document.querySelectorAll('[data-elder-age]').forEach(option => {
+                option.addEventListener('click', () => {
+                    document.querySelectorAll('[data-elder-age]').forEach(o => o.classList.remove('active'));
+                    option.classList.add('active');
+
+                    const qualified = option.dataset.elderAge === 'qualified';
+                    appState.deductions.additional.elderCare.qualified = qualified;
+
+                    document.querySelectorAll('.elder-options').forEach(el => {
+                        el.classList.toggle('hidden', !qualified);
+                    });
+
+                    updateUI();
+                });
+            });
+
+            document.querySelectorAll('[data-siblings]').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('[data-siblings]').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const siblings = parseInt(btn.dataset.siblings);
+                    appState.deductions.additional.elderCare.siblings = siblings;
+
+                    if (siblings > 1) {
+                        const averageShare = Math.min(Math.floor(3000 / siblings), 1500);
+                        appState.deductions.additional.elderCare.share = averageShare;
+                        document.getElementById('elderShareInput').value = averageShare;
+                    }
+
+                    document.querySelectorAll('.elder-share').forEach(el => {
+                        el.classList.toggle('hidden', siblings === 1);
+                    });
+
+                    updateUI();
+                });
+            });
+
+            document.getElementById('elderShareInput').addEventListener('input', debounce((e) => {
+                const value = Math.min(parseFloat(e.target.value) || 0, 1500);
+                appState.deductions.additional.elderCare.share = value;
+                e.target.value = value;
+                updateUI();
+            }, 300));
+
+            document.getElementById('bonusInput').addEventListener('input', debounce((e) => {
+                appState.income.bonus = parseFloat(e.target.value) || 0;
+                updateUI();
+            }, 300));
+
+            document.getElementById('exportBtn').addEventListener('click', exportData);
+            document.getElementById('importBtn').addEventListener('click', () => {
+                document.getElementById('fileInput').click();
+            });
+            document.getElementById('fileInput').addEventListener('change', importData);
+            document.getElementById('clearBtn').addEventListener('click', clearData);
+        }
+
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        function saveToLocalStorage() {
+            try {
+                localStorage.setItem('taxCalculatorData', JSON.stringify(appState));
+            } catch (e) {
+                console.error('Failed to save to localStorage:', e);
+            }
+        }
+
+        function loadFromLocalStorage() {
+            try {
+                const saved = localStorage.getItem('taxCalculatorData');
+                if (saved) {
+                    const data = JSON.parse(saved);
+
+                    // 安全合并数据，防止丢失默认字段导致 NaN
+                    appState = {
+                        mode: data.mode || 'monthly',
+                        income: { ...appState.income, ...(data.income || {}) },
+                        deductions: {
+                            social: { ...appState.deductions.social, ...(data.deductions?.social || {}) },
+                            additional: { ...appState.deductions.additional, ...(data.deductions?.additional || {}) }
+                        }
+                    };
+
+                    // 兼容旧数据格式
+                    if (appState.income && !appState.income.monthlyIncomes) {
+                        appState.income.monthlyIncomes = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+                        if (appState.income.monthly) {
+                            appState.income.monthlyIncomes.fill(appState.income.monthly);
+                        }
+                    }
+
+                    // 安全地更新 DOM
+                    const yearlyInput = document.getElementById('yearlyIncomeInput');
+                    if (yearlyInput) yearlyInput.value = appState.income.yearly || '';
+
+                    appState.income.monthlyIncomes.forEach((income, index) => {
+                        const input = document.querySelector(`.monthly-income-input[data-month="${index + 1}"]`);
+                        if (input) {
+                            input.value = income || '';
+                        }
+                    });
+
+                    const monthlyMainInput = document.getElementById('monthlyIncomeInput');
+                    if (monthlyMainInput) {
+                        const allSame = appState.income.monthlyIncomes.every(val => val === appState.income.monthlyIncomes[0]);
+                        if (allSame && appState.income.monthlyIncomes[0] > 0) {
+                            monthlyMainInput.value = appState.income.monthlyIncomes[0];
+                        } else {
+                            monthlyMainInput.value = '';
+                        }
+                    }
+
+                    const setVal = (id, val) => {
+                        const el = document.getElementById(id);
+                        if (el) el.value = val || '';
+                    };
+
+                    setVal('pensionInput', appState.deductions.social.pension);
+                    setVal('medicalInput', appState.deductions.social.medical);
+                    setVal('unemploymentInput', appState.deductions.social.unemployment);
+                    setVal('housingFundInput', appState.deductions.social.housingFund);
+                    setVal('bonusInput', appState.income.bonus);
+
+                    updateUIFromState();
+                }
+            } catch (e) {
+                console.error('Failed to load from localStorage:', e);
+            }
+        }
+
+        function updateUIFromState() {
+            document.querySelectorAll('.mode-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.mode === appState.mode);
+            });
+
+            document.querySelectorAll('.monthly-only').forEach(el => {
+                el.classList.toggle('hidden', appState.mode !== 'monthly');
+            });
+            document.querySelectorAll('.yearly-only').forEach(el => {
+                el.classList.toggle('hidden', appState.mode !== 'yearly');
+            });
+
+            updateUI();
+        }
+
+        function exportData() {
+            const dataStr = JSON.stringify(appState, null, 2);
+            const blob = new Blob([dataStr], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `个税计算数据_${new Date().toISOString().slice(0, 10)}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        function importData(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = (event) => {
+                try {
+                    const imported = JSON.parse(event.target.result);
+
+                    if (imported.mode && imported.income && imported.deductions) {
+                        appState = imported;
+                        saveToLocalStorage(); // 先保存依然很重要，确保 loadFromLocalStorage 读到的是最新数据
+                        loadFromLocalStorage();
+                        alert('数据导入成功！');
+                    } else {
+                        alert('导入失败：数据格式不正确');
+                    }
+                } catch (error) {
+                    alert('导入失败：' + error.message);
+                }
+            };
+            reader.readAsText(file);
+
+            e.target.value = '';
+        }
+
+        function clearData() {
+            if (!confirm('确定要清空所有数据吗？此操作不可恢复。')) return;
+
+            appState = {
+                mode: 'monthly',
+                income: {
+                    monthlyIncomes: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                    yearly: 0,
+                    prepaidTax: 0,
+                    bonus: 0
+                },
+                deductions: {
+                    social: {
+                        pension: 0,
+                        medical: 0,
+                        unemployment: 0,
+                        housingFund: 0
+                    },
+                    additional: {
+                        childEducation: { count: 0, ratio: 100 },
+                        infantCare: { count: 0, ratio: 100 },
+                        continuingEducation: { type: 'none' },
+                        housing: { type: 'none', cityTier: 'tier1' },
+                        elderCare: { qualified: false, siblings: 1, share: 0 }
+                    }
+                }
+            };
+
+            document.querySelectorAll('input[type="number"]').forEach(input => input.value = '');
+            const monthlyMainInput = document.getElementById('monthlyIncomeInput');
+            if (monthlyMainInput) monthlyMainInput.value = '';
+            const yearlyInput = document.getElementById('yearlyIncomeInput');
+            if (yearlyInput) yearlyInput.value = '';
+
+            // 清除结果显示区域
+            document.getElementById('totalTaxAmount').textContent = '¥ 0.00';
+            document.getElementById('netIncome').textContent = '¥ 0.00';
+            document.getElementById('effectiveRate').textContent = '0.00%';
+            document.getElementById('socialTotal').textContent = '¥ 0';
+            document.getElementById('additionalTotal').textContent = '¥ 0';
+
+            // 收起所有折叠面板
+            document.querySelectorAll('.collapse-content').forEach(el => el.classList.remove('expanded'));
+            document.querySelectorAll('.collapse-icon').forEach(el => el.classList.remove('expanded'));
+
+            document.querySelectorAll('.btn-option').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.radio-option').forEach(option => option.classList.remove('active'));
+
+            const pDefaults = {
+                '[data-preset="22.5"]': true,
+                '[data-children="0"]': true,
+                '[data-infants="0"]': true,
+                '[data-edu-type="none"]': true,
+                '[data-housing-type="none"]': true,
+                '[data-elder-age="none"]': true,
+                '[data-siblings="1"]': true
+            };
+
+            Object.keys(pDefaults).forEach(selector => {
+                const el = document.querySelector(selector);
+                if (el) el.classList.add('active');
+            });
+
+            saveToLocalStorage();
+            updateUIFromState();
+
+            // 提示清空成功
+            console.log('Data cleared successfully');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initEventListeners();
+            loadFromLocalStorage();
+            updateUI();
+        });
+    </script>
+</body>
+
+</html>

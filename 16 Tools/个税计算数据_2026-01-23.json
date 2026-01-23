@@ -1,0 +1,54 @@
+{
+  "mode": "monthly",
+  "income": {
+    "monthly": 0,
+    "yearly": 0,
+    "currentMonth": 12,
+    "prepaidTax": 0,
+    "bonus": 0,
+    "monthlyIncomes": [
+      23860,
+      23860,
+      23860,
+      23860,
+      23860,
+      23860,
+      23860,
+      23860,
+      23860,
+      23860,
+      23860,
+      23860
+    ]
+  },
+  "deductions": {
+    "social": {
+      "pension": 1200,
+      "medical": 300,
+      "unemployment": 75,
+      "housingFund": 850
+    },
+    "additional": {
+      "childEducation": {
+        "count": 1,
+        "ratio": 100
+      },
+      "infantCare": {
+        "count": 2,
+        "ratio": 100
+      },
+      "continuingEducation": {
+        "type": "none"
+      },
+      "housing": {
+        "type": "rent",
+        "cityTier": "tier1"
+      },
+      "elderCare": {
+        "qualified": true,
+        "siblings": 2,
+        "share": 1500
+      }
+    }
+  }
+}
