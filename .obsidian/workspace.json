@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1 Projects/Agent Skills/Agent Skills 终极指南：入门、精通、预测.md",
+                "file": "1 Projects/MCPs/Playwright.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Agent Skills 终极指南：入门、精通、预测"
+              "title": "Playwright"
             }
           }
         ]
@@ -195,13 +195,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1 Projects/Agent Skills/Agent Skills 终极指南：入门、精通、预测.md",
+                "file": "1 Projects/MCPs/Playwright.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Agent Skills 终极指南：入门、精通、预测 的大纲"
+              "title": "Playwright 的大纲"
             }
           }
         ]
@@ -225,6 +225,7 @@
   },
   "active": "3f24b4dc9aedd0a1",
   "lastOpenFiles": [
+    "1 Projects/Agent Skills/Agent Skills 终极指南：入门、精通、预测.md",
     "1 Projects/Agent Skills/Agent Skills.md",
     "1 Projects/Agent Skills/Agent Skill 创作最佳实践.md",
     "2 Areas/People/LEO.md",
@@ -253,7 +254,6 @@
     "2 Areas/Bases/Agent Skills.base",
     "2 Areas/Bases/唐朝历代皇帝.canvas",
     "00 Inbox/未命名.md",
-    "1 Projects/Agent Skills/Agent Skills 终极指南：入门、精通、预测.md",
     "1 Projects/Agent Skills",
     "1 Projects/Skills/Agent Skills.md",
     "1 Projects/Skills/Agent Skills 终极指南：入门、精通、预测.md",
