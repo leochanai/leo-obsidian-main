@@ -4,17 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "db5c40400edf86fd",
+        "id": "a36d15cb5ec6d3f0",
         "type": "tabs",
         "children": [
           {
-            "id": "989737bf7b33e21d",
+            "id": "3f24b4dc9aedd0a1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "AGENTS.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "AGENTS"
             }
           }
         ]
@@ -74,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 265.5
+    "width": 470.5
   },
   "right": {
     "id": "f4de798dc9827ed2",
@@ -181,12 +195,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "AGENTS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "AGENTS 的大纲"
             }
           }
         ]
@@ -208,53 +223,55 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "989737bf7b33e21d",
+  "active": "3f24b4dc9aedd0a1",
   "lastOpenFiles": [
-    "01 Base/Nano Banana Prompts.base",
-    "14 Prompts/风格转换 - 复古动漫风格.md",
-    "13 Skills/a-share-daily-review/SKILL.md",
-    "13 Skills/a-share-daily-review/15 Reports/2026-01-22 A股复盘.md",
-    "13 Skills/a-share-daily-review/15 Reports",
-    "13 Skills/a-share-daily-review/references/report-template.md",
-    "15 Reports/2026-01-22 A股复盘 (auto-auto-news).md",
-    "15 Reports/2026-01-22 A股复盘 (auto-news).md",
-    "13 Skills/a-share-daily-review/references/news-example.json",
-    "15 Reports/2026-01-22 A股复盘 (auto-fast2).md",
-    "15 Reports/2026-01-22 A股复盘 (auto8).md",
-    "15 Reports/2026-01-22 A股复盘 (auto-fast).md",
-    "14 Prompts/数字手绘草图.md",
-    "10 Attachment/01436c7ce47e72a13a94d5fb0c77f04e_MD5.jpg",
-    "15 Reports/2026-01-22 A股复盘 (auto6).md",
-    "10 Attachment/ChatGPT Image 2026年1月22日 16_44_05.png",
-    "15 Reports/2026-01-22 A股复盘 (auto5).md",
-    "16 Tools",
-    "未命名文件夹",
-    "15 Reports/2026-01-22 A股复盘 (auto4).md",
-    "15 Reports/2026-01-22 A股复盘 (auto3).md",
-    "15 Reports/2026-01-22 A股复盘 (auto2).md",
-    "15 Reports/2026-01-22 A股复盘 (auto).md",
-    "13 Skills/a-share-daily-review/scripts/__pycache__/a_share_daily_review.cpython-314.pyc",
-    "13 Skills/a-share-daily-review/scripts/__pycache__",
-    "13 Skills/a-share-daily-review/scripts/a_share_daily_review.py",
-    "13 Skills/a-share-daily-review/scripts",
-    "15 Reports/2026-01-22 A股复盘.md",
-    "15 Reports/2025-01-22 A股复盘.md",
-    "03 Source/Agent Skill 创作最佳实践.md",
-    "13 Skills/video/SKILL.md",
-    "13 Skills/video",
-    "13 Skills/remotion-best-practices/rules/videos.md",
-    "13 Skills/remotion-best-practices/rules/trimming.md",
-    "13 Skills/remotion-best-practices/rules/transitions.md",
-    "13 Skills/remotion-best-practices/rules/transcribe-captions.md",
-    "13 Skills/remotion-best-practices/rules/timing.md",
-    "10 Attachment/52d7c8a8c47838a1a4fd65212f48bacb_MD5.svg",
-    "10 Attachment/5e4f631aa3db39a78a3a6e8dca7de263_MD5.svg",
-    "10 Attachment/328aa21719748ef127cb2886f3db9428_MD5.png",
-    "10 Attachment/35f12f6c709dbd64c413094183b41868_MD5.jpg",
-    "10 Attachment/e32a29a8cc5abd96a7faf3838729b27c_MD5.png",
-    "10 Attachment/fccb36390e01dfd2af6e2c92ebbaa93a_MD5.webp",
-    "10 Attachment/ce9236f0f36b272d22ae6293e49877f8_MD5.webp",
-    "10 Attachment/70fa756f1a43bf5aa29466ec2da47d3f_MD5.webp",
+    "3 Resources/Sources/将 Next.js 项目从 Vercel 迁移到 Cloudflare.md",
+    "3 Resources/Sources/一家投资 OpenAI 的硅谷基金的深度研究.md",
+    "3 Resources/Sources/A designer’s path from influence to identity.md",
+    "3 Resources/Sources/Anthropic 工程师都在用的 AI 编程秘技！让 AI \"采访\"你做出完美应用.md",
+    "3 Resources/Sources/Doing well in your courses.md",
+    "3 Resources/Sources/If you have multiple interests, do not waste the next 2-3 years.md",
+    "3 Resources/Sources/oh-my-opencode.md",
+    "3 Resources/AI-Research/Nano Banana Pro 最佳实践 - Gemini.md",
+    "2 Areas/Bases/Obsidian.base",
+    "3 Resources/Prompts/风格转换 - 复古动漫风格.md",
+    "2 Areas/Bases/Nano Banana Prompts.base",
+    "2 Areas/Bases/Investment.base",
+    "2 Areas/Bases/Collection.base",
+    "2 Areas/Bases/Agent Skills.base",
+    "2 Areas/Bases/唐朝历代皇帝.canvas",
+    "1 Projects/Agent Skills/Agent Skills.md",
+    "1 Projects/Agent Skills/Agent Skill 创作最佳实践.md",
+    "00 Inbox/未命名.md",
+    "1 Projects/Agent Skills/Agent Skills 终极指南：入门、精通、预测.md",
+    "1 Projects/Agent Skills",
+    "1 Projects/Skills/Agent Skills.md",
+    "1 Projects/Skills/Agent Skills 终极指南：入门、精通、预测.md",
+    "1 Projects/Skills/Agent Skill 创作最佳实践.md",
+    "2 Areas/Tools/个税计算数据_2026-01-23.json",
+    "2 Areas/Tools/2026-个人所得税计算器.html",
+    "2 Areas/Tools",
+    "1 Projects/Skills",
+    "1 Projects/Agent Skills/youtube-clipper/templates/summary-template.md",
+    "1 Projects/Agent Skills/youtube-clipper/references/yt-dlp-guide.md",
+    "1 Projects/Agent Skills/youtube-clipper/references/subtitle-formatting.md",
+    "1 Projects/Agent Skills/youtube-clipper/references/ffmpeg-guide.md",
+    "1 Projects/Agent Skills/vercel-react-best-practices/rules/server-serialization.md",
+    "1 Projects/Agent Skills/vercel-react-best-practices/rules/server-parallel-fetching.md",
+    "1 Projects/Agent Skills/vercel-react-best-practices/rules/server-dedup-props.md",
+    "1 Projects/Agent Skills/vercel-react-best-practices/rules/server-cache-react.md",
+    "1 Projects/Agent Skills/vercel-react-best-practices/rules/server-cache-lru.md",
+    "1 Projects/Agent Skills/vercel-react-best-practices/rules/server-auth-actions.md",
+    "_Attachment/fbd338a9a4b0d20aa27a212a29f7b375_MD5.png",
+    "_Attachment/fb9c0c7a87ef6a758fce229774872b4a_MD5.png",
+    "_Attachment/ee83b501ae2a5832963478af550f4ae1_MD5.jpg",
+    "_Attachment/f6b5acc27935f185935c986fc04faf01_MD5.webp",
+    "_Attachment/f17f8e6d27e7e59298cddc11e1642e6f_MD5.png",
+    "_Attachment/f05ff4dd60dbb1d58cc4da2d0c744718_MD5.png",
+    "_Attachment/ebdfd5dbea293b607afa83d51c4222db_MD5.png",
+    "_Attachment/ecbd4b05138dab085cb6c28a7c9c2d1d_MD5.png",
+    "_Attachment/e9ada98b74792d6de357453c07068f53_MD5.png",
+    "_Attachment/e9721f4242bf311445656bf3571922b5_MD5.png",
     "02 Map/唐朝历代皇帝.canvas"
   ]
 }

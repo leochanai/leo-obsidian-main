@@ -1,46 +1,28 @@
-# Agent Guidelines for leo-obsidian
+# Leo Obsidian Vault (PARA)
 
-This is an Obsidian vault repository containing Agent Skills, notes, and utility scripts.
+本仓库采用 **PARA** 方法组织，由 Tiago Forte 提出。
 
-## Repository Structure
+## 目录结构
 
 ```
-00 Inbox/        - Capture zone for new ideas
-01 Base/         - Base files for knowledge mapping
-02 Map/          - MOC (Map of Content) files
-03 Source/       - Reference materials and articles
-04 Person/       - Person profiles
-05 Journal/      - Daily notes
-06 Note/         - Permanent notes
-10 Attachment/   - Attached media files
-11 Template/     - Obsidian templates
-12 AI Chat/      - AI conversation logs
-13 Skills/       - Agent Skills (SKILL.md files + scripts)
-14 Actions/      - Action-specific skills
-.obsidian/       - Obsidian plugins, themes, config
+├── 0 Inbox/          # 快速捕获入口，待整理的内容
+├── 1 Projects/       # 有明确目标的活跃项目
+├── 2 Areas/          # 需要长期维护的责任领域
+├── 3 Resources/      # 参考资料和感兴趣的主题
+├── 4 Archive/        # 已完成或不再活跃的内容
+├── _Attachment/      # 附件和媒体文件
+└── _Template/        # 模板文件
 ```
 
-### File Naming
-- Markdown files: `Title Case with Spaces.md` or `kebab-case.md`
-- SKILL directories: `kebab-case-name/`
-- Scripts: `snake_case.py` or `kebab-case.sh`
+## PARA 核心原则
 
-### Notes Structure
-- **Inbox**: Quick captures, no formatting needed
-- **Base**: Base files with `.base` extension for knowledge mapping
-- **Journal**: Date format `YYYY-MM-DD.md`
-- **Notes**: Descriptive titles, can use Chinese
+- **Projects**: 有截止日期的短期目标，完成后移入 Archive
+- **Areas**: 长期维护的责任范围，无截止日期
+- **Resources**: 可能有用的主题或参考资料
+- **Archive**: 已完成的项目或不再活跃的内容
 
-### Actions
-Each action skill should include:
-1. Clear role definition
-2. Task objectives
-3. Visual guidelines (if applicable)
-4. Technical constraints
-5. Output format specifications
+## 工作流程
 
-## Testing
-No formal test framework. Manual testing:
-- Run scripts with sample inputs
-- Verify output format matches SKILL.md specifications
-- Check error handling edge cases
+1. 新内容先进入 `0 Inbox`
+2. 定期整理，分配到 Projects/Areas/Resources
+3. 项目完成后移入 `4 Archive`
