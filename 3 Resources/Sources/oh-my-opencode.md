@@ -1,5 +1,5 @@
 ---
-cover: "[[10 Attachment/328aa21719748ef127cb2886f3db9428_MD5.png]]"
+cover: "[[_Attachment/328aa21719748ef127cb2886f3db9428_MD5.png]]"
 source: https://github.com/code-yeongyu/oh-my-opencode/blob/dev/README.zh-cn.md#google-%E8%AE%A4%E8%AF%81
 author:
   - "[[sisyphus-dev-ai]]"
@@ -45,7 +45,7 @@ tags:
 
 ### 给想阅读的人：认识 Sisyphus
 
-![[10 Attachment/328aa21719748ef127cb2886f3db9428_MD5.png]]
+![[_Attachment/328aa21719748ef127cb2886f3db9428_MD5.png]]
 
 在希腊神话中，西西弗斯因欺骗众神而被惩罚永恒地将巨石推上山坡。LLM 智能体并没有做错什么，但它们也每天推动着它们的 " 石头 "——它们的思考。 我的生活也没有什么不同。回顾过去，我们与这些智能体并没有太大不同。 **是的！LLM 智能体和我们没有区别。如果你给它们优秀的工具和可靠的队友，它们可以写出和我们一样出色的代码，工作得同样优秀。**
 

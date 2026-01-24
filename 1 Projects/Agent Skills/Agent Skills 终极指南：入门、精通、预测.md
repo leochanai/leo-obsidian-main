@@ -1,5 +1,5 @@
 ---
-cover: "[[10 Attachment/0843be065a6054d58c3df96750c8ed5d_MD5.webp]]"
+cover: "[[_Attachment/0843be065a6054d58c3df96750c8ed5d_MD5.webp]]"
 source: https://mp.weixin.qq.com/s/jUylk813LYbKw0sLiIttTQ
 author:
   - "[[一泽Eze]]"
@@ -12,7 +12,7 @@ tags:
 
 # Agent Skills 终极指南：入门、精通、预测
 
-![[10 Attachment/0843be065a6054d58c3df96750c8ed5d_MD5.webp]]
+![[_Attachment/0843be065a6054d58c3df96750c8ed5d_MD5.webp]]
 
 ## 🎐 卷首语
 
@@ -28,15 +28,15 @@ Claude Skills 的价值，还是被大大低估了。
 
 比如我自己做的 Article-Copilot，一个 skill 就实现了从素材处理到正文写作的 Agent 应用；
 
-![[10 Attachment/9f85853757fc0fce2f8e916a1322c44e_MD5.webp]]
+![[_Attachment/9f85853757fc0fce2f8e916a1322c44e_MD5.webp]]
 
 又如 AI Partner Skill，让通用 Agent 深度学习你的记忆，塑造懂你的 AI 伴侣，给到个性回应。
 
-![[10 Attachment/ee83b501ae2a5832963478af550f4ae1_MD5.jpg]]
+![[_Attachment/ee83b501ae2a5832963478af550f4ae1_MD5.jpg]]
 
 在研读 Anthropic 官方技术博客，与持续 Agent Skill 实验之后，形成了这份全网最完整的 Skill 指南，包含：
 
-![[10 Attachment/80b629fb3a8402f32e1b80cf4bca5f1e_MD5.png]]
+![[_Attachment/80b629fb3a8402f32e1b80cf4bca5f1e_MD5.png]]
 
 1. 1.最容易读懂的 Skills 概念与原理介绍
 2. 2.讨论 Skills 的真实价值、技术优势、对 AI 产品设计的影响
@@ -53,17 +53,17 @@ Claude Skills 的价值，还是被大大低估了。
 
 两个月后，Agent Skills 作为开放标准被进一步发布，意在引导一个新的 AI Agent 开发生态。
 
-![[10 Attachment/b621cde3ad41a0308ceb614d9ea9b34f_MD5.png]]
+![[_Attachment/b621cde3ad41a0308ceb614d9ea9b34f_MD5.png]]
 
 OpenAI、Github、VS Code、Cursor 均已跟进。
 
-![[10 Attachment/5d89576a21d7711379e5358744bec9d3_MD5.png]]
+![[_Attachment/5d89576a21d7711379e5358744bec9d3_MD5.png]]
 
 为了更好的理解，你可以把 Skills 理解为“通用 Agent 的扩展包”：
 
 Agent 可通过加载不同的 Skills 包，来具备不同的专业知识、工具使用能力，稳定完成特定任务。
 
-![[10 Attachment/94024a23b8a51f5b4d5d4d871d7c81ed_MD5.png]]
+![[_Attachment/94024a23b8a51f5b4d5d4d871d7c81ed_MD5.png]]
 
 最常见的疑惑是：这和 MCP 有什么区别？
 
@@ -75,7 +75,7 @@ Agent 可通过加载不同的 Skills 包，来具备不同的专业知识、工
 - PDF：包含 PDF 合并、拆分、文本提取等代码脚本，教会 Agent 如何处理 PDF 文件 - 提取文本，创建新的 PDF、合并或拆分文档。
 - Brand-guidelines：包含品牌设计规范、Logo 资源等，Agent 设计网站、海报时，可参考 Skill 内的设计资源，自动遵循企业设计规范。
 - Skill-Creator：把创建 Skill 的方法打包成元 Skill，让 AI 发起 Skill 创建流程，引导用户创建出符合需求的高水准 Skill。
-![[10 Attachment/b007a5ac09e2252f480b9ff12aa614ad_MD5.png]]
+![[_Attachment/b007a5ac09e2252f480b9ff12aa614ad_MD5.png]]
 
 Skill-Creator：教 Agent 如何帮用户创建新 Agent 的技能
 
@@ -93,7 +93,7 @@ Anthropic 说：
 
 Skills 是模块化的能力，扩展了 Agent 的功能。每个 Skill 都打包了 LLM 指令、元数据、可选资源（脚本、模板等），Agent 会在需要时自动使用他们。
 
-![[10 Attachment/a1ebd3b7a3f99fd2f2de6cbd0941a325_MD5.png]]
+![[_Attachment/a1ebd3b7a3f99fd2f2de6cbd0941a325_MD5.png]]
 
 我有个更直观的解释：Skill 就像给 Agent 准备的工作交接 SOP 大礼包：
 
@@ -110,7 +110,7 @@ Skills 是模块化的能力，扩展了 Agent 的功能。每个 Skill 都打�
 
 Skill 的设计架构，几乎是交接大礼包的数字版本：
 
-![[10 Attachment/6906943d7606ca9407703b73306da4c0_MD5.png]]
+![[_Attachment/6906943d7606ca9407703b73306da4c0_MD5.png]]
 
 相对标准的 Skill 结构示例，实际案例中，只有 SKILL.md 是必需的，其他结构为可选项
 
@@ -126,7 +126,7 @@ Skill 的设计架构，几乎是交接大礼包的数字版本：
 
 举个例子，这是 PPTX Skill 的文件目录：
 
-![[10 Attachment/f05ff4dd60dbb1d58cc4da2d0c744718_MD5.png]]
+![[_Attachment/f05ff4dd60dbb1d58cc4da2d0c744718_MD5.png]]
 
 - 整个文件夹就是一个完整的能力包，用来支持 AI 创建、编辑和分析 PowerPoint 演示文稿。
 - 核心文件是 SKILL.md，包含技能的元数据和任务指导，告诉 agent 什么时候使用这个技能、如何按步骤处理任务。
@@ -167,7 +167,7 @@ Skill 的设计架构，几乎是交接大礼包的数字版本：
 
 仅有一个 SKILL.md，纯自然语言写成。
 
-![[10 Attachment/23ec9dbb06f1b6ddedbcba8f0a4afee8_MD5.png]]
+![[_Attachment/23ec9dbb06f1b6ddedbcba8f0a4afee8_MD5.png]]
 
 - 元信息：什么时候用这个 Skill
 - 正文：品牌颜色、字体等文本描述信息
@@ -176,7 +176,7 @@ Skill 的设计架构，几乎是交接大礼包的数字版本：
 
 当你要设计一个符合 Anthropic 公司设计规范的 AI 搜索网站，Agent 就会自动运行该 Skill ⬇️
 
-![[10 Attachment/7c9eebbc7696c50efc4d6c0ede7ed327_MD5.png]]
+![[_Attachment/7c9eebbc7696c50efc4d6c0ede7ed327_MD5.png]]
 
 Skill 有两种加载模式：显式 / 隐式。
 
@@ -184,9 +184,9 @@ Skill 有两种加载模式：显式 / 隐式。
 
 这是该 skill agent 一次性开发的网站，调性接近 Claude 官网设计：
 
-![[10 Attachment/118d3abb049ef6b7d9111f6b767a8cb8_MD5.png]]
+![[_Attachment/118d3abb049ef6b7d9111f6b767a8cb8_MD5.png]]
 
-![[10 Attachment/be10c36100fff593e42d8753ef3c73fb_MD5.png]]
+![[_Attachment/be10c36100fff593e42d8753ef3c73fb_MD5.png]]
 
 （我电脑上缺了他家的 Serif 字体，实际上可以更像）
 
@@ -194,25 +194,25 @@ Skill 有两种加载模式：显式 / 隐式。
 
 包含 SKILL 文档、向量数据库构建指南、向量数据库使用脚本、AI 伴侣与用户的 Persona 模板资源
 
-![[10 Attachment/36873028165e26f7c0ef7fca6e16eeb4_MD5.png]]
+![[_Attachment/36873028165e26f7c0ef7fca6e16eeb4_MD5.png]]
 
 SKILL.md 本体依然由自然语言写成：
 
-![[10 Attachment/e9721f4242bf311445656bf3571922b5_MD5.png]]
+![[_Attachment/e9721f4242bf311445656bf3571922b5_MD5.png]]
 
 借此，Agent 就能理解 AI-Partner 的初始化与对话方法，引导用户上传包含个人记忆的文档预料，在用户端智能切分笔记片段，构建向量数据：
 
-![[10 Attachment/ecbd4b05138dab085cb6c28a7c9c2d1d_MD5.png]]
+![[_Attachment/ecbd4b05138dab085cb6c28a7c9c2d1d_MD5.png]]
 
 解析用户记忆文档，提炼个性化的 AI 伴侣与用户画像设定：
 
-![[10 Attachment/28c52e555ecb4279b4776f7ba38e4fac_MD5.png]]
+![[_Attachment/28c52e555ecb4279b4776f7ba38e4fac_MD5.png]]
 
-![[10 Attachment/74821b8c15fab7439641fd5ab555a31c_MD5.png]]
+![[_Attachment/74821b8c15fab7439641fd5ab555a31c_MD5.png]]
 
 最终智能检索用户记忆，提供懂用户的 AI Partner 对话体验：
 
-![[10 Attachment/b2975522e5822195b511cbe42e4e59bc_MD5.png]]
+![[_Attachment/b2975522e5822195b511cbe42e4e59bc_MD5.png]]
 
 这能基本验证：单靠 Skill + Agent 所构造的垂直 Agent，所实现的智能效果，无异甚至可超过同类 AI 产品。
 
@@ -244,7 +244,7 @@ Workflow 或 传统程序 的核心问题是，它们假设所有情况都能预
 
 或者出现了预设之外的边缘情况。
 
-![[10 Attachment/9b1352c4be17e6036ad5dd1365fc081e_MD5.png]]
+![[_Attachment/9b1352c4be17e6036ad5dd1365fc081e_MD5.png]]
 
 这时 Workflow 或传统程序就卡住了，它只能按预设路径执行，遇到意外就报错，或要求用户自行消除差距。
 
@@ -259,7 +259,7 @@ Workflow 或 传统程序 的核心问题是，它们假设所有情况都能预
 
 所以在 AI-Partner-Chat 中，也有过很有意思的探索：
 
-![[10 Attachment/0f077a47af63862e9df660580ab37093_MD5.png]]
+![[_Attachment/0f077a47af63862e9df660580ab37093_MD5.png]]
 
 借 Agent 本身的“观察 - 规划 - 执行”的动态智能，对用户文档进行自适应切片，而非所有文件都按照固定的分隔符 or 字数切分。
 
@@ -299,17 +299,17 @@ Agent Skills 实质仍是 Context 工程，Skills 只是把垂直领域的知识
 
 一个完整装载了 Skill 的 Agent 架构是这样的：
 
-![[10 Attachment/845767c311f830d81f60f1c90f3df156_MD5.png]]
+![[_Attachment/845767c311f830d81f60f1c90f3df156_MD5.png]]
 
 Skill 包放在 Agent 文件系统（右侧）中，并非默认全量加载在 Context Window 中。
 
 根据 Context 加载顺序、优先级的不同，Skill 被划分为了 3 种层级：
 
-![[10 Attachment/a04a66f4be6c5456d777e492f520862d_MD5.png]]
+![[_Attachment/a04a66f4be6c5456d777e492f520862d_MD5.png]]
 
 Skill 内容物的 3 种渐进披露优先级
 
-![[10 Attachment/f17f8e6d27e7e59298cddc11e1642e6f_MD5.png]]
+![[_Attachment/f17f8e6d27e7e59298cddc11e1642e6f_MD5.png]]
 
 渐进披露的流程图解
 
@@ -338,7 +338,7 @@ SKILL.md 文档内的正文内容，也就是主要技能指令，一般包含�
 
 当用户发出的消息与 Skill 元数据的描述匹配，需要调用 Skill 时，Agent 才会用 bash 读取文档正文 。读取时文档内容加载到 Context Window 中。
 
-![[10 Attachment/de74986fc2297a0b3f708ac75e707344_MD5.png]]
+![[_Attachment/de74986fc2297a0b3f708ac75e707344_MD5.png]]
 
 SKILL.md 的结构：分为 YAML 元数据与 MD 正文
 
@@ -350,7 +350,7 @@ SKILL.md 的结构：分为 YAML 元数据与 MD 正文
 
 - Sub-SKILL.md 子技能文档：相对独立、复杂的子技能指令，单独放在 Level3 拆分加载
 
-	![[10 Attachment/fb9c0c7a87ef6a758fce229774872b4a_MD5.png]]
+	![[_Attachment/fb9c0c7a87ef6a758fce229774872b4a_MD5.png]]
 
 	随着一个 Skill 的复杂度提升，可能因为技能知识的上下文过长，或者有些知识仅在特定场景使用，而不适合放入单个 SKILL.md，可被分拆为独立指令文档，仅在必要时加载。
 
@@ -374,7 +374,7 @@ Level 3: Resources 中的具体文件（按需读取）
 
 公众号 @言午 在 [《Claude Skills背后的信息分层设计哲学》](https://mp.weixin.qq.com/s?__biz=MjM5MDgzNDUxMw==&mid=2650854111&idx=1&sn=3d06a8fe9a00904aff809cde122abfae&scene=21#wechat_redirect) 一文中，亦有形象的图解：
 
-![[10 Attachment/4c010fbd2b9049c273ebf9adc1f948a4_MD5.png]]
+![[_Attachment/4c010fbd2b9049c273ebf9adc1f948a4_MD5.png]]
 
 不过，即使 Agent Skill 支持「渐进式披露」。
 
@@ -404,7 +404,7 @@ Level 3: Resources 中的具体文件（按需读取）
 
 所以，进一步推演未来 ai native 产品的发展趋势，我目前的猜测是：
 
-![[10 Attachment/e9ada98b74792d6de357453c07068f53_MD5.png]]
+![[_Attachment/e9ada98b74792d6de357453c07068f53_MD5.png]]
 
 拿笔记类 APP 举例，大部分 APP 的逻辑还是：新笔记 -> 代码 -> 处理。新笔记完全用代码逻辑，原模原样直接入库。
 
@@ -471,13 +471,13 @@ CC 能做的事情远不止 AI Coding：它能代替我们操作电脑，包括�
 
 	AI 就会这样教你安装：
 
-	![[10 Attachment/ab12666c1fd406ec71cacf212fe7fa6c_MD5.png]]
+	![[_Attachment/ab12666c1fd406ec71cacf212fe7fa6c_MD5.png]]
 
 	遇到问题就截图给它，基本都能教你解决。
 
 安装后，终端里输入 claude --version，看到版本号，则这一步安装成功。
 
-![[10 Attachment/9c980adddc574760125d5fe46b719f3a_MD5.png]]
+![[_Attachment/9c980adddc574760125d5fe46b719f3a_MD5.png]]
 
 #### Step 2：如果不用 Claude 模型，请替换模型
 
@@ -485,9 +485,9 @@ CC 能做的事情远不止 AI Coding：它能代替我们操作电脑，包括�
 
 ❶ 你可以用「模型名称 + Claude Code」的关键词去网上搜索模型厂商官方的 Claude Code 模型接入教程。
 
-![[10 Attachment/1ac5d506807fef36836a36e7b5fe14e7_MD5.png]]
+![[_Attachment/1ac5d506807fef36836a36e7b5fe14e7_MD5.png]]
 
-![[10 Attachment/0f3f11575caecf6b2cb57059f739d0b6_MD5.png]]
+![[_Attachment/0f3f11575caecf6b2cb57059f739d0b6_MD5.png]]
 
 目前比较推荐的是 GLM 4.7、Kimi K2-thinking 或新版本。
 
@@ -497,11 +497,11 @@ CC 能做的事情远不止 AI Coding：它能代替我们操作电脑，包括�
 我是电脑小白，指导我根据【替换为教程链接】，并替换 claude code 内的模型。Claude Code 已经装好了
 ```
 
-![[10 Attachment/c5298a7e38061501e873fd0c1066424b_MD5.png]]
+![[_Attachment/c5298a7e38061501e873fd0c1066424b_MD5.png]]
 
 ❷ 另外，也有一些好用的 Claude Code 模型管理工具，比如「CC Swtich」，项目地址为 https://github.com/farion1231/cc-switch
 
-![[10 Attachment/5f102ef99bd7c028ede888294b886d10_MD5.png]]
+![[_Attachment/5f102ef99bd7c028ede888294b886d10_MD5.png]]
 
 同样打开 AI，发送以下 Prompt，就能学会如何使用：
 
@@ -513,11 +513,11 @@ CC 能做的事情远不止 AI Coding：它能代替我们操作电脑，包括�
 
 正式使用 Claude Code 之前，建议在任意目录下创建一个空文件夹，比如叫 test，再在终端内切换到对应文件目录：
 
-![[10 Attachment/a835730ad701ddd0db915411c61f2765_MD5.png]]
+![[_Attachment/a835730ad701ddd0db915411c61f2765_MD5.png]]
 
 然后在终端输入 claude，就可以启动 CC 了，看到下图就是启动成功了
 
-![[10 Attachment/fbd338a9a4b0d20aa27a212a29f7b375_MD5.png]]
+![[_Attachment/fbd338a9a4b0d20aa27a212a29f7b375_MD5.png]]
 
 这一步能把 Claude Code 的后续 AI 行为，都局限在该目录，减小对本地电脑其他文件的影响。
 
@@ -527,13 +527,13 @@ CC 能做的事情远不止 AI Coding：它能代替我们操作电脑，包括�
 
 你可以让 CC 替你自动安装 Skill，比如在 CC 中发送 安装 skill，skill 项目地址为：<skill 项目地址>
 
-![[10 Attachment/1231c4df983de525d63958c572a1e360_MD5.png]]
+![[_Attachment/1231c4df983de525d63958c572a1e360_MD5.png]]
 
 ❷ 也可以手动下载 Skill，把文件包解压后，放在 skills 安装目录下：
 
 可以在当前项目文件夹的/.claude/skills/目录下，放入要安装的 skill 文件包：（如图为正确的项目 skills 路径配置）
 
-![[10 Attachment/203bdf65a36b83d78106ca078509aaf9_MD5.png]]
+![[_Attachment/203bdf65a36b83d78106ca078509aaf9_MD5.png]]
 
 也可以选择全局目录～/.claude/skills/（所有项目都能共享放在全局目录的 Skill）
 
@@ -545,11 +545,11 @@ CC 能做的事情远不止 AI Coding：它能代替我们操作电脑，包括�
 
 只要在装好后的 CC 中，发送开始使用<skill 名称>，
 
-![[10 Attachment/aea86cabbc88ebf07f72a3eefbd863b2_MD5.png]]
+![[_Attachment/aea86cabbc88ebf07f72a3eefbd863b2_MD5.png]]
 
 或者用户消息与 skill 元数据的描述匹配，
 
-![[10 Attachment/2ad24a4d308e68f74cf2939256e81c94_MD5.png]]
+![[_Attachment/2ad24a4d308e68f74cf2939256e81c94_MD5.png]]
 
 就能自动调用 Skills，执行任务。
 
@@ -568,13 +568,13 @@ CC 能做的事情远不止 AI Coding：它能代替我们操作电脑，包括�
 
 但不难发现，现有大部分的 Skills 公开市场，没有完善的评价和精选体系，所有 Skill 缺少合理的分类与排序机制，导致很难找到需要的 Skills。
 
-![[10 Attachment/acf63426788f4258ba930d0622f51994_MD5.png]]
+![[_Attachment/acf63426788f4258ba930d0622f51994_MD5.png]]
 
 可以看到仅靠 star 排序，是非常难找到合适的精选 Skill 的
 
 付铖他们的 Mulerun 最近就在研究解决这个问题，顺手给他们恰逢其时地推荐一下：
 
-![[10 Attachment/cdc24e643f061e9f6b01631676a874a7_MD5.png]]
+![[_Attachment/cdc24e643f061e9f6b01631676a874a7_MD5.png]]
 
 - 他们在打造全球性的 Agent 市场，支持创作者在平台上开发并上架 Skill、N8N 等形式的 AI Agent
 - 他们会帮助 Agent 创作者做全球分发、增长（类似 Agent 向的 APP Store），且上架 Mulerun 后，Agent 能被其他用户付费使用
@@ -593,21 +593,21 @@ CC 能做的事情远不止 AI Coding：它能代替我们操作电脑，包括�
 
 ❶ 首先是安装 skill-creator，skill 项目地址在：https://github.com/anthropics/skills/tree/main/skills/skill-creator，安装过程一如上面的教程，请 CC 来帮忙自动安装：
 
-![[10 Attachment/1231c4df983de525d63958c572a1e360_MD5.png]]
+![[_Attachment/1231c4df983de525d63958c572a1e360_MD5.png]]
 
 ❷ 安装完成后，即可调用 skill-creator 自动创建需要的 skill。
 
 比如，发送创建需求给 CC：
 
-![[10 Attachment/df0822ddef1c2bec247d3bfaff3ec8f8_MD5.png]]
+![[_Attachment/df0822ddef1c2bec247d3bfaff3ec8f8_MD5.png]]
 
 CC 自动调用 skill-creator，编写 SKILL.md 与 pdf2word 脚本
 
-![[10 Attachment/b31cec5e4fb94fd8b47789708fc270a2_MD5.png]]
+![[_Attachment/b31cec5e4fb94fd8b47789708fc270a2_MD5.png]]
 
 最终提示创建成功：
 
-![[10 Attachment/ac49ae29b618a9a53fcd1039716dea29_MD5.png]]
+![[_Attachment/ac49ae29b618a9a53fcd1039716dea29_MD5.png]]
 
 你也可以试着：
 
@@ -620,7 +620,7 @@ CC 自动调用 skill-creator，编写 SKILL.md 与 pdf2word 脚本
 
 告诉 CC 指定.skill 的文件地址，要求 cc 直接安装 skill 即可：
 
-![[10 Attachment/c2d665a2f33790137614906a22f93881_MD5.png]]
+![[_Attachment/c2d665a2f33790137614906a22f93881_MD5.png]]
 
 如果是文件夹或者 zip，那就按上文的介绍，手动解压放到对应 skills 目录即可。
 
@@ -705,7 +705,7 @@ Skills 是 Agent 的灵魂，就像 Steam 游戏 + 创意工坊一样。
 
 只需关注 Skills 本身的设计，就能低成本创造兼具通用 AI 智能上限的垂直 Agent 应用。
 
-![[10 Attachment/737ba883e261d9bf9a4a63f651f19931_MD5.png]]
+![[_Attachment/737ba883e261d9bf9a4a63f651f19931_MD5.png]]
 
 对于 Agent 创业者，乃至非技术的领域专家来说，Skills 无异代表了很多的新机会：
 
@@ -719,7 +719,7 @@ Skills 是 Agent 的灵魂，就像 Steam 游戏 + 创意工坊一样。
 
 两种方式各有适用场景，但 Skill 确实让更多人、更多场景接入 Agent 能力变得更为可行：
 
-![[10 Attachment/aa6bf200bcb1bb0fdd1062e4c16b7853_MD5.png]]
+![[_Attachment/aa6bf200bcb1bb0fdd1062e4c16b7853_MD5.png]]
 
 - 不必为了一个内部小工具开发完整产品，打包个 Skill 就能解决
 - 不必说服 IT 团队理解你的需求，自己就能创建工具

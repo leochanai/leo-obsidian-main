@@ -8,14 +8,14 @@ created: 2025-12-25
 description:
 tags:
   - design
-cover: "[[10 Attachment/20b4fc29c39004d3d17367340ea8b1bc_MD5.webp]]"
+cover: "[[_Attachment/20b4fc29c39004d3d17367340ea8b1bc_MD5.webp]]"
 ---
 
 # A designer’s path from influence to identity
 
 ## A designer’s path from influence to identity / 设计师从受影响到建立身份的成长之路
 
-![[10 Attachment/20b4fc29c39004d3d17367340ea8b1bc_MD5.webp]]
+![[_Attachment/20b4fc29c39004d3d17367340ea8b1bc_MD5.webp]]
 
 As designers, we are told to search for our style, as if it were a fixed destination waiting at the end of a road. But style is less a discovery and more a discipline. It does not arrive in a sudden moment of recognition; it accumulates slowly, in repetitions and refinements, in the daily work of noticing and choosing.
 
@@ -31,7 +31,7 @@ What begins as imitation hardens over time into something recognisable, a voice,
 
 ## Repetition builds instinct, but instinct builds signature / 重复建立本能，而本能铸就个人特色
 
-![[10 Attachment/f6b5acc27935f185935c986fc04faf01_MD5.webp]]
+![[_Attachment/f6b5acc27935f185935c986fc04faf01_MD5.webp]]
 
 Do something often enough, and it becomes second nature. But the nuance here is that if you’re just mindlessly repeating it, you’ll plateau.
 
@@ -59,7 +59,7 @@ That’s where an aesthetic stops being imitation and starts carrying weight.
 
 ## How you can shape your aesthetic / 如何塑造你的审美
 
-![[10 Attachment/661a5be68008e03b40dd7dc47348cf95_MD5.webp]]
+![[_Attachment/661a5be68008e03b40dd7dc47348cf95_MD5.webp]]
 
 ## 1\. Curate a reference library / 1. 策划一个参考库
 
@@ -75,7 +75,7 @@ Over time, you’ll start to see patterns in what you like and in why you like i
 
 ---
 
-![[10 Attachment/29f24c1577a27314168bf7cabf118368_MD5.webp]]
+![[_Attachment/29f24c1577a27314168bf7cabf118368_MD5.webp]]
 
 Collect and tag designs that speak to you to start seeing patterns in your taste. ( Source )
 
@@ -109,7 +109,7 @@ You must keep expanding your perceptual framework.
 
 ---
 
-![[10 Attachment/ca6eeab7f6eceef8a2495aab26f88810_MD5.webp]]
+![[_Attachment/ca6eeab7f6eceef8a2495aab26f88810_MD5.webp]]
 
 Look beyond your field: Films, architecture, photography, everyday visuals can all sharpen your eye. This is the intro visual of Only murders in the building TV show.
 
@@ -155,7 +155,7 @@ Once you understand the mechanics behind what draws you in, you can start applyi
 
 ---
 
-![[10 Attachment/4d8911aeac1cbab43548a72a79ed0e76_MD5.webp]]
+![[_Attachment/4d8911aeac1cbab43548a72a79ed0e76_MD5.webp]]
 
 Dissect products and designs you love to understand the reasoning behind what works. ( Source )
 
@@ -171,7 +171,7 @@ Don’t wait for a big project to try something new. Set up small, low-pressure 
 
 ---
 
-![[10 Attachment/1e1bc708a0235b73c59dae73d7d6030b_MD5.webp]]
+![[_Attachment/1e1bc708a0235b73c59dae73d7d6030b_MD5.webp]]
 
 Instead of learning to build a whole product from scratch, start with something small, like card and icon design. ( Source )
 

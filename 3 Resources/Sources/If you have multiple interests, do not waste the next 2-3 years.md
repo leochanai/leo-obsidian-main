@@ -569,7 +569,7 @@ IV – How to turn yourself into a business / IV – 如何将自己变成一份
 
 [
 
-![[10 Attachment/2eee8282e59977fb9977c1b09d556b92_MD5.png]]
+![[_Attachment/2eee8282e59977fb9977c1b09d556b92_MD5.png]]
 
 ](https://x.com/thedankoe/article/2010042119121957316/media/2010036069417529347)
 
@@ -803,7 +803,7 @@ In other words, your brand is this:
 
 [
 
-![[10 Attachment/8203cf9b02f47a49f1a109d349af7674_MD5.png]]
+![[_Attachment/8203cf9b02f47a49f1a109d349af7674_MD5.png]]
 
 ](https://x.com/thedankoe/article/2010042119121957316/media/2010035936432934912)
 

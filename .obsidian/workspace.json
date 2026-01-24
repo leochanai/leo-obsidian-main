@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a36d15cb5ec6d3f0",
+        "id": "a857110cf0f471b6",
         "type": "tabs",
         "children": [
           {
-            "id": "3f24b4dc9aedd0a1",
+            "id": "d117aac748424d78",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1 Projects/MCPs/Playwright.md",
+                "file": "3 Resources/Sources/obsidian-baseline.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Playwright"
+              "title": "obsidian-baseline"
             }
           }
         ]
@@ -88,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 470.5
+    "width": 300
   },
   "right": {
     "id": "f4de798dc9827ed2",
@@ -97,63 +97,10 @@
       {
         "id": "dea80247bd80007f",
         "type": "tabs",
-        "dimension": 34.93589743589743,
+        "dimension": 34.28270042194092,
         "children": [
           {
-            "id": "d490f6a00609dfd3",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "04 Person/哈哈.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "哈哈 的反向链接列表"
-            }
-          },
-          {
-            "id": "6d29898df4018ae5",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "04 Person/哈哈.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "哈哈 的出链列表"
-            }
-          },
-          {
-            "id": "daadc01746aec00b",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          },
-          {
-            "id": "99506e10483920e5",
-            "type": "leaf",
-            "state": {
-              "type": "claudian-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "claudian-view"
-            }
-          },
-          {
-            "id": "df6f93a01b3ba30e",
+            "id": "a24b677c479d6728",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -168,7 +115,7 @@
             }
           },
           {
-            "id": "16286a63deb407d3",
+            "id": "4e4abf0ca13a6025",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -180,14 +127,57 @@
               "icon": "lucide-archive",
               "title": "添加笔记属性"
             }
+          },
+          {
+            "id": "d490f6a00609dfd3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "3 Resources/Sources/obsidian-baseline.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "obsidian-baseline 的反向链接列表"
+            }
+          },
+          {
+            "id": "6d29898df4018ae5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "03 Source/Claude Code/Agent Skill 创作最佳实践.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Agent Skill 创作最佳实践 的出链列表"
+            }
+          },
+          {
+            "id": "5b80cf213a0c0d20",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
           }
         ],
         "currentTab": 2
       },
       {
-        "id": "adebd5ba83d7b90f",
+        "id": "72a70c2011ef31d9",
         "type": "tabs",
-        "dimension": 65.06410256410257,
+        "dimension": 65.71729957805907,
         "children": [
           {
             "id": "f580b6fa08db6598",
@@ -195,83 +185,83 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1 Projects/MCPs/Playwright.md",
+                "file": "3 Resources/Sources/obsidian-baseline.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Playwright 的大纲"
+              "title": "obsidian-baseline 的大纲"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 292.5
+    "width": 423.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false,
+      "daily-notes:打开/创建今天的日记": false,
       "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
+      "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "3f24b4dc9aedd0a1",
+  "active": "d117aac748424d78",
   "lastOpenFiles": [
+    "2 Areas/Bases/Obsidian.base",
+    "2 Areas/Bases/Nano Banana Prompts.base",
+    "2 Areas/Bases/Investment.base",
+    "2 Areas/Bases/Agent Skills.base",
     "1 Projects/Agent Skills/Agent Skills 终极指南：入门、精通、预测.md",
     "1 Projects/Agent Skills/Agent Skills.md",
     "1 Projects/Agent Skills/Agent Skill 创作最佳实践.md",
-    "2 Areas/People/LEO.md",
-    "2 Areas/People/Microsoft.md",
-    "2 Areas/People/Claude Docs.md",
-    "2 Areas/People/喜妹.md",
-    "2 Areas/People/乐乐.md",
-    "2 Areas/People/哈哈.md",
-    "2 Areas/People/安哥.md",
-    "1 Projects/MCPs/Playwright.md",
-    "AGENTS.md",
-    "1 Projects/MCPs",
-    "3 Resources/Sources/将 Next.js 项目从 Vercel 迁移到 Cloudflare.md",
-    "3 Resources/Sources/一家投资 OpenAI 的硅谷基金的深度研究.md",
-    "3 Resources/Sources/A designer’s path from influence to identity.md",
-    "3 Resources/Sources/Anthropic 工程师都在用的 AI 编程秘技！让 AI \"采访\"你做出完美应用.md",
-    "3 Resources/Sources/Doing well in your courses.md",
-    "3 Resources/Sources/If you have multiple interests, do not waste the next 2-3 years.md",
-    "3 Resources/Sources/oh-my-opencode.md",
-    "3 Resources/AI-Research/Nano Banana Pro 最佳实践 - Gemini.md",
-    "2 Areas/Bases/Obsidian.base",
-    "3 Resources/Prompts/风格转换 - 复古动漫风格.md",
-    "2 Areas/Bases/Nano Banana Prompts.base",
-    "2 Areas/Bases/Investment.base",
-    "2 Areas/Bases/Collection.base",
-    "2 Areas/Bases/Agent Skills.base",
-    "2 Areas/Bases/唐朝历代皇帝.canvas",
-    "00 Inbox/未命名.md",
-    "1 Projects/Agent Skills",
-    "1 Projects/Skills/Agent Skills.md",
-    "1 Projects/Skills/Agent Skills 终极指南：入门、精通、预测.md",
-    "1 Projects/Skills/Agent Skill 创作最佳实践.md",
-    "2 Areas/Tools/个税计算数据_2026-01-23.json",
-    "2 Areas/Tools/2026-个人所得税计算器.html",
-    "2 Areas/Tools",
-    "1 Projects/Agent Skills/youtube-clipper/templates/summary-template.md",
+    "13 Skills/generating-html-from-content/SKILL.md",
+    "_Template",
     "_Attachment/fbd338a9a4b0d20aa27a212a29f7b375_MD5.png",
     "_Attachment/fb9c0c7a87ef6a758fce229774872b4a_MD5.png",
-    "_Attachment/ee83b501ae2a5832963478af550f4ae1_MD5.jpg",
     "_Attachment/f6b5acc27935f185935c986fc04faf01_MD5.webp",
     "_Attachment/f17f8e6d27e7e59298cddc11e1642e6f_MD5.png",
     "_Attachment/f05ff4dd60dbb1d58cc4da2d0c744718_MD5.png",
-    "_Attachment/ebdfd5dbea293b607afa83d51c4222db_MD5.png",
+    "_Attachment/ee83b501ae2a5832963478af550f4ae1_MD5.jpg",
     "_Attachment/ecbd4b05138dab085cb6c28a7c9c2d1d_MD5.png",
+    "_Attachment/ebdfd5dbea293b607afa83d51c4222db_MD5.png",
     "_Attachment/e9ada98b74792d6de357453c07068f53_MD5.png",
     "_Attachment/e9721f4242bf311445656bf3571922b5_MD5.png",
-    "02 Map/唐朝历代皇帝.canvas"
+    "_Attachment",
+    "4 Archive",
+    "3 Resources/Sources/将 Next.js 项目从 Vercel 迁移到 Cloudflare.md",
+    "3 Resources/Sources/一家投资 OpenAI 的硅谷基金的深度研究.md",
+    "3 Resources/Sources/oh-my-opencode.md",
+    "3 Resources/Sources/obsidian-baseline.md",
+    "3 Resources/Sources/If you have multiple interests, do not waste the next 2-3 years.md",
+    "3 Resources/Sources/Doing well in your courses.md",
+    "3 Resources/Sources/Anthropic 工程师都在用的 AI 编程秘技！让 AI \"采访\"你做出完美应用.md",
+    "3 Resources/Sources/A designer’s path from influence to identity.md",
+    "3 Resources/Prompts/风格转换 - 复古动漫风格.md",
+    "3 Resources/Prompts/虫眼视角（底视仰拍）照片.md",
+    "3 Resources/Prompts/数字手绘草图.md",
+    "3 Resources/Prompts/将角色插画转换为高品质手办产品.md",
+    "3 Resources/Prompts/将照片转换为复古拍立得即时照片.md",
+    "3 Resources/Prompts/四格拼接构图的超写实写真.md",
+    "3 Resources/Prompts/像素级角色拆解.md",
+    "3 Resources/Notes/设计师的自我修养.md",
+    "3 Resources/Notes/Veo3 技巧.md",
+    "3 Resources/Notes/考神.md",
+    "3 Resources/Notes/Netconf 连接过程.md",
+    "3 Resources/Notes/2026 年投资方向.md",
+    "3 Resources/AI-Research/SSH Key Exchange Deep Dive.md",
+    "3 Resources/Sources",
+    "3 Resources/Prompts",
+    "3 Resources/Notes",
+    "3 Resources/AI-Research",
+    "02 Map/唐朝历代皇帝.canvas",
+    "Notes/Map/唐朝历代皇帝.canvas"
   ]
 }

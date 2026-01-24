@@ -8,12 +8,12 @@ created: 2025-12-30
 description: Baseline sets a new standard for your Obsidian vault experience. - aaaaalexis/obsidian-baseline
 tags:
   - obsidian-theme
-cover: "[[10 Attachment/ebdfd5dbea293b607afa83d51c4222db_MD5.png]]"
+cover: "[[_Attachment/ebdfd5dbea293b607afa83d51c4222db_MD5.png]]"
 ---
 
 # obsidian-baseline / obsidian-baseline
 
-![[10 Attachment/ebdfd5dbea293b607afa83d51c4222db_MD5.png]]
+![[_Attachment/ebdfd5dbea293b607afa83d51c4222db_MD5.png]]
 
 Baseline sets a new standard for your Obsidian vault experience — sleek, familiar, and effortlessly minimal, offering endless ways to make it yours.
 
@@ -50,21 +50,21 @@ Discover and share Style Settings presets in Baseline Marketplace.
 ## Overview / 概览
 
 - **Beautifully yours** — Customize your experience to your heart's content with [Style Settings](https://github.com/mgmeyers/obsidian-style-settings)
-	![[10 Attachment/e694072238189e8e9421868d26aa52ff_MD5.png]]
+	![[_Attachment/e694072238189e8e9421868d26aa52ff_MD5.png]]
 
 - **Beautifully yours** — 通过 [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) 尽情定制您的体验。
 
 ---
 
 - **Minimal interface** — Clean, organized look and feel, with playful animations and effects.
-	![[10 Attachment/84435593a7757e9a7e3504fe8c82e713_MD5.png]]
+	![[_Attachment/84435593a7757e9a7e3504fe8c82e713_MD5.png]]
 
 - **Minimal interface** — 干净、有条理的外观和触感，伴有灵动的动画和效果。
 
 ---
 
 - **Optimized for mobile** — Enhanced navigation, menus, editor, and more, with comfortable spacing for better usability.
-  ![[10 Attachment/e03b4897bc306a5ddc38a537f62b5bf3_MD5.png]]
+  ![[_Attachment/e03b4897bc306a5ddc38a537f62b5bf3_MD5.png]]
 
 - **Optimized for mobile** — 增强后的导航、菜单、编辑器等，拥有更舒适的间距以提升易用性。
 
@@ -228,7 +228,7 @@ Add at the end of the image link, e.g. `![[image.jpeg#invert]]`
 
 ### Alternate checkboxes / 替代复选框
 
-![[10 Attachment/c5c774db0c76de8ad39bb448720a4280_MD5.png]]
+![[_Attachment/c5c774db0c76de8ad39bb448720a4280_MD5.png]]
 
 | Syntax | Description |
 | --- | --- |
