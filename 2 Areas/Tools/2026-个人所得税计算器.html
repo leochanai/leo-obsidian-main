@@ -219,6 +219,14 @@
             gap: var(--spacing-xl);
         }
 
+        /* === 左右列容器 === */
+        .left-column,
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-xl);
+        }
+
         /* === 卡片 === */
         .card {
             background: var(--card-bg);
@@ -1323,6 +1331,28 @@
                     </div>
                 </div>
 
+                <!-- 月度明细 -->
+                <div class="card monthly-only">
+                    <h3 class="card-title">月度明细</h3>
+                    <div id="monthlyDetails">
+                        <div class="monthly-table-wrapper">
+                            <table class="monthly-table" style="width: 100%; border-collapse: collapse; font-size: 0.875rem;">
+                                <thead>
+                                    <tr style="border-bottom: 2px solid var(--border-light);">
+                                        <th style="padding: 0.75rem 0.5rem; text-align: left; color: var(--text-secondary); font-weight: 600;">月份</th>
+                                        <th style="padding: 0.75rem 0.5rem; text-align: right; color: var(--text-secondary); font-weight: 600;">税前工资</th>
+                                        <th style="padding: 0.75rem 0.5rem; text-align: right; color: var(--text-secondary); font-weight: 600;">当月个税</th>
+                                        <th style="padding: 0.75rem 0.5rem; text-align: right; color: var(--text-secondary); font-weight: 600;">到手工资</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="monthlyTableBody">
+                                    <!-- 由 JavaScript 动态生成 -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- 收入分解 -->
                 <div class="card">
                     <h3 class="card-title">收入分解</h3>
@@ -1551,6 +1581,7 @@
             updateIncomeBreakdown(result);
             updateTaxDetails(result);
             updateBonusComparison();
+            updateMonthlyDetails();
 
             saveToLocalStorage();
         }
@@ -1632,6 +1663,57 @@
                 const total = appState.income.monthlyIncomes.reduce((sum, income) => sum + income, 0);
                 document.getElementById('totalYearlyIncome').textContent = `¥ ${total.toLocaleString('zh-CN')}`;
             }
+        }
+
+        function updateMonthlyDetails() {
+            const tbody = document.getElementById('monthlyTableBody');
+            if (!tbody) return;
+
+            const monthlyIncomes = appState.income.monthlyIncomes || [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+            const socialDeduction = getSocialDeductionTotal();
+            const additionalDeduction = getAdditionalDeductionTotal();
+            const monthNames = ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'];
+
+            let accumulatedIncome = 0;
+            let accumulatedDeduction = 0;
+            let accumulatedTax = 0;
+            let html = '';
+
+            for (let i = 0; i < 12; i++) {
+                const monthIncome = monthlyIncomes[i] || 0;
+
+                if (monthIncome > 0) {
+                    accumulatedIncome += monthIncome;
+                    accumulatedDeduction += 5000 + socialDeduction + additionalDeduction;
+
+                    const taxableIncome = Math.max(0, accumulatedIncome - accumulatedDeduction);
+                    const totalTaxSoFar = calculateTax(taxableIncome, TAX_BRACKETS);
+                    const monthTax = Math.max(0, totalTaxSoFar - accumulatedTax);
+                    accumulatedTax = totalTaxSoFar;
+
+                    const netSalary = monthIncome - socialDeduction - monthTax;
+
+                    html += `
+                        <tr style="border-bottom: 1px solid var(--border-light);">
+                            <td style="padding: 0.75rem 0.5rem; color: var(--text-primary); font-weight: 500;">${monthNames[i]}</td>
+                            <td style="padding: 0.75rem 0.5rem; text-align: right; color: var(--text-secondary); font-family: 'SF Mono', monospace;">¥ ${monthIncome.toLocaleString('zh-CN')}</td>
+                            <td style="padding: 0.75rem 0.5rem; text-align: right; color: var(--error-500); font-family: 'SF Mono', monospace;">¥ ${monthTax.toLocaleString('zh-CN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
+                            <td style="padding: 0.75rem 0.5rem; text-align: right; color: var(--success-600); font-weight: 600; font-family: 'SF Mono', monospace;">¥ ${netSalary.toLocaleString('zh-CN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
+                        </tr>
+                    `;
+                } else {
+                    html += `
+                        <tr style="border-bottom: 1px solid var(--border-light); opacity: 0.5;">
+                            <td style="padding: 0.75rem 0.5rem; color: var(--text-tertiary);">${monthNames[i]}</td>
+                            <td style="padding: 0.75rem 0.5rem; text-align: right; color: var(--text-tertiary);">-</td>
+                            <td style="padding: 0.75rem 0.5rem; text-align: right; color: var(--text-tertiary);">-</td>
+                            <td style="padding: 0.75rem 0.5rem; text-align: right; color: var(--text-tertiary);">-</td>
+                        </tr>
+                    `;
+                }
+            }
+
+            tbody.innerHTML = html;
         }
 
         function updateIncomeBreakdown(result) {
