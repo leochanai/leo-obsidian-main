@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3 Resources/Sources/obsidian-baseline.md",
+                "file": "3 Resources/Articles/oh-my-opencode.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "obsidian-baseline"
+              "title": "oh-my-opencode"
             }
           }
         ]
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3 Resources/Sources/obsidian-baseline.md",
+                "file": "3 Resources/Articles/oh-my-opencode.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "obsidian-baseline 的反向链接列表"
+              "title": "oh-my-opencode 的反向链接列表"
             }
           },
           {
@@ -185,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3 Resources/Sources/obsidian-baseline.md",
+                "file": "3 Resources/Articles/oh-my-opencode.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "obsidian-baseline 的大纲"
+              "title": "oh-my-opencode 的大纲"
             }
           }
         ]
@@ -213,8 +213,17 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "d117aac748424d78",
+  "active": "15e90fe269434724",
   "lastOpenFiles": [
+    "3 Resources/Articles/obsidian-baseline.md",
+    "3 Resources/Articles/If you have multiple interests, do not waste the next 2-3 years.md",
+    "3 Resources/Articles/Doing well in your courses.md",
+    "3 Resources/Articles/Anthropic 工程师都在用的 AI 编程秘技！让 AI \"采访\"你做出完美应用.md",
+    "3 Resources/Articles/A designer’s path from influence to identity.md",
+    "3 Resources/Articles/一家投资 OpenAI 的硅谷基金的深度研究.md",
+    "2 Areas/Investment/2026-01-23 A股复盘.md",
+    "family-advisor.skill",
+    "2 Areas/Investment",
     "2 Areas/Bases/Obsidian.base",
     "2 Areas/Bases/Nano Banana Prompts.base",
     "2 Areas/Bases/Investment.base",
@@ -236,14 +245,8 @@
     "_Attachment/e9721f4242bf311445656bf3571922b5_MD5.png",
     "_Attachment",
     "4 Archive",
-    "3 Resources/Sources/将 Next.js 项目从 Vercel 迁移到 Cloudflare.md",
-    "3 Resources/Sources/一家投资 OpenAI 的硅谷基金的深度研究.md",
-    "3 Resources/Sources/oh-my-opencode.md",
-    "3 Resources/Sources/obsidian-baseline.md",
-    "3 Resources/Sources/If you have multiple interests, do not waste the next 2-3 years.md",
-    "3 Resources/Sources/Doing well in your courses.md",
-    "3 Resources/Sources/Anthropic 工程师都在用的 AI 编程秘技！让 AI \"采访\"你做出完美应用.md",
-    "3 Resources/Sources/A designer’s path from influence to identity.md",
+    "3 Resources/Articles/将 Next.js 项目从 Vercel 迁移到 Cloudflare.md",
+    "3 Resources/Articles/oh-my-opencode.md",
     "3 Resources/Prompts/风格转换 - 复古动漫风格.md",
     "3 Resources/Prompts/虫眼视角（底视仰拍）照片.md",
     "3 Resources/Prompts/数字手绘草图.md",
@@ -256,11 +259,7 @@
     "3 Resources/Notes/考神.md",
     "3 Resources/Notes/Netconf 连接过程.md",
     "3 Resources/Notes/2026 年投资方向.md",
-    "3 Resources/AI-Research/SSH Key Exchange Deep Dive.md",
-    "3 Resources/Sources",
-    "3 Resources/Prompts",
-    "3 Resources/Notes",
-    "3 Resources/AI-Research",
+    "3 Resources/Articles",
     "02 Map/唐朝历代皇帝.canvas",
     "Notes/Map/唐朝历代皇帝.canvas"
   ]
