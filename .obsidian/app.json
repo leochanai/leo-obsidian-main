@@ -4,7 +4,7 @@
   "newFileFolderPath": "0 Inbox",
   "alwaysUpdateLinks": true,
   "promptDelete": false,
-  "showInlineTitle": true,
+  "showInlineTitle": false,
   "readableLineLength": true,
   "pdfExportSettings": {
     "includeName": true,

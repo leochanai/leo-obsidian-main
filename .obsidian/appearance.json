@@ -6,5 +6,6 @@
   "textFontFamily": "SN Pro,Alibaba PuHuiTi 2.0",
   "nativeMenus": false,
   "translucency": true,
-  "showViewHeader": false
+  "showViewHeader": true,
+  "showRibbon": false
 }
