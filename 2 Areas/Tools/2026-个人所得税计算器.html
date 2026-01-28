@@ -2166,6 +2166,78 @@
                     setVal('housingFundInput', appState.deductions.social.housingFund);
                     setVal('bonusInput', appState.income.bonus);
 
+                    // 同步专项附加扣除的UI状态
+                    const additional = appState.deductions.additional;
+
+                    // 子女教育
+                    const childCount = additional.childEducation?.count || 0;
+                    document.querySelectorAll('[data-children]').forEach(btn => {
+                        const value = parseInt(btn.dataset.children);
+                        btn.classList.toggle('active', value === childCount);
+                    });
+                    document.querySelectorAll('.child-options').forEach(el => {
+                        el.classList.toggle('hidden', childCount === 0);
+                    });
+                    const childRatio = additional.childEducation?.ratio || 100;
+                    document.querySelectorAll('[data-child-ratio]').forEach(btn => {
+                        const value = parseInt(btn.dataset.childRatio);
+                        btn.classList.toggle('active', value === childRatio);
+                    });
+
+                    // 婴幼儿照护
+                    const infantCount = additional.infantCare?.count || 0;
+                    document.querySelectorAll('[data-infants]').forEach(btn => {
+                        const value = parseInt(btn.dataset.infants);
+                        btn.classList.toggle('active', value === infantCount);
+                    });
+                    document.querySelectorAll('.infant-options').forEach(el => {
+                        el.classList.toggle('hidden', infantCount === 0);
+                    });
+                    const infantRatio = additional.infantCare?.ratio || 100;
+                    document.querySelectorAll('[data-infant-ratio]').forEach(btn => {
+                        const value = parseInt(btn.dataset.infantRatio);
+                        btn.classList.toggle('active', value === infantRatio);
+                    });
+
+                    // 继续教育
+                    const eduType = additional.continuingEducation?.type || 'none';
+                    document.querySelectorAll('[data-education]').forEach(option => {
+                        option.classList.toggle('active', option.dataset.education === eduType);
+                    });
+
+                    // 住房
+                    const housingType = additional.housing?.type || 'none';
+                    document.querySelectorAll('[data-housing]').forEach(option => {
+                        option.classList.toggle('active', option.dataset.housing === housingType);
+                    });
+                    const cityTier = additional.housing?.cityTier || 'tier1';
+                    document.querySelectorAll('[data-city]').forEach(btn => {
+                        btn.classList.toggle('active', btn.dataset.city === cityTier);
+                    });
+                    document.querySelectorAll('.housing-options').forEach(el => {
+                        el.classList.toggle('hidden', housingType !== 'rent');
+                    });
+
+                    // 赡养老人
+                    const elderQualified = additional.elderCare?.qualified || false;
+                    document.querySelectorAll('[data-elder-age]').forEach(option => {
+                        const isQualifiedOption = option.dataset.elderAge === 'qualified';
+                        option.classList.toggle('active', isQualifiedOption === elderQualified);
+                    });
+                    document.querySelectorAll('.elder-options').forEach(el => {
+                        el.classList.toggle('hidden', !elderQualified);
+                    });
+                    const siblings = additional.elderCare?.siblings || 1;
+                    document.querySelectorAll('[data-siblings]').forEach(btn => {
+                        const value = parseInt(btn.dataset.siblings);
+                        btn.classList.toggle('active', value === siblings);
+                    });
+                    const elderShare = additional.elderCare?.share || 0;
+                    setVal('elderShareInput', elderShare);
+                    document.querySelectorAll('.elder-share').forEach(el => {
+                        el.classList.toggle('hidden', !elderQualified || siblings === 1);
+                    });
+
                     updateUIFromState();
                 }
             } catch (e) {
@@ -2211,8 +2283,23 @@
                     const imported = JSON.parse(event.target.result);
 
                     if (imported.mode && imported.income && imported.deductions) {
-                        appState = imported;
-                        saveToLocalStorage(); // 先保存依然很重要，确保 loadFromLocalStorage 读到的是最新数据
+                        // 深度合并导入的数据，确保嵌套对象正确合并
+                        appState = {
+                            mode: imported.mode,
+                            income: { ...imported.income },
+                            deductions: {
+                                social: { ...imported.deductions.social },
+                                additional: {
+                                    childEducation: { ...imported.deductions.additional?.childEducation },
+                                    infantCare: { ...imported.deductions.additional?.infantCare },
+                                    continuingEducation: { ...imported.deductions.additional?.continuingEducation },
+                                    housing: { ...imported.deductions.additional?.housing },
+                                    elderCare: { ...imported.deductions.additional?.elderCare }
+                                }
+                            }
+                        };
+
+                        saveToLocalStorage();
                         loadFromLocalStorage();
                         alert('数据导入成功！');
                     } else {
