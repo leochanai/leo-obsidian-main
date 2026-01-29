@@ -1398,6 +1398,7 @@
 
         let appState = {
             mode: 'monthly',
+            socialMode: 'preset', // 'preset' 或 'custom'
             income: {
                 monthlyIncomes: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], // 12个月的工资数组
                 yearly: 0,
@@ -1420,6 +1421,29 @@
                 }
             }
         };
+
+        // 计算企业标准社保（22.5%）
+        function applyPresetSocial() {
+            let income = 0;
+            if (appState.mode === 'monthly') {
+                // 计算有收入月份的平均工资
+                const totalIncome = appState.income.monthlyIncomes.reduce((sum, val) => sum + val, 0);
+                const monthsWithIncome = appState.income.monthlyIncomes.filter(val => val > 0).length;
+                income = monthsWithIncome > 0 ? totalIncome / monthsWithIncome : 0;
+            } else {
+                income = appState.income.yearly / 12;
+            }
+
+            document.getElementById('pensionInput').value = Math.round(income * 0.08);
+            document.getElementById('medicalInput').value = Math.round(income * 0.02);
+            document.getElementById('unemploymentInput').value = Math.round(income * 0.005);
+            document.getElementById('housingFundInput').value = Math.round(income * 0.12);
+
+            appState.deductions.social.pension = Math.round(income * 0.08);
+            appState.deductions.social.medical = Math.round(income * 0.02);
+            appState.deductions.social.unemployment = Math.round(income * 0.005);
+            appState.deductions.social.housingFund = Math.round(income * 0.12);
+        }
 
         function calculateTax(taxableIncome, brackets) {
             for (let i = 0; i < brackets.length; i++) {
@@ -1856,6 +1880,12 @@
             // 年度收入输入
             document.getElementById('yearlyIncomeInput').addEventListener('input', debounce((e) => {
                 appState.income.yearly = parseFloat(e.target.value) || 0;
+
+                // 如果是企业标准模式，自动重新计算社保
+                if (appState.socialMode === 'preset') {
+                    applyPresetSocial();
+                }
+
                 updateUI();
             }, 300));
 
@@ -1870,6 +1900,11 @@
                     input.value = value || '';
                 });
 
+                // 如果是企业标准模式，自动重新计算社保
+                if (appState.socialMode === 'preset') {
+                    applyPresetSocial();
+                }
+
                 updateUI();
             }, 300));
 
@@ -1879,6 +1914,11 @@
                     const month = parseInt(e.target.dataset.month);
                     const value = parseFloat(e.target.value) || 0;
                     appState.income.monthlyIncomes[month - 1] = value;
+
+                    // 如果是企业标准模式，自动重新计算社保
+                    if (appState.socialMode === 'preset') {
+                        applyPresetSocial();
+                    }
 
                     // 当明细被修改时，主输入框的值就不再代表全年统一，清空它或保持现状（这里选择保持现状，通常用户会知道他在做微调）
                     updateUI();
@@ -1892,27 +1932,11 @@
 
                     const preset = btn.dataset.preset;
                     if (preset === '22.5') {
-                        let income = 0;
-                        if (appState.mode === 'monthly') {
-                            // 计算有收入月份的平均工资
-                            const totalIncome = appState.income.monthlyIncomes.reduce((sum, val) => sum + val, 0);
-                            const monthsWithIncome = appState.income.monthlyIncomes.filter(val => val > 0).length;
-                            income = monthsWithIncome > 0 ? totalIncome / monthsWithIncome : 0;
-                        } else {
-                            income = appState.income.yearly / 12;
-                        }
-
-                        document.getElementById('pensionInput').value = Math.round(income * 0.08);
-                        document.getElementById('medicalInput').value = Math.round(income * 0.02);
-                        document.getElementById('unemploymentInput').value = Math.round(income * 0.005);
-                        document.getElementById('housingFundInput').value = Math.round(income * 0.12);
-
-                        appState.deductions.social.pension = Math.round(income * 0.08);
-                        appState.deductions.social.medical = Math.round(income * 0.02);
-                        appState.deductions.social.unemployment = Math.round(income * 0.005);
-                        appState.deductions.social.housingFund = Math.round(income * 0.12);
-
+                        appState.socialMode = 'preset';
+                        applyPresetSocial();
                         updateUI();
+                    } else {
+                        appState.socialMode = 'custom';
                     }
                 });
             });
@@ -1927,6 +1951,8 @@
                     else if (id === 'unemploymentInput') appState.deductions.social.unemployment = value;
                     else if (id === 'housingFundInput') appState.deductions.social.housingFund = value;
 
+                    // 手动修改社保时，自动切换到自定义模式
+                    appState.socialMode = 'custom';
                     document.querySelectorAll('[data-preset]').forEach(b => b.classList.remove('active'));
                     document.querySelector('[data-preset="custom"]').classList.add('active');
 

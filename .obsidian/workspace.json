@@ -30,8 +30,57 @@
               "icon": "lucide-file",
               "title": "Playwright"
             }
+          },
+          {
+            "id": "e55e3c73a4cffa77",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2 Areas/People/LEO.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "LEO"
+            }
+          },
+          {
+            "id": "cc49abe1fcfcd1ee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1 Projects/Agent Skills/Agent Skills 终极指南：入门、精通、预测.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Agent Skills 终极指南：入门、精通、预测"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -115,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1 Projects/MCPs/Playwright.md",
+                "file": "1 Projects/Agent Skills/Agent Skills 终极指南：入门、精通、预测.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +174,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Playwright 的反向链接列表"
+              "title": "Agent Skills 终极指南：入门、精通、预测 的反向链接列表"
             }
           },
           {
@@ -184,13 +233,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1 Projects/MCPs/Playwright.md",
+                "file": "1 Projects/Agent Skills/Agent Skills 终极指南：入门、精通、预测.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Playwright 的大纲"
+              "title": "Agent Skills 终极指南：入门、精通、预测 的大纲"
             }
           }
         ]
@@ -212,14 +261,34 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": true
     }
   },
-  "active": "2711aace0ec773f0",
+  "active": "cc49abe1fcfcd1ee",
   "lastOpenFiles": [
-    "0 Inbox/未命名.base",
+    "1 Projects/Agent Skills/Agent Skills.md",
+    "1 Projects/Agent Skills/Agent Skill 创作最佳实践.md",
+    "0 Inbox/未命名.md",
+    "2 Areas/People/喜妹.md",
+    "2 Areas/People/乐乐.md",
+    "2 Areas/People/安哥.md",
+    "2 Areas/People/哈哈.md",
+    "2 Areas/People/LEO.md",
     "1 Projects/MCPs/Playwright.md",
+    "icon.png",
+    "statuses/icons/todo.svg",
+    "statuses/icons/needs-review.svg",
+    "statuses/icons/in-progress.svg",
+    "statuses/icons/done.svg",
+    "statuses/icons/cancelled.svg",
+    "statuses/icons/backlog.svg",
+    "statuses/icons",
+    "statuses/config.json",
+    "statuses",
+    "config.json",
+    "skills",
+    "sessions",
+    "sources",
+    "0 Inbox/未命名.base",
     "2 Areas/Bases/Obsidian.base",
     "2 Areas/Bases/Nano Banana Prompts.base",
-    "2 Areas/Bases/Investment.base",
-    "2 Areas/Bases/Agent Skills.base",
     "3 Resources/Articles/将 Next.js 项目从 Vercel 迁移到 Cloudflare.md",
     "3 Resources/Articles/一家投资 OpenAI 的硅谷基金的深度研究.md",
     "3 Resources/Articles/oh-my-opencode.md",
@@ -228,38 +297,19 @@
     "3 Resources/Articles/Doing well in your courses.md",
     "3 Resources/Articles/Anthropic 工程师都在用的 AI 编程秘技！让 AI \"采访\"你做出完美应用.md",
     "3 Resources/Articles/A designer’s path from influence to identity.md",
-    "3 Resources/Articles",
     "AGENTS.md",
     "1 Projects/Agent Skills/Agent Skills 终极指南：入门、精通、预测.md",
-    "1 Projects/Agent Skills/Agent Skills.md",
-    "1 Projects/Agent Skills/Agent Skill 创作最佳实践.md",
-    "2 Areas/People/LEO.md",
     "2 Areas/People/Microsoft.md",
     "2 Areas/People/Claude Docs.md",
-    "2 Areas/People/喜妹.md",
-    "2 Areas/People/乐乐.md",
-    "2 Areas/People/哈哈.md",
-    "2 Areas/People/安哥.md",
-    "1 Projects/MCPs",
     "3 Resources/Sources/将 Next.js 项目从 Vercel 迁移到 Cloudflare.md",
     "3 Resources/Sources/一家投资 OpenAI 的硅谷基金的深度研究.md",
     "3 Resources/Sources/A designer’s path from influence to identity.md",
     "3 Resources/Sources/Anthropic 工程师都在用的 AI 编程秘技！让 AI \"采访\"你做出完美应用.md",
     "3 Resources/Sources/Doing well in your courses.md",
-    "2 Areas/Bases/Collection.base",
     "2 Areas/Bases/唐朝历代皇帝.canvas",
-    "1 Projects/Agent Skills",
-    "2 Areas/Tools/个税计算数据_2026-01-23.json",
     "_Attachment/fbd338a9a4b0d20aa27a212a29f7b375_MD5.png",
     "_Attachment/fb9c0c7a87ef6a758fce229774872b4a_MD5.png",
     "_Attachment/ee83b501ae2a5832963478af550f4ae1_MD5.jpg",
-    "_Attachment/f6b5acc27935f185935c986fc04faf01_MD5.webp",
-    "_Attachment/f17f8e6d27e7e59298cddc11e1642e6f_MD5.png",
-    "_Attachment/f05ff4dd60dbb1d58cc4da2d0c744718_MD5.png",
-    "_Attachment/ebdfd5dbea293b607afa83d51c4222db_MD5.png",
-    "_Attachment/ecbd4b05138dab085cb6c28a7c9c2d1d_MD5.png",
-    "_Attachment/e9ada98b74792d6de357453c07068f53_MD5.png",
-    "_Attachment/e9721f4242bf311445656bf3571922b5_MD5.png",
     "02 Map/唐朝历代皇帝.canvas"
   ]
 }
